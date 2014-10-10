@@ -181,33 +181,54 @@ Das ganze auf Englisch.
 GIT ist ein Versionsverwaltungssystem. Doch was ist ein Versionsverwaltungssystem? Ein Versionsverwaltungssystem ist ein System, welches Änderungen an einer Datei oder eine Reihe von Dateien protokolliert, so dass  bestimmte Versionen später wieder aufrufbar sind.\footnote{\cite{chacon2009pro} Seite 1 Zeile 1 } Um Problemen entgegenzuwirken die eine Amateurhafte Methoden der Versionsverwaltung mit sich bringen wie z.B das ständige kopieren neuer Versionen in ein Verzeichnis. Wurden diese Systeme entwickelt.Dabei unterscheidet man 3 Arten von Systemen. Der wesentlichste Unterschied besteht darin wie und wo die Daten gehalten werden.
 \subsubsection{Lokale Versionskontrollsysteme}
 
-Von Lokalen Versionskontrollsystemen spricht man wenn die Daten auf dem Lokalen System vorligen (siehe Abbildung 1 ). Dabei werden die Dateien in einer Version Database (Repository) gehalten. Nach jedem Checkout wird automatisch eine neue Version im Repository erstellt. Somit entgeht man der Gefahr durch das oben erwähnte Kopieren in andere Verzeichnisse eine der Versionen zu überschreiben, da man vergessen hat die Datei umzubenennen.
-%\begin{minipage}{\linewidth}
-%	\centering
-%	\includegraphics[width=0.4\linewidth]{Bilder/LVKS.png}
-%	\captionof{figure}[Lokales Versionssystem Funktionsweise]{Eigene Grafik\footnotemark }
-%	\label{fig:osgi}
-%\end{minipage}
-Natürlich ist diese Variante der Versionskontrolle für Große Projekte die im Team bearbeitet werden eher destruktiv.Ein Beispiel für Lokale Systeme ist RCS( Revision Control System ).Eher geeignet für Teamwork sind die beiden andern Architekturen. 
+Von Lokalen Versionskontrollsystemen spricht man wenn die Daten auf dem Lokalen System vorligen (siehe Abbildung 1 ). Dabei werden die Dateien in einer Version Database (Repository) gehalten. Nach jedem Checkout wird automatisch eine neue Version im Repository erstellt. Somit entgeht man der Gefahr durch das oben erwähnte Kopieren in andere Verzeichnisse eine der Versionen zu überschreiben, da man vergessen hat die Datei umzubenennen. Natürlich ist diese Variante der Versionskontrolle für Große Projekte die im Team bearbeitet werden eher destruktiv.Ein Beispiel für Lokale Systeme ist RCS( Revision Control System ).Eher geeignet für Teamwork sind die beiden andern Architekturen. 
+\newline
+\vspace{3pt}
+\begin{minipage}{\linewidth}
+	\centering
+	\includegraphics[width=0.4\linewidth]{Bilder/LVKS.png}
+	\captionof{figure}[Lokale Architektur]{Lokale Architektur  \cite{chacon2009pro}\footnotemark }
+	\label{fig:osgi}
+\end{minipage}
+\newpage
 \subsubsection{Zentralisierte Versionskontrollsysteme}
-Bei zentralisierte Versionskontrollsystemen wird die Versionierung nicht lokal vorgenommen. Die Entwickler haben einen Zentralen Punkt, einen Server und dort befindet sich der Quellcode des Projektes in einem Reposytory zu deutsch Lager. Der unterschied zu einfachen Lokalen Systemen ist nun Offensichtlich. Man braucht zumindest ein Netzwerk um solche Systeme zu nutzen. Ein sehr beliebtes zentralisiertes System ist Subversion. Ein weiterer Vorteil gegenüber der lokalen Versionnierung besteht darin das gemeinsames Arbeiten an einem Projekt möglich ist und bei Verwendung eines Servers der Online erreichbar ist kann das Arbeiten auch ohne Ortsbindung ablaufen. Doch dieser Vorteil der Ortsungebundenheit bietet einen enormen „Single Point of Failure“ denn wenn der Server ausfällt ist man nicht in der Lage seiner Arbeit nachzugehen.      
+Bei zentralisierte Versionskontrollsystemen wird die Versionierung nicht lokal vorgenommen. Die Entwickler haben einen Zentralen Punkt(Abbildung 2) , einen Server und dort befindet sich der Quellcode des Projektes in einem Reposytory zu deutsch Lager. Der unterschied zu einfachen Lokalen Systemen ist nun Offensichtlich. Man braucht zumindest ein Netzwerk um solche Systeme zu nutzen. Ein sehr beliebtes zentralisiertes System ist Subversion. Ein weiterer Vorteil gegenüber der lokalen Versionnierung besteht darin das gemeinsames Arbeiten an einem Projekt möglich ist und bei Verwendung eines Servers der Online erreichbar ist kann das Arbeiten auch ohne Ortsbindung ablaufen. Doch dieser Vorteil der Ortsungebundenheit bietet einen enormen „Single Point of Failure“ denn wenn der Server ausfällt ist man nicht in der Lage seiner Arbeit nachzugehen.
+
+\newline
+\vspace{3pt}
+\begin{minipage}{\linewidth}
+	\centering
+	\includegraphics[width=0.3\linewidth]{Bilder/sub.png}
+	\captionof{figure}[Zentralisierte Architektur]{Zentralisierte Architektur\footnotemark }
+	\label{fig:osgi}
+\end{minipage}    
 
 \subsubsection{Verteilte Versionskontrollsysteme}
 GIT gehört zu den Verteilten Systemen, der Unterschied zu den Varianten davor ist das sie beides können. 
-Einer Art hybride Lösung. Man ist in der Lage Lokal zu Versionieren aber auch im Netzwerk Versionen anderen zur Verfügung zu stellen. Jeder kann als Server fungieren und somit eliminiert man den „Single Point of Failure“ der Zentralisierten Systeme. In der Praxis ist aber eher üblich das man einen Server nutzt vor allem bei Teamarbeiten. 
-
-   
-
-\vspace{1em}
+Einer Art hybride Lösung. Man ist in der Lage Lokal zu Versionieren aber auch im Netzwerk Versionen, anderen zur Verfügung zu stellen (Abbildung 3). Jeder kann als Server fungieren und somit  wird der „Single Point of Failure“ eliminiert den Zentralisierten Systeme haben. In der Praxis ist aber eher üblich das man einen Server nutzt vor allem bei Teamarbeiten. Wenn dieser jedoch ausfällt ist man in der Lage weiter seine Arbeit zu verrichten.
+\newline
+\vspace{3pt}
 \begin{minipage}{\linewidth}
 	\centering
-	\includegraphics[width=0.7\linewidth]{Bilder/layering-osgi.png}
-	\captionof{figure}[OSGi Architektur]{OSGi Architektur\footnotemark }
+	\includegraphics[width=0.3\linewidth]{Bilder/git.png}
+	\captionof{figure}[Verteilte Architektur]{Verteilte Architektur\footnotemark }
 	\label{fig:osgi}
 \end{minipage}
-\footnotetext{Quelle: \url{http://www.osgi.org/Technology/WhatIsOSGi}}
+   
+
+%\vspace{1em}
+%\begin{minipage}{\linewidth}
+%	\centering
+%	\includegraphics[width=0.7\linewidth]{Bilder/layering-osgi.png}
+%	\captionof{figure}[OSGi Architektur]{OSGi Architektur\footnotemark }
+%	\label{fig:osgi}
+%\end{minipage}
+%\footnotetext{Quelle: \url{http://www.osgi.org/Technology/WhatIsOSGi}}
 
 \subsection{GIT Historie }
+Im Jahre 2005 ist es zu unstimmigkeiten zwichen der Etwicklercommunety von Linux und dem Anbieter des proprietären BitKeeper-Systems das vorher kostenfrei genutz wurde. 
+
+
 In diesem Abschnitt wird eine Tabelle (siehe Tabelle \ref{tab:beispiel}) dargestellt.
 
 \vspace{1em}
