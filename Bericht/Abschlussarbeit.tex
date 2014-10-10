@@ -181,19 +181,19 @@ Das ganze auf Englisch.
 GIT ist ein Versionsverwaltungssystem. Doch was ist ein Versionsverwaltungssystem? Ein Versionsverwaltungssystem ist ein System, welches Änderungen an einer Datei oder eine Reihe von Dateien protokolliert, so dass  bestimmte Versionen später wieder aufrufbar sind.\footnote{\cite{chacon2009pro} Seite 1 Zeile 1 } Um Problemen entgegenzuwirken die eine Amateurhafte Methoden der Versionsverwaltung mit sich bringen wie z.B das ständige kopieren neuer Versionen in ein Verzeichnis. Wurden diese Systeme entwickelt.Dabei unterscheidet man 3 Arten von Systemen. Der wesentlichste Unterschied besteht darin wie und wo die Daten gehalten werden.
 \subsubsection{Lokale Versionskontrollsysteme}
 
-Von Lokalen Versionskontrollsystemen spricht man wenn die Daten auf dem Lokalen System gehalten werden(siehe Abbildung 1 ). Dabei werden die Dateien in einer Version Database gehalten. Nach jedem Checkout wird automatisch eine neue Version erstellt.Somit entgeht man der Gefahr durch das oben erwähnte Kopieren in andere Verzeichnisse eine der Versionen zu überschreiben, da man vergessen hat die Datei umzubenennen.
+Von Lokalen Versionskontrollsystemen spricht man wenn die Daten auf dem Lokalen System vorligen (siehe Abbildung 1 ). Dabei werden die Dateien in einer Version Database (Repository) gehalten. Nach jedem Checkout wird automatisch eine neue Version im Repository erstellt. Somit entgeht man der Gefahr durch das oben erwähnte Kopieren in andere Verzeichnisse eine der Versionen zu überschreiben, da man vergessen hat die Datei umzubenennen.
 %\begin{minipage}{\linewidth}
 %	\centering
 %	\includegraphics[width=0.4\linewidth]{Bilder/LVKS.png}
 %	\captionof{figure}[Lokales Versionssystem Funktionsweise]{Eigene Grafik\footnotemark }
 %	\label{fig:osgi}
 %\end{minipage}
-Natürlich ist diese Variante der Versionskontrolle für Große Projekte die im Team bearbeitet werden eine eher destruktiv.Ein Beispiel für Lokale Systeme ist RCS( Revision Control System ).Eher geeignet für Teamwork sind die beiden andern Architekturen. 
+Natürlich ist diese Variante der Versionskontrolle für Große Projekte die im Team bearbeitet werden eher destruktiv.Ein Beispiel für Lokale Systeme ist RCS( Revision Control System ).Eher geeignet für Teamwork sind die beiden andern Architekturen. 
 \subsubsection{Zentralisierte Versionskontrollsysteme}
-Bei zentralisierte Versionskontrollsystemen 
+Bei zentralisierte Versionskontrollsystemen wird die Versionierung nicht lokal vorgenommen. Die Entwickler haben einen Zentralen Punkt, einen Server und dort befindet sich der Quellcode des Projektes in einem Reposytory zu deutsch Lager. Der unterschied zu einfachen Lokalen Systemen ist nun Offensichtlich. Man braucht zumindest ein Netzwerk um solche Systeme zu nutzen. Ein sehr beliebtes zentralisiertes System ist Subversion. Ein weiterer Vorteil gegenüber der lokalen Versionnierung besteht darin das gemeinsames Arbeiten an einem Projekt möglich ist und bei Verwendung eines Servers der Online erreichbar ist kann das Arbeiten auch ohne Ortsbindung ablaufen.       
 
 \subsubsection{Verteilte Versionskontrollsysteme}
-
+Zu Verteilten Verionskontrollsystemen gehört Git  
 Diese Dezentralsierung ermöglicht das arbeiten auch ohne Internetzugang, lokal auf dem eigenem Computer. Dennoch besteht die Möglichkeit es Serverseitig zu nutzen.
 
    
