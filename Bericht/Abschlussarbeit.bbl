@@ -22,4 +22,33 @@
   worldwide by Springer-Verlag, 2009. --
 \newblock ISBN 9781430218340
 
+\bibitem[joo]{joomla}
+\textsc{joomla}:
+\newblock \emph{Joomla CMS}.
+\newblock \url{https://github.com/joomla/joomla-cms}
+
+\bibitem[Jqu]{jquery}
+\textsc{Jquery}:
+\newblock \emph{Jquerry, jquery}.
+\newblock \url{https://github.com/jquery/jquery}. --
+\newblock Zugriff: 15.02.2013, Archiviert mit
+  WebCite\textsuperscript{\textregistered}:
+  \url{https://github.com/jquery/jquery}
+
+\bibitem[Rub]{ruby}
+\textsc{Ruby}:
+\newblock \emph{Ruby on Rails}.
+\newblock \url{https://github.com/rails/rails}. --
+\newblock Zugriff: 15.02.2013, Archiviert mit
+  WebCite\textsuperscript{\textregistered}:
+  \url{https://github.com/rails/rails}
+
+\bibitem[Tor]{linux}
+\textsc{Torvalds}:
+\newblock \emph{Linux Kernel, Torvalds}.
+\newblock \url{https://github.com/torvalds/linux}. --
+\newblock Zugriff: 15.02.2013, Archiviert mit
+  WebCite\textsuperscript{\textregistered}:
+  \url{https://github.com/torvalds/linux}
+
 \end{thebibliography}
