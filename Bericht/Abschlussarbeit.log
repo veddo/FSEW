@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  11 OCT 2014 19:01
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  12 OCT 2014 20:25
 entering extended mode
  %&-line parsing enabled.
 **Abschlussarbeit.tex
@@ -980,19 +980,19 @@ Overfull \hbox (12.3982pt too wide) in paragraph at lines 248--250
 g das die Pro-jek-te []offentlich zug[]anglich
  []
 
-[3]
+[3] [4] [5]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 266.
+nput line 297.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 268.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 299.
 
 
-LaTeX Warning: Citation `buch' on page 4 undefined on input line 300.
+LaTeX Warning: Citation `buch' on page 6 undefined on input line 331.
 
 Package acronym Info: Label `acro:OSGi' newly defined as it shall be overridden
 
-although it is yet undefined on input line 302.
-[4] [5] [6] [7] (./Abschlussarbeit.bbl
+although it is yet undefined on input line 333.
+[6] [7] [8] (./Abschlussarbeit.bbl
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
 
@@ -1002,13 +1002,13 @@ a-niel Brett-schnei-ders Blog\OT1/cmr/m/n/12 .  [][]$\OT1/cmtt/m/n/12 http : /
 / www .
  []
 
-) [8]pdfTeX warning (ext4): destination with the same identifier (name{page.I})
+) [9]pdfTeX warning (ext4): destination with the same identifier (name{page.I})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.380 \newpage
+l.393 \newpage
                [1]
-Overfull \hbox (3.26385pt too wide) in paragraph at lines 392--393
+Overfull \hbox (3.26385pt too wide) in paragraph at lines 405--406
 []|\OT1/cmr/m/n/12 .......................................................| 
  []
 
@@ -1016,7 +1016,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.397 \end{document}
+l.410 \end{document}
                      [2] (./Abschlussarbeit.aux)
 
 LaTeX Warning: There were undefined references.
@@ -1026,8 +1026,8 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12516 strings out of 495021
- 174931 string characters out of 1181036
+ 12517 strings out of 495021
+ 174937 string characters out of 1181036
  302979 words of memory out of 3000000
  15424 multiletter control sequences out of 15000+50000
  14114 words of font info for 54 fonts, out of 3000000 for 9000
@@ -1044,9 +1044,9 @@ texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/a
 msfonts/cm/cmtt12.pfb>
-Output written on Abschlussarbeit.pdf (16 pages, 335130 bytes).
+Output written on Abschlussarbeit.pdf (17 pages, 336924 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 66 named destinations out of 1000 (max. 500000)
+ 340 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
  253 words of extra memory for PDF output out of 10000 (max. 10000000)
 
