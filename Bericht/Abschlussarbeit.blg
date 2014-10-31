@@ -7,66 +7,68 @@ Warning--entry type for "online" isn't style-file defined
 --line 9 of file bibo.bib
 Warning--entry type for "linux" isn't style-file defined
 --line 16 of file bibo.bib
+Warning--entry type for "Leymann" isn't style-file defined
+--line 22 of file bibo.bib
 Warning--entry type for "jquery" isn't style-file defined
---line 23 of file bibo.bib
-I was expecting a `,' or a `}'---line 29 of file bibo.bib
+--line 28 of file bibo.bib
+I was expecting a `,' or a `}'---line 34 of file bibo.bib
  : 
  : @ONLINE{ruby,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "ruby" isn't style-file defined
---line 29 of file bibo.bib
-I was expecting a `,' or a `}'---line 35 of file bibo.bib
+--line 34 of file bibo.bib
+I was expecting a `,' or a `}'---line 40 of file bibo.bib
  : 
  : @ONLINE{joomla,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "joomla" isn't style-file defined
---line 35 of file bibo.bib
-Illegal end of database file---line 40 of file bibo.bib
+--line 40 of file bibo.bib
+Illegal end of database file---line 45 of file bibo.bib
  : }
  :  
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "buch"
-You've used 6 entries,
+You've used 7 entries,
             4793 wiz_defined-function locations,
-            920 strings with 7196 characters,
-and the built_in function-call counts, 2409 in all, are:
-= -- 234
-> -- 48
-< -- 26
-+ -- 25
-- -- 12
-* -- 138
-:= -- 418
-add.period$ -- 6
-call.type$ -- 6
-change.case$ -- 24
-chr.to.int$ -- 6
-cite$ -- 6
-duplicate$ -- 88
-empty$ -- 208
-format.name$ -- 36
-if$ -- 518
+            926 strings with 7463 characters,
+and the built_in function-call counts, 2917 in all, are:
+= -- 291
+> -- 56
+< -- 48
++ -- 47
+- -- 15
+* -- 161
+:= -- 501
+add.period$ -- 7
+call.type$ -- 7
+change.case$ -- 28
+chr.to.int$ -- 7
+cite$ -- 7
+duplicate$ -- 102
+empty$ -- 239
+format.name$ -- 42
+if$ -- 619
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 34
-newline$ -- 45
-num.names$ -- 18
-pop$ -- 53
+missing$ -- 40
+newline$ -- 51
+num.names$ -- 21
+pop$ -- 62
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 42
 quote$ -- 0
-skip$ -- 99
+skip$ -- 133
 stack$ -- 0
-substring$ -- 124
-swap$ -- 13
-text.length$ -- 13
-text.prefix$ -- 6
+substring$ -- 158
+swap$ -- 15
+text.length$ -- 15
+text.prefix$ -- 7
 top$ -- 0
-type$ -- 56
+type$ -- 66
 warning$ -- 0
-while$ -- 19
-width$ -- 9
-write$ -- 83
+while$ -- 22
+width$ -- 10
+write$ -- 96
 (There were 3 error messages)

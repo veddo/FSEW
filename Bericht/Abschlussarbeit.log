@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  13 OCT 2014 19:43
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  31 OCT 2014 16:20
 entering extended mode
  %&-line parsing enabled.
 **Abschlussarbeit.tex
@@ -894,11 +894,11 @@ l.115
 \tf@toc=\write4
 \openout4 = `Abschlussarbeit.toc'.
 
- [2] (./Abschlussarbeit.lof)
+ [2] [3] (./Abschlussarbeit.lof)
 \tf@lof=\write5
 \openout5 = `Abschlussarbeit.lof'.
 
- [3]
+ [4]
 (./Abschlussarbeit.lot)
 \tf@lot=\write6
 \openout6 = `Abschlussarbeit.lot'.
@@ -916,8 +916,8 @@ e 140.
 \tf@lol=\write7
 \openout7 = `Abschlussarbeit.lol'.
 
- [4] [5]
-<Bilder/LVKS.png, id=210, 346.29375pt x 293.095pt>
+ [5] [6]
+<Bilder/LVKS.png, id=215, 346.29375pt x 293.095pt>
 File: Bilder/LVKS.png Graphic file (type png)
  <use Bilder/LVKS.png>
 
@@ -944,7 +944,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Bilder/sub.png, id=222, 369.38pt x 289.08pt>
+<Bilder/sub.png, id=226, 369.38pt x 289.08pt>
 File: Bilder/sub.png Graphic file (type png)
  <use Bilder/sub.png>
 
@@ -952,7 +952,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 202.
 See the caption package documentation for explanation.
 
-<Bilder/git.png, id=223, 378.41376pt x 425.59pt>
+<Bilder/git.png, id=227, 378.41376pt x 425.59pt>
 File: Bilder/git.png Graphic file (type png)
  <use Bilder/git.png>
 
@@ -980,18 +980,25 @@ Overfull \hbox (12.3982pt too wide) in paragraph at lines 248--250
 g das die Pro-jek-te []offentlich zug[]anglich
  []
 
-[3] [4] [5]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 297.
+[3]
+Overfull \hbox (1.34578pt too wide) in paragraph at lines 269--270
+[] []\OT1/cmss/bx/n/12 Breanch[] \OT1/cmr/m/n/12 Zu Deutsch Zweig ist ei-ne Ga-
+be-lung des Quell-co-des. Aus ver-schie-de-nen gr[]unden
+ []
+
+[4]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 299.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 280.
+ [5]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 313.
 
 
-LaTeX Warning: Citation `buch' on page 6 undefined on input line 331.
+LaTeX Warning: Citation `buch' on page 6 undefined on input line 347.
 
 Package acronym Info: Label `acro:OSGi' newly defined as it shall be overridden
 
-although it is yet undefined on input line 333.
+although it is yet undefined on input line 349.
 [6] [7] [8] [9] [10] (./Abschlussarbeit.bbl
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
@@ -1002,13 +1009,31 @@ a-niel Brett-schnei-ders Blog\OT1/cmr/m/n/12 .  [][]$\OT1/cmtt/m/n/12 http : /
 / www .
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--46
+[]\OT1/cmr/m/sc/12 Leymann\OT1/cmr/m/n/12 , Pro-fes-sor Dr. F.:  \OT1/cmr/m/it/
+12 Re-po-si-to-ry,Leymann\OT1/cmr/m/n/12 .  [][]$\OT1/cmtt/m/n/12 http : / /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--46
+\OT1/cmtt/m/n/12 wirtschaftslexikon . gabler . de / Definition / repository . h
+tml$[][]\OT1/cmr/m/n/12 . --  Zu-
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 39--46
+\OT1/cmr/m/n/12 griff: 20.10.2014, Ar-chi-viert mit WebCite$[]$: [][]$\OT1/cmtt
+/m/n/12 http : / / wirtschaftslexikon .
+ []
+
 ) [11]pdfTeX warning (ext4): destination with the same identifier (name{page.I}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.398 \newpage
+l.414 \newpage
                [1]
-Overfull \hbox (3.26385pt too wide) in paragraph at lines 410--411
+Overfull \hbox (3.26385pt too wide) in paragraph at lines 426--427
 []|\OT1/cmr/m/n/12 .......................................................| 
  []
 
@@ -1016,7 +1041,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.415 \end{document}
+l.431 \end{document}
                      [2] (./Abschlussarbeit.aux)
 
 LaTeX Warning: There were undefined references.
@@ -1026,13 +1051,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12527 strings out of 495021
- 175061 string characters out of 1181036
- 304000 words of memory out of 3000000
- 15428 multiletter control sequences out of 15000+50000
+ 12547 strings out of 495021
+ 175311 string characters out of 1181036
+ 304031 words of memory out of 3000000
+ 15436 multiletter control sequences out of 15000+50000
  14114 words of font info for 54 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 47i,11n,43p,902b,1125s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,11n,43p,902b,1107s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
 exlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts
@@ -1044,9 +1069,9 @@ texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/a
 msfonts/cm/cmtt12.pfb>
-Output written on Abschlussarbeit.pdf (19 pages, 343278 bytes).
+Output written on Abschlussarbeit.pdf (20 pages, 352194 bytes).
 PDF statistics:
- 371 PDF objects out of 1000 (max. 8388607)
- 73 named destinations out of 1000 (max. 500000)
+ 394 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
  285 words of extra memory for PDF output out of 10000 (max. 10000000)
 

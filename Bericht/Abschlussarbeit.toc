@@ -1,35 +1,41 @@
 \select@language {ngerman}
 \contentsline {section}{\numberline {I}Zusammenfassung}{I}{section.I}
 \contentsline {section}{II \hspace {0.35em}Inhaltsverzeichnis}{II}{section*.1}
-\contentsline {section}{\numberline {III}Abbildungsverzeichnis}{III}{section.III}
-\contentsline {section}{\numberline {IV}Tabellenverzeichnis}{IV}{section.IV}
-\contentsline {section}{\numberline {V}Listing-Verzeichnis}{IV}{section.V}
-\contentsline {section}{\numberline {VI}Abk\IeC {\"u}rzungsverzeichnis}{V}{section.VI}
+\contentsline {section}{\numberline {III}Abbildungsverzeichnis}{IV}{section.III}
+\contentsline {section}{\numberline {IV}Tabellenverzeichnis}{V}{section.IV}
+\contentsline {section}{\numberline {V}Listing-Verzeichnis}{V}{section.V}
+\contentsline {section}{\numberline {VI}Abk\IeC {\"u}rzungsverzeichnis}{VI}{section.VI}
 \contentsline {section}{\numberline {1}GIT}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}Was ist GIT}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.1}Was ist ein Versionskontrollsystem}{1}{subsection.1.1}
 \contentsline {subsubsection}{\numberline {1.1.1}Lokale Versionskontrollsysteme}{1}{subsubsection.1.1.1}
 \contentsline {subsubsection}{\numberline {1.1.2}Zentralisierte Versionskontrollsysteme}{2}{subsubsection.1.1.2}
 \contentsline {subsubsection}{\numberline {1.1.3}Verteilte Versionskontrollsysteme}{2}{subsubsection.1.1.3}
 \contentsline {subsection}{\numberline {1.2}GIT Historie }{3}{subsection.1.2}
 \contentsline {section}{\numberline {2}GIT Grundlagen}{4}{section.2}
 \contentsline {subsection}{\numberline {2.1}Begriffe die man kennen sollte}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Installation von GIT}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Konfiguration von GIT}{4}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Hilfestellungen durch das System}{4}{subsection.2.4}
-\contentsline {section}{\numberline {3}Mit Git Arbeiten }{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Ein Git Repository anlegen}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2} \IeC {\"A}nderungen nachverfolgen}{6}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3} Mit Git commiten}{7}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Commithistorie anzeigen}{7}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5} \IeC {\"A}nderungen r\IeC {\"u}ckg\IeC {\"a}ngig machen}{7}{subsection.3.5}
-\contentsline {section}{\numberline {4}Branching mit Git}{8}{section.4}
-\contentsline {subsection}{\numberline {4.1}Was ist ein Branch?}{8}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Einfaches Branching}{8}{subsection.4.2}
-\contentsline {section}{\numberline {5}Merging mit Git}{9}{section.5}
-\contentsline {subsection}{\numberline {5.1}Einfaches und Merging}{9}{subsection.5.1}
-\contentsline {section}{\numberline {6}Git in Netzwerken}{10}{section.6}
-\contentsline {subsection}{\numberline {6.1}Welche Protokolle unters\IeC {\"u}tzt Git}{10}{subsection.6.1}
-\contentsline {section}{\numberline {7}Quellenverzeichnis}{11}{section.7}
-\contentsline {section}{Anhang}{I}{section*.4}
+\contentsline {paragraph}{Repository}{4}{paragraph*.2}
+\contentsline {paragraph}{Clone}{4}{paragraph*.3}
+\contentsline {paragraph}{Commit}{4}{paragraph*.4}
+\contentsline {paragraph}{Breanch}{4}{paragraph*.5}
+\contentsline {paragraph}{Merge}{4}{paragraph*.6}
+\contentsline {section}{\numberline {3}Installation von GIT}{5}{section.3}
+\contentsline {paragraph}{Installation unter Linux}{5}{paragraph*.7}
+\contentsline {subsection}{\numberline {3.1}Konfiguration von GIT}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Hilfestellungen durch das System}{5}{subsection.3.2}
+\contentsline {section}{\numberline {4}Mit Git Arbeiten }{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Ein Git Repository anlegen}{6}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2} \IeC {\"A}nderungen nachverfolgen}{6}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3} Mit Git commiten}{7}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Commithistorie anzeigen}{7}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5} \IeC {\"A}nderungen r\IeC {\"u}ckg\IeC {\"a}ngig machen}{7}{subsection.4.5}
+\contentsline {section}{\numberline {5}Branching mit Git}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1}Was ist ein Branch?}{8}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Einfaches Branching}{8}{subsection.5.2}
+\contentsline {section}{\numberline {6}Merging mit Git}{9}{section.6}
+\contentsline {subsection}{\numberline {6.1}Einfaches und Merging}{9}{subsection.6.1}
+\contentsline {section}{\numberline {7}Git in Netzwerken}{10}{section.7}
+\contentsline {subsection}{\numberline {7.1}Welche Protokolle unters\IeC {\"u}tzt Git}{10}{subsection.7.1}
+\contentsline {section}{\numberline {8}Quellenverzeichnis}{11}{section.8}
+\contentsline {section}{Anhang}{I}{section*.10}
 \vspace {-0.5em}
 \contentsline {section}{\numberline {A}GUI}{I}{section.A}

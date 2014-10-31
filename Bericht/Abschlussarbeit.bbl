@@ -35,6 +35,15 @@
   WebCite\textsuperscript{\textregistered}:
   \url{https://github.com/jquery/jquery}
 
+\bibitem[Ley]{Leymann}
+\textsc{Leymann}, Professor Dr.~F.:
+\newblock \emph{Repository,Leymann}.
+\newblock \url{http://wirtschaftslexikon.gabler.de/Definition/repository.html}.
+  --
+\newblock Zugriff: 20.10.2014, Archiviert mit
+  WebCite\textsuperscript{\textregistered}:
+  \url{http://wirtschaftslexikon.gabler.de/Definition/repository.html}
+
 \bibitem[Rub]{ruby}
 \textsc{Ruby}:
 \newblock \emph{Ruby on Rails}.

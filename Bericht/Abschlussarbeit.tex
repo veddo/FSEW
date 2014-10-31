@@ -177,8 +177,8 @@ Das ganze auf Englisch.
 % ----------------------------------------------------------------------------------------------------------
 \section{GIT}
 
-\subsection{Was ist GIT}
-GIT ist ein Versionsverwaltungssystem. Doch was ist ein Versionsverwaltungssystem? Ein Versionsverwaltungssystem ist ein System, welches Änderungen an einer Datei oder eine Reihe von Dateien protokolliert, so dass  bestimmte Versionen später wieder aufrufbar sind.\footnote{\cite{chacon2009pro} Seite 1 Zeile 1 } Um Problemen entgegenzuwirken die eine Amateurhafte Methoden der Versionsverwaltung mit sich bringen wie z.B das ständige kopieren neuer Versionen in ein Verzeichnis. Wurden diese Systeme entwickelt.Dabei unterscheidet man 3 Arten von Systemen. Der wesentlichste Unterschied besteht darin wie und wo die Daten gehalten werden.
+\subsection{Was ist ein Versionskontrollsystem}
+GIT ist ein Versionsverwaltungssystem soviel wissen wir. Doch was ist das, was macht es im Detail? Ein Versionsverwaltungssystem ist ein System, welches Änderungen an einer Datei oder eine Reihe von Dateien protokolliert, so dass  bestimmte Versionen später wieder aufrufbar sind.\footnote{\cite{chacon2009pro} Seite 1 Zeile 1 } Um Problemen entgegenzuwirken die eine Amateurhafte Methoden der Versionsverwaltung mit sich bringen wie z.B das ständige kopieren neuer Versionen in ein Verzeichnis. Wurden diese Systeme entwickelt.Dabei unterscheidet man 3 Arten von Systemen. Der wesentlichste Unterschied besteht darin wie und wo die Daten gehalten werden.
 \subsubsection{Lokale Versionskontrollsysteme}
 
 Von Lokalen Versionskontrollsystemen spricht man wenn die Daten auf dem Lokalen System vorligen (siehe Abbildung 1 ). Dabei werden die Dateien in einer Version Database (Repository) gehalten. Nach jedem Checkout wird automatisch eine neue Version im Repository erstellt. Somit entgeht man der Gefahr durch das oben erwähnte Kopieren in andere Verzeichnisse eine der Versionen zu überschreiben, da man vergessen hat die Datei umzubenennen. Natürlich ist diese Variante der Versionskontrolle für Große Projekte die im Team bearbeitet werden eher destruktiv.Ein Beispiel für Lokale Systeme ist RCS( Revision Control System ).Eher geeignet für Teamwork sind die beiden andern Architekturen. 
@@ -253,22 +253,38 @@ Das sind natürlich nicht alle Open Source Projekte die GIT in Verbindung mit Gi
 % ----------------------------------------------------------------------------------------------------------
 \section{GIT Grundlagen}
 Um grundlegende Funktionen von GIT zu nutzen, ist es unumgänglich gewisse Begriffe zu kennen. Elementar hingegen ist der Umgang mit der Konsole des jeweiligen Systems. Es existieren einige plugins für Entwicklungsumgebungen wie z.B. Eclipse die mit einem GUI ausgestattet sind. Jedoch sind diese Plugins meistens nicht soweit entwickelt um den Kompletten Funktionsumfang des Systems bedienbar zu machen.
-Weswegen meine Erläuterungen zum Git System sich auf Linux als Betriebssysteme beziehen werden und nur mit der Konsole zu bedienen sind.        
-
-
-
+Weswegen meine Erläuterungen zum Git System sich auf Linux als Betriebssysteme beziehen werden und nur mit der Konsole zu bedienen sind.     
 
 \subsection{Begriffe die man kennen sollte}
-Bevor man mit Versionierungssystemen arbeitet sollte man einige begriffe kennenlernen.
+Bevor man mit Versionierungssystemen arbeitet sollte man einige begriffe kennenlernen. 
+\paragraph{Repository}
+Der Begriff Repository (Englisch für Lager) kommt aus dem Lateinischen Repositorium.
+Eine Repository ist eine spezielle Datenbank zur systematischen Ablage von Modellen und deren Bestandteilen. Das Herz der Datenhaltung eines Versionskontrollsystems. Grundlegende Funktion ist die Speicherung und das Abrufen von gespeichertem Inhalt samt aller Bestandteile wie z.B. Bilder. \footnote{\cite{Leymann}} 
 
-Repository
-clone
-breanch
-merge
+\paragraph{Clone}
+Ein Clone im Git Kontext ist äquivalent zu dem begriff in der Biologie. Da her es ist eine exakte Kopie von etwas existierendem in diesem Fall der Repository. Im Fall git lässt sich  ein Clone auch durch verschiedene Protokolle umsetzten z.B. git:// ein eigens Protokoll oder auch das https:// Protokoll. Weitere Erläuterungen dazu folgen später. 
+\paragraph{Commit}
+Zu deutsch übergeben, wenn man also eine Änderung im Arbeitsverzeichnis macht wird diese getrackt(verfolgt) um diese zu bestätigen bzw an Git zu übergeben ist ein commit erforderlich. 
+\paragraph{Breanch}
+Zu Deutsch Zweig ist eine Gabelung des Quellcodes. Aus verschiedenen gründen kann es erforderlich sein ein Version des Quellcodes vom Original abzuzweigen um ggf. eine neue Funktion zu implementieren. Dies läuft dann parallel zur Entwicklung des Originalcodes. Der initiale Commit wird auch als Master bezeichnet 
+\paragraph{Merge}
+Ein Merge bzw das Merging ist das zusammenführen eines Breanches und des Master zweiges. 
 
 
-\subsection{Installation von GIT}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+\section{Installation von GIT}
+\paragraph{Installation unter Linux}
+Unter Linux ist die Installation von Git abhängig welches Distribution genutzt wird d.h. welches Paketmanagement-Programm. Doch es wird empfohlen wenn möglich Git vom Quellcode aus zu installieren. Da man immer die neuste Version erhält.\footnote{\cite{chacon2009pro}} Um Git zu installieren braucht man einige Bibliotheken, die von Git verwendet werden: curl, zlib, openssl, expat und libiconv. 
+
+Installation unter Fedora Paketmanagement (YUM)
+\begin{lstlisting}
+	$ yum install curl-devel expat-devel gettext-devel \openssl-devel zlib-devel
+ \end{lstlisting}
+
+Installation unter Debian/ Ubuntu
+\begin{lstlisting}
+	$ sudo apt-get install curl-devel expat-devel gettext-devel \openssl-devel zlib-devel
+ \end{lstlisting}
+ 
 
 \subsection{Konfiguration von GIT}
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.

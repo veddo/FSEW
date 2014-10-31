@@ -5,29 +5,29 @@
 \BOOKMARK [1][-]{section.V}{Listing-Verzeichnis}{}
 \BOOKMARK [1][-]{section.VI}{Abk\374rzungsverzeichnis}{}
 \BOOKMARK [1][-]{section.1}{GIT}{}
-\BOOKMARK [2][-]{subsection.1.1}{Was ist GIT}{section.1}
+\BOOKMARK [2][-]{subsection.1.1}{Was ist ein Versionskontrollsystem}{section.1}
 \BOOKMARK [3][-]{subsubsection.1.1.1}{Lokale Versionskontrollsysteme}{subsection.1.1}
 \BOOKMARK [3][-]{subsubsection.1.1.2}{Zentralisierte Versionskontrollsysteme}{subsection.1.1}
 \BOOKMARK [3][-]{subsubsection.1.1.3}{Verteilte Versionskontrollsysteme}{subsection.1.1}
 \BOOKMARK [2][-]{subsection.1.2}{GIT Historie }{section.1}
 \BOOKMARK [1][-]{section.2}{GIT Grundlagen}{}
 \BOOKMARK [2][-]{subsection.2.1}{Begriffe die man kennen sollte}{section.2}
-\BOOKMARK [2][-]{subsection.2.2}{Installation von GIT}{section.2}
-\BOOKMARK [2][-]{subsection.2.3}{Konfiguration von GIT}{section.2}
-\BOOKMARK [2][-]{subsection.2.4}{Hilfestellungen durch das System}{section.2}
-\BOOKMARK [1][-]{section.3}{Mit Git Arbeiten }{}
-\BOOKMARK [2][-]{subsection.3.1}{Ein Git Repository anlegen}{section.3}
-\BOOKMARK [2][-]{subsection.3.2}{ \304nderungen nachverfolgen}{section.3}
-\BOOKMARK [2][-]{subsection.3.3}{ Mit Git commiten}{section.3}
-\BOOKMARK [2][-]{subsection.3.4}{Commithistorie anzeigen}{section.3}
-\BOOKMARK [2][-]{subsection.3.5}{ \304nderungen r\374ckg\344ngig machen}{section.3}
-\BOOKMARK [1][-]{section.4}{Branching mit Git}{}
-\BOOKMARK [2][-]{subsection.4.1}{Was ist ein Branch?}{section.4}
-\BOOKMARK [2][-]{subsection.4.2}{Einfaches Branching}{section.4}
-\BOOKMARK [1][-]{section.5}{Merging mit Git}{}
-\BOOKMARK [2][-]{subsection.5.1}{Einfaches und Merging}{section.5}
-\BOOKMARK [1][-]{section.6}{Git in Netzwerken}{}
-\BOOKMARK [2][-]{subsection.6.1}{Welche Protokolle unters\374tzt Git}{section.6}
-\BOOKMARK [1][-]{section.7}{Quellenverzeichnis}{}
-\BOOKMARK [1][-]{section*.4}{Anhang}{}
+\BOOKMARK [1][-]{section.3}{Installation von GIT}{}
+\BOOKMARK [2][-]{subsection.3.1}{Konfiguration von GIT}{section.3}
+\BOOKMARK [2][-]{subsection.3.2}{Hilfestellungen durch das System}{section.3}
+\BOOKMARK [1][-]{section.4}{Mit Git Arbeiten }{}
+\BOOKMARK [2][-]{subsection.4.1}{Ein Git Repository anlegen}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{ \304nderungen nachverfolgen}{section.4}
+\BOOKMARK [2][-]{subsection.4.3}{ Mit Git commiten}{section.4}
+\BOOKMARK [2][-]{subsection.4.4}{Commithistorie anzeigen}{section.4}
+\BOOKMARK [2][-]{subsection.4.5}{ \304nderungen r\374ckg\344ngig machen}{section.4}
+\BOOKMARK [1][-]{section.5}{Branching mit Git}{}
+\BOOKMARK [2][-]{subsection.5.1}{Was ist ein Branch?}{section.5}
+\BOOKMARK [2][-]{subsection.5.2}{Einfaches Branching}{section.5}
+\BOOKMARK [1][-]{section.6}{Merging mit Git}{}
+\BOOKMARK [2][-]{subsection.6.1}{Einfaches und Merging}{section.6}
+\BOOKMARK [1][-]{section.7}{Git in Netzwerken}{}
+\BOOKMARK [2][-]{subsection.7.1}{Welche Protokolle unters\374tzt Git}{section.7}
+\BOOKMARK [1][-]{section.8}{Quellenverzeichnis}{}
+\BOOKMARK [1][-]{section*.10}{Anhang}{}
 \BOOKMARK [1][-]{section.A}{GUI}{}
