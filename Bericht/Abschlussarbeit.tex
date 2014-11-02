@@ -354,10 +354,35 @@ $ git config --global user.email "mustermann@muster.de"
 Wichtig ist dabei das diese Einstellungen in diesem Fall nur ein 
 mal vorgenommen werden. Da die Option \lstinline|--global|verwendet wird. Will man jedoch für ein explizites Projekt andere Identitätsdaten verwenden, muss man im Verzeichnis des Projektes die selben befehle aufrufen. Doch ohne die Option \lstinline|--global|.
 \paragraph{Editor Konfiguration}
-Da man beim Commiten eine Nachricht mit geben soll  ist es möglich durch die Konsoleneingabe  
+Da man beim Commiten eine Nachricht mit geben soll  ist es möglich durch die Konsoleneingabe  einen expliziten Texteditor zu bestimmen.
+\begin{lstlisting}
+$ git config --global core.editor <gewünster Editor>
+ \end{lstlisting}
+Verändert man diese Einstellungsmöglichkeit jedoch nicht wird die Default Einstellung VIM gewählt.
+
+\paragraph{Konfiguration überprüfen}
+Will man nun die vorgenommenen Einstellungen überprüfen genügt die Eingabe dieses Befehls.
+\begin{lstlisting}
+$ git config --list
+\end{lstlisting}
+
+Manche der aufgelisteten Variabelen kommen vermutlich öfter vor, dies liegt jedoch an den Verschiedenen Dateien z.B.\lstinline| /etc/gitconfig| in diesem Fall wird die zuletzt aufgelistete Variable genutzt.
 
 \subsection{Hilfestellungen durch das System}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Für weitere spezielle Einstellungen gibt es unter Git die Help Option.
+Die gilt für fast alle befehle. Um diese auszurufen gibt es verschiedene Möglichkeiten.
+\begin{lstlisting}
+$ git help <verb>
+$ git <verb> --help
+$ man git-<verb>
+\end{lstlisting} 
+\newpage
+Braucht man nun andere Optionen zum Befehl \lstinline| git config| Tippt man folgendes in die Console.
+\begin{lstlisting}
+$ git help config
+\end{lstlisting}
+Es erscheint nun ein Manual für den Jeweiligen Befehl. Diese beinhaltet eine kurze Beschreibung zu der Funktion sowie die Optionen die einem zur Verfügung stehen.  
+  
 \pagebreak
 
 
