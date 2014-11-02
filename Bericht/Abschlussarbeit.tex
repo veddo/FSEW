@@ -271,8 +271,8 @@ Zu Deutsch Zweig ist eine Gabelung des Quellcodes. Aus verschiedenen gründen ka
 Ein Merge bzw das Merging ist das zusammenführen eines Breanches und des Master zweiges. 
 
 
-\section{Installation von GIT}
-\paragraph{Installation unter Linux}
+
+\section{Installation von GIT unter Linux}
 Unter Linux ist die Installation von Git abhängig welches Distribution genutzt wird d.h. welches Paketmanagement-Programm. Doch es wird empfohlen wenn möglich Git vom Quellcode aus zu installieren. Da man immer die neuste Version erhält.\footnote{\cite{chacon2009pro}} Um Git zu installieren braucht man einige Bibliotheken, die von Git verwendet werden: curl, zlib, openssl, expat und libiconv. 
 
 Installation unter Fedora Paketmanagement (YUM)
@@ -285,9 +285,74 @@ Installation unter Debian/ Ubuntu
 	$ sudo apt-get install curl-devel expat-devel gettext-devel \openssl-devel zlib-devel
  \end{lstlisting}
  
+Download GIT
+
+\begin{lstlisting}
+	http://git-scm.com/download
+ \end{lstlisting}
+ 
+ 
+Nadem man diese Packete installiert hat ist es noch notwendig Git Selbst zu Downloaden. Auf dieser Seite sind Git Downloads für verschiedenste Betriebssysteme. Um den Quellcode zu laden wird man auf eine GitHub Repository weitergeleitet. Rechts auf dieser GitHub Page ist immer ein Link zum Clonen sowie ein Download link welche auf dem System eine Zipdatei abspeichert. Doch um einen Überblick der verschiedenen Versionen zu bekommen 
+empfehle ich den Older releases  link.
+
+Anschließend wird Git kompiliert und installiert:
+\begin{lstlisting}
+$ tar -zxf git-2.1.3.tar.gz
+$ cd git-2.1.3
+$ make prefix=/usr/local all
+$ sudo make prefix=/usr/local install
+ \end{lstlisting}
+
+\paragraph{Installation über den Paketmanager}
+
+Git über den Paketmanager zu installieren ist für Linux Anfänger durchaus Praktischer. Je nach Distribution unterscheidet die Eingabe in das Terminal jedoch.
+\newpage
+Terminal Installation für Fedora/ Ubuntu/ openSUSE 
+
+Fedora:
+\begin{lstlisting}
+$ yum install git
+ \end{lstlisting}
+
+Ubuntu:
+\begin{lstlisting}
+$ apt-get install git
+ \end{lstlisting}
+
+openSUSE :
+\begin{lstlisting}
+$ zypper install git
+ \end{lstlisting}
+
+
+
+\subsection{Installation unter Windows}
+Auf der Homepage git-scm.com findet man im Downloadbereich auch eine Windowsversion.
+Diese wird einfach Installiert. Nach abschluss der installation startet man eine seperate Git Konsole wichtig, diese Konsole hört explizit nur auf Linux befehle. 
 
 \subsection{Konfiguration von GIT}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Nachdem git nun erfolgreich auf de System installiert ist, bedarf es noch einigen Konfigurationen. Über das tool \lstinline|git config| ist es möglich durch Eingabe in das Terminal Konfigurationen vorzunehmen welche die Arbeitsweise und die Optik von git beeinflussen. Die Konfiguratins Dateien sind an Drei verschiedenen orten im System
+gespeichert. 
+\begin{compactitem}
+	\item Die Datei gitconfig im etc Verzeichniss enthält Werte, die für jeden Anwender des Systems und all ihre Projekte gelten. Durch eingabe von\lstinline| git config| mit der Option \lstinline|--system| wird diese Datei verwendet.
+\item Die Werte in der Datei \lstinline|~/.gitconfig| gelten explizit für das Systemkonto das gerade genutzt wird.Duch die Eingabe von\lstinline| git config| mit der Option \lstinline|--global| wird diese Datei verwendet. 
+\item Um einem Projekt geltende werte zuzuweisen gibt es noch im die Datei \lstinline|git/config|im Verzeichniss des Projektes selbst. 
+\end{compactitem}
+Wichtig ist jedoch das die Dateien Werte aus den jeweils vorhergehenden Dateien überschreiben. Als Beispiel \lstinline|git/config| überschreibt die Werte in \lstinline|/etc/gitconfig|
+
+\paragraph{Konfiguration auf Windows Systemen}
+Auch auf Windows such Git nacht der \lstinline|.gitconfig| Datei im  \lstinline|$Home |Verzeichniss in den meisten Fällen ist das 
+der Pfad \lstinline|C:\Dokumente und Einstellungen\$USER| auch die \lstinline|/etc/gitconfig| Datei wird gesucht im Fall ist diese Datei in dem Verzeichnis in das Git bei Windows installiert wurde.
+
+\paragraph{Identität Konfigurieren}
+Nach dem die Installation erfolgreich abgeschlossen wurde ist es von enormer Wichtigkeit die Konfiguration zur Identität vorzunehmen. Git nutzt diese Parameter bei jedem Commit.
+Um die Einstellungen vorzunehmen das Terminal öffnen und.
+\begin{lstlisting}
+$ git config --global user.name "Max Musterman"
+$ git config --global user.email "mustermann@muster.de"
+ \end{lstlisting}
+Wichtig ist dabei das diese Einstellungen in diesem Fall nur ein 
+mal vorgenommen werden. Da die Option \lstinline|--global|verwendet wird. Will man jedoch für ein explizites Projekt andere Identitätsdaten verwenden, muss man im Verzeichnis des Projektes die selben befehle aufrufen. Doch ohne die Option \lstinline|--global|.
 
 \subsection{Hilfestellungen durch das System}
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
