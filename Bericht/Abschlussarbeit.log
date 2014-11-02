@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  2 NOV 2014 21:04
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  2 NOV 2014 21:30
 entering extended mode
  %&-line parsing enabled.
 **Abschlussarbeit.tex
@@ -997,14 +997,14 @@ or-her-ge-hen-den Da-tei-en []uberschreiben.
 
 [6] [7]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 378.
+nput line 380.
 
 
-LaTeX Warning: Citation `buch' on page 8 undefined on input line 412.
+LaTeX Warning: Citation `buch' on page 8 undefined on input line 414.
 
 Package acronym Info: Label `acro:OSGi' newly defined as it shall be overridden
 
-although it is yet undefined on input line 414.
+although it is yet undefined on input line 416.
 [8] [9] [10] [11] [12] (./Abschlussarbeit.bbl
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
@@ -1037,9 +1037,9 @@ Underfull \hbox (badness 1337) in paragraph at lines 39--46
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.479 \newpage
+l.481 \newpage
                [1]
-Overfull \hbox (3.26385pt too wide) in paragraph at lines 491--492
+Overfull \hbox (3.26385pt too wide) in paragraph at lines 493--494
 []|\OT1/cmr/m/n/12 .......................................................| 
  []
 
@@ -1047,7 +1047,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.496 \end{document}
+l.498 \end{document}
                      [2] (./Abschlussarbeit.aux)
 
 LaTeX Warning: There were undefined references.
@@ -1057,27 +1057,30 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12570 strings out of 495021
- 175617 string characters out of 1181036
+ 12572 strings out of 495021
+ 175646 string characters out of 1181036
  329033 words of memory out of 3000000
  15438 multiletter control sequences out of 15000+50000
  14114 words of font info for 54 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  47i,12n,43p,902b,1107s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
-sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/typ
-e1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/a
-msfonts/cm/cmtt12.pfb>
-Output written on Abschlussarbeit.pdf (22 pages, 363290 bytes).
+pdfTeX warning (dest): name{table.caption.10} has been referenced but does no
+t exist, replaced by a fixed one
+
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmtt12.pfb>
+Output written on Abschlussarbeit.pdf (22 pages, 363547 bytes).
 PDF statistics:
- 428 PDF objects out of 1000 (max. 8388607)
- 106 named destinations out of 1000 (max. 500000)
+ 430 PDF objects out of 1000 (max. 8388607)
+ 108 named destinations out of 1000 (max. 500000)
  293 words of extra memory for PDF output out of 10000 (max. 10000000)
 

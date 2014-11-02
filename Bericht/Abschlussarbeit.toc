@@ -24,6 +24,7 @@
 \contentsline {subsection}{\numberline {3.2}Konfiguration von GIT}{6}{subsection.3.2}
 \contentsline {paragraph}{Konfiguration auf Windows Systemen}{6}{paragraph*.8}
 \contentsline {paragraph}{Identit\IeC {\"a}t Konfigurieren}{7}{paragraph*.9}
+\contentsline {paragraph}{Editor Konfiguration}{7}{paragraph*.10}
 \contentsline {subsection}{\numberline {3.3}Hilfestellungen durch das System}{7}{subsection.3.3}
 \contentsline {section}{\numberline {4}Mit Git Arbeiten }{8}{section.4}
 \contentsline {subsection}{\numberline {4.1}Ein Git Repository anlegen}{8}{subsection.4.1}
@@ -39,6 +40,6 @@
 \contentsline {section}{\numberline {7}Git in Netzwerken}{12}{section.7}
 \contentsline {subsection}{\numberline {7.1}Welche Protokolle unters\IeC {\"u}tzt Git}{12}{subsection.7.1}
 \contentsline {section}{\numberline {8}Quellenverzeichnis}{13}{section.8}
-\contentsline {section}{Anhang}{I}{section*.12}
+\contentsline {section}{Anhang}{I}{section*.13}
 \vspace {-0.5em}
 \contentsline {section}{\numberline {A}GUI}{I}{section.A}
