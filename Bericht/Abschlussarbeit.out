@@ -17,11 +17,12 @@
 \BOOKMARK [2][-]{subsection.3.2}{Konfiguration von GIT}{section.3}
 \BOOKMARK [2][-]{subsection.3.3}{Hilfestellungen durch das System}{section.3}
 \BOOKMARK [1][-]{section.4}{Mit Git Arbeiten }{}
-\BOOKMARK [2][-]{subsection.4.1}{Ein Git Repository anlegen}{section.4}
-\BOOKMARK [2][-]{subsection.4.2}{ \304nderungen nachverfolgen}{section.4}
-\BOOKMARK [2][-]{subsection.4.3}{ Mit Git commiten}{section.4}
-\BOOKMARK [2][-]{subsection.4.4}{Commithistorie anzeigen}{section.4}
-\BOOKMARK [2][-]{subsection.4.5}{ \304nderungen r\374ckg\344ngig machen}{section.4}
+\BOOKMARK [2][-]{subsubsection.4.0.1}{Ein Git Repository anlegen}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.0.2}{Ein Git Repository clonen}{subsubsection.4.0.1}
+\BOOKMARK [2][-]{subsection.4.1}{ \304nderungen nachverfolgen}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{ Mit Git commiten}{section.4}
+\BOOKMARK [2][-]{subsection.4.3}{Commithistorie anzeigen}{section.4}
+\BOOKMARK [2][-]{subsection.4.4}{ \304nderungen r\374ckg\344ngig machen}{section.4}
 \BOOKMARK [1][-]{section.5}{Branching mit Git}{}
 \BOOKMARK [2][-]{subsection.5.1}{Was ist ein Branch?}{section.5}
 \BOOKMARK [2][-]{subsection.5.2}{Einfaches Branching}{section.5}
@@ -29,6 +30,7 @@
 \BOOKMARK [2][-]{subsection.6.1}{Einfaches und Merging}{section.6}
 \BOOKMARK [1][-]{section.7}{Git in Netzwerken}{}
 \BOOKMARK [2][-]{subsection.7.1}{Welche Protokolle unters\374tzt Git}{section.7}
+\BOOKMARK [2][-]{subsection.7.2}{weg}{section.7}
 \BOOKMARK [1][-]{section.8}{Quellenverzeichnis}{}
 \BOOKMARK [1][-]{section*.14}{Anhang}{}
 \BOOKMARK [1][-]{section.A}{GUI}{}

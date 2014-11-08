@@ -367,7 +367,7 @@ $ git config --list
 \end{lstlisting}
 
 Manche der aufgelisteten Variabelen kommen vermutlich öfter vor, dies liegt jedoch an den Verschiedenen Dateien z.B.\lstinline| /etc/gitconfig| in diesem Fall wird die zuletzt aufgelistete Variable genutzt.
-
+\newpage
 \subsection{Hilfestellungen durch das System}
 Für weitere spezielle Einstellungen gibt es unter Git die Help Option.
 Die gilt für fast alle befehle. Um diese auszurufen gibt es verschiedene Möglichkeiten.
@@ -376,29 +376,116 @@ $ git help <verb>
 $ git <verb> --help
 $ man git-<verb>
 \end{lstlisting} 
-\newpage
+
 Braucht man nun andere Optionen zum Befehl \lstinline| git config| Tippt man folgendes in die Console.
 \begin{lstlisting}
 $ git help config
 \end{lstlisting}
 Es erscheint nun ein Manual für den Jeweiligen Befehl. Diese beinhaltet eine kurze Beschreibung zu der Funktion sowie die Optionen die einem zur Verfügung stehen.  
   
-\pagebreak
+
 
 
 
 
 
 \section{Mit Git Arbeiten }
-Für Auflistungen wird die \textit{compactitem}-Umgebung genutzt, wodurch der Zeilenabstand zwischen den Punkten verringert wird.
 
+Der Grundstein ist gelegt um das Arbeiten mit Git zu beginnen. Dar unser System Verteilt ist also Lokal in jedem Fall vorliegt ist die Erste Aufgabe nach erfolgreichem Installieren eine Versionierungsdatenbank zu erzeugen ein Sogenanntes Repository.Im allgemeinen setzt das Arbeiten mit Git auch das Arbeiten mit der Konsole vorraus. Es besteht auch die Möglichkeit Plugins zu nutzen die einige Funktionen unterstützen. Jedoch unterstützen diese Plugins meistens nicht alle Funktionen die Git bietet. Somit sollten die grundlegenden Konsolenbefehle bekannt sein.  
 \begin{compactitem}
-	\item Nur
-	\item ein
-	\item Beispiel.
+	\item ls - listet alle Verzeichnisse und Dateien 	auf. Bei Windows gilt der Befehl dir. Mit dem Parameter -a werden auch Unsichtbare Dateien angezeigt. 
+	\item cd - Wechselt das Verzeichnis.
+	\item cd .. - geht ein Verzeichnis zurück.
+	\item mkdir - Erzeugt ein neues Verzeichnis. 
 \end{compactitem}
+Die Git Befehle welche die Konsole entgegenimmt beginnen alle mit dem Signalwort GIT.  
+\newpage 
+\subsubsection{Ein Git Repository anlegen}
+Um nun ein Repository anzulegen navigiert man sich mit dem cd(Change Directory) Befehlen in den Ordner, in welchen das Repository angelegt werden soll. Es ist aber auch Möglich ein neues Verzeichnis anzulegen mit mkdir <Name>. 
 
-\subsection{Ein Git Repository anlegen}
+  \vspace{1em}
+\begin{lstlisting}[caption=Git Repository anlegen, label=lst:arduino]
+name@comp:~$ mkdir GITtest(Legt neuen Ordner an)
+name@comp:~$ cd GITtest(Springt in das Verzeichnis GITtest)
+name@comp:~/GITtest$ git init 
+(Erzeugt ein leeres Git Repository im Ordner GITtest)
+name@comp:~/GITtest$ ls -a
+.  ..  .git (Erzeugntes Repository)
+
+\end{lstlisting}
+
+Nun ist ein Repository angelegt.
+Will man nun in Zukunft ein weiteres Repository nutzen Erzeugt oder wechselt man in das Verzeichnis seiner Wahl und Tippt  \lstinline| git init| . Damit Git nun Veränderungen an Dateien Tracken kann muss man selbstverständlich diese auch in diesem Verzeichnis speichern. Doch nur das Speicher genügt Git nicht.Man muss die Dateien dem Repo hinzufügen. 
+
+ \vspace{1em}
+\begin{lstlisting}[caption=Git Repository Dateien hinzufügen, label=lst:arduino]
+$ git add README.txt
+$ git commit -m 'initial project version'
+
+\end{lstlisting}
+
+
+Einzeln durch das Kommando \lstinline|git add DATEINAME| oder wenn es alle Dateien im Verzeichnis sind durch den Befehl \lstinline|git add -A|. Hat man seine Dateien nun hinzugefügt folgt ein Commit mit dem Kommando \lstinline|git commit-m "TEXT "|. Hat man nun alles Richtig gemacht erscheint bei der Status abfrage von git mit dem Befehl \lstinline|git status| nothing to commit (working directory clean).
+
+
+\subsubsection{Ein Git Repository clonen}
+Wenn Git Kontex von Klonen die Rede ist geht es darum ein bereits exsistirendes Repository für eigene Zwecke zu Kopieren. Dies ist meist bei bereits vorhandenen Projekten der Fall. Mit \lstinline| clone [url]| wird jede einzelne Version jeder einzelnen Datei in der Historie des Repositorys heruntergeladen. Das hat zur folge das selbst wenn der Server, von dem man ursprünglich den Klone hat beschädigt wird ist man in der Lage ihn wiederherzustellen da der Klon alle Versionen hat. Als Beispiel ein Klon dieser Seminararbeit.
+
+    \vspace{1em}
+\begin{lstlisting}[caption=Git Repository Klonen, label=lst:arduino]
+$ git clone https://github.com/veddo/FSEW.git
+\end{lstlisting}
+
+Beim diesem Vorgang legt git ein Verzeichnis namens grit an und installiert .git Datei darin, lädt alle Dateien des Repositorys runter und checkt die Arbeitskopie der letzten Version aus.
+
+
+
+
+\subsection{ Änderungen nachverfolgen}
+
+\subsection{ Mit Git commiten}
+\subsection{Commithistorie anzeigen}
+\subsection{ Änderungen rückgängig machen}
+Die Quellen befinden sich in der Datei \textit{bibo.bib}. Ein Buch- und eine Online-Quelle sind beispielhaft eingefügt. [Vgl. \cite{buch}, \cite{online}]
+
+Abkürzungen lassen sich natürlich auch nutzen (\ac{OSGi}). Weiter oben im Latex-Code findet sich das Verzeichnis.
+
+
+Abkürzungen lassen sich natürlich auch nutzen (\ac{OSGi}). Weiter oben im Latex-Code findet sich das Verzeichnis.
+\begin{scriptsize}
+bvc
+\end{scriptsize}
+\pagebreak
+
+% ----------------------------------------------------------------------------------------------------------
+% Kapitel 
+% ----------------------------------------------------------------------------------------------------------
+\section{Branching mit Git}
+Lorem ipsum dolor sit amet.
+
+\subsection{Was ist ein Branch?}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+\subsection{Einfaches Branching}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+\pagebreak
+
+% ----------------------------------------------------------------------------------------------------------
+% Kapitel
+% ----------------------------------------------------------------------------------------------------------
+\section{Merging mit Git}
+Lorem ipsum dolor sit amet.
+
+\subsection{Einfaches und Merging}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+\pagebreak
+\section{Git in Netzwerken}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+\subsection{Welche Protokolle untersützt Git}
+\pagebreak
+
+\subsection{weg}
 Zuletzt ein Beispiel für ein Listing, in dem Quellcode eingebunden werden kann, siehe Listing \ref{lst:arduino}.
 
 \vspace{1em}
@@ -435,43 +522,8 @@ In diesem Abschnitt wird eine Tabelle (siehe Tabelle \ref{tab:beispiel}) dargest
 	\label{tab:beispiel}
 \end{table}
 
-\subsection{ Änderungen nachverfolgen}
-Die Quellen befinden sich in der Datei \textit{bibo.bib}. Ein Buch- und eine Online-Quelle sind beispielhaft eingefügt. [Vgl. \cite{buch}, \cite{online}]
 
-Abkürzungen lassen sich natürlich auch nutzen (\ac{OSGi}). Weiter oben im Latex-Code findet sich das Verzeichnis.
 
-\subsection{ Mit Git commiten}
-\subsection{Commithistorie anzeigen}
-\subsection{ Änderungen rückgängig machen}
-\pagebreak
-
-% ----------------------------------------------------------------------------------------------------------
-% Kapitel 
-% ----------------------------------------------------------------------------------------------------------
-\section{Branching mit Git}
-Lorem ipsum dolor sit amet.
-
-\subsection{Was ist ein Branch?}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-\subsection{Einfaches Branching}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-\pagebreak
-
-% ----------------------------------------------------------------------------------------------------------
-% Kapitel
-% ----------------------------------------------------------------------------------------------------------
-\section{Merging mit Git}
-Lorem ipsum dolor sit amet.
-
-\subsection{Einfaches und Merging}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-\pagebreak
-\section{Git in Netzwerken}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-\subsection{Welche Protokolle untersützt Git}
-\pagebreak
 % ----------------------------------------------------------------------------------------------------------
 % Literatur
 % ----------------------------------------------------------------------------------------------------------
