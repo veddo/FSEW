@@ -476,7 +476,50 @@ nothing to commit, working directory clean
 \end{lstlisting}
 
 Nach Abbildung 4 ist der Momentane Status des Arbeitsverzeichnisses Unmodified, dh 
-es wurden weder Dateien hinzugefügt noch wurde an einer anderen Datei was Verändert.  
+es wurden weder Dateien hinzugefügt noch wurde an einer anderen Datei was Verändert. Wen doch würde git die Veränderten und Hinzugefügten Dateien auflisten.
+
+Fügen wir nun eine neue Datei hinzu. 
+\vspace{1em}
+\begin{lstlisting}[caption=Git Statusbefehl nachdem erzeugen einer Datei, label=lst:arduino]
+$ touch TEST.txt
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        TEST.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+\end{lstlisting}
+
+Wie man an der Meldung von Git erkennen kann gibt es Dateien die sich im untracked status befinden. Mit der Anmerkung use \lstinline|git add| to Track, weist git nun Daraufhin das die neue Datei in den Status unmodified gebracht werden muss. Nach dem hinzufügen der Datei durch \lstinline|git add[Dateiname]| und einer erneuten Statusabfrage meldet git folgendes.
+Im File Lifecycle ist man also an erster Stelle.
+\newpage
+\vspace{1em}
+\begin{lstlisting}[caption=Git Statusbefehl nachdem erzeugen einer Datei, label=lst:arduino]
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   TEST.TXT
+
+\end{lstlisting}
+Der Status "Changes to be committed" nun hat sich git die neue Datei Vorgemeerkt (gestaged) und erstellt beim nächsten Commit ein snapshot dieser Datei. Wenn man sich nun den File Status Lifecycle noch einmal anschaut, befindet man sich zwischen modified und staged. 
+Verändert man nun diese Datei indem man einen kleinen Text hinzufügt. 
+Erfolgt wieder eine Statusabfrage, 
+\vspace{1em}
+\begin{lstlisting}[caption=Git Statusbefehl nachdem erzeugen einer Datei, label=lst:arduino]
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+      
+        modified:   TEST.txt
+
+\end{lstlisting}
 
 \subsection{ Mit Git commiten}
 \subsection{Commithistorie anzeigen}

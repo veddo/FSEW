@@ -33,18 +33,18 @@
 \contentsline {subsection}{\numberline {4.1} \IeC {\"A}nderungen nachverfolgen}{10}{subsection.4.1}
 \contentsline {paragraph}{File Status Lifecyrcle}{10}{paragraph*.12}
 \contentsline {paragraph}{Zustand der Dateien Pr\IeC {\"u}fen}{11}{paragraph*.13}
-\contentsline {subsection}{\numberline {4.2} Mit Git commiten}{11}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Commithistorie anzeigen}{11}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4} \IeC {\"A}nderungen r\IeC {\"u}ckg\IeC {\"a}ngig machen}{11}{subsection.4.4}
-\contentsline {section}{\numberline {5}Branching mit Git}{12}{section.5}
-\contentsline {subsection}{\numberline {5.1}Was ist ein Branch?}{12}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Einfaches Branching}{12}{subsection.5.2}
-\contentsline {section}{\numberline {6}Merging mit Git}{13}{section.6}
-\contentsline {subsection}{\numberline {6.1}Einfaches und Merging}{13}{subsection.6.1}
-\contentsline {section}{\numberline {7}Git in Netzwerken}{14}{section.7}
-\contentsline {subsection}{\numberline {7.1}Welche Protokolle unters\IeC {\"u}tzt Git}{14}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}weg}{15}{subsection.7.2}
-\contentsline {section}{\numberline {8}Quellenverzeichnis}{15}{section.8}
+\contentsline {subsection}{\numberline {4.2} Mit Git commiten}{12}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Commithistorie anzeigen}{12}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4} \IeC {\"A}nderungen r\IeC {\"u}ckg\IeC {\"a}ngig machen}{12}{subsection.4.4}
+\contentsline {section}{\numberline {5}Branching mit Git}{13}{section.5}
+\contentsline {subsection}{\numberline {5.1}Was ist ein Branch?}{13}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Einfaches Branching}{13}{subsection.5.2}
+\contentsline {section}{\numberline {6}Merging mit Git}{14}{section.6}
+\contentsline {subsection}{\numberline {6.1}Einfaches und Merging}{14}{subsection.6.1}
+\contentsline {section}{\numberline {7}Git in Netzwerken}{15}{section.7}
+\contentsline {subsection}{\numberline {7.1}Welche Protokolle unters\IeC {\"u}tzt Git}{15}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}weg}{16}{subsection.7.2}
+\contentsline {section}{\numberline {8}Quellenverzeichnis}{16}{section.8}
 \contentsline {section}{Anhang}{I}{section*.16}
 \vspace {-0.5em}
 \contentsline {section}{\numberline {A}GUI}{I}{section.A}
