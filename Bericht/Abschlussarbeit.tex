@@ -442,6 +442,24 @@ Beim diesem Vorgang legt git ein Verzeichnis namens grit an und installiert .git
 
 
 \subsection{ Änderungen nachverfolgen}
+ Man hat jetzt ein voll funktionsfähiges Git Repository und eine Ausgecheckte Arbeitskopie.Wie weiter oben bereits erwähnt git immer die Selbe abfolge von Kommandos wenn man eine oder auch mehrer Dateien dem Repository hinzufügen möchte. Zur wiederholung
+\begin{compactitem}
+	\item \lstinline|git status| - Überprüft den Status der Dateien im Repository.
+	\item \lstinline|git add| - Lassen sich neue Dateien oder geänderte Dateien hinzufügen. 
+	\item \lstinline|git commit -m "TEXT"| - Erzeugt einen snapshot aller zum Repository hinzugefügten Dateien.
+\end{compactitem}
+\paragraph{File Status Lifecyrcle}
+Was da genau vorgeht beschreibt am besten der File Status Lifecyrcle. Jede Datei im Arbeitsverzeichnis kann sich in einem Von zwei Zuständen befinden. Änderungen werden verfolgt (eng. Tracked) oder sie werden nicht mitverfolgt(engl. untracked). 
+Genauer Dateien welche getrackt werden sind nur die, welche sich im letzten Commit befinden. Die anderen Daten die nicht, mit dem add Kommando einem Commit hinzugefügt wurden haben den Status Untracked. \newline
+
+Dateien die nun im Commit befinden haben wiederum zwei mögliche Stadien in denen sie sich befinden können Veränderte (engl. modified) oder unverändert (eng. unmodified). Die veränderten Dateien sind sommit für den nächsten Commit vorgemerkt (engl. staged).Alee anderen Dateien mit dem Status unmodified werden hingegen nicht Versioniert. Sobald man nun Dateien wieder bearbeitet, beginnt dieser Vorgang erneut.
+
+\vspace{3pt}
+\begin{minipage}{\linewidth}
+	\centering
+	\includegraphics[width=0.3\linewidth]{Bilder/flc.png}
+	\captionof{figure}[File Life Circle]{File Life Circle\footnotemark }
+
 
 \subsection{ Mit Git commiten}
 \subsection{Commithistorie anzeigen}
