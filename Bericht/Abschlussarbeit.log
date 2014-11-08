@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  8 NOV 2014 14:44
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  8 NOV 2014 15:51
 entering extended mode
  %&-line parsing enabled.
 **Abschlussarbeit.tex
@@ -774,6 +774,18 @@ LaTeX Warning: Label `fig:osgi' multiply defined.
 
 LaTeX Warning: Label `lst:arduino' multiply defined.
 
+
+LaTeX Warning: Label `lst:arduino' multiply defined.
+
+
+LaTeX Warning: Label `fig:osgi' multiply defined.
+
+
+LaTeX Warning: Label `lst:arduino' multiply defined.
+
+
+LaTeX Warning: Label `lst:arduino' multiply defined.
+
 )
 \openout1 = `Abschlussarbeit.aux'.
 
@@ -873,7 +885,7 @@ LaTeX Info: Redefining \pageref on input line 46.
 \AtBeginShipoutBox=\box37
 \c@lstlisting=\count141
 
-<Bilder/hs_os.png, id=87, 243.0681pt x 82.8696pt>
+<Bilder/hs_os.png, id=147, 243.0681pt x 82.8696pt>
 File: Bilder/hs_os.png Graphic file (type png)
  <use Bilder/hs_os.png>
 LaTeX Font Info:    Try loading font information for U+msa on input line 91.
@@ -893,15 +905,15 @@ lready used, duplicate ignored
 <to be read again> 
                    \relax 
 l.115 
-       [1] (./Abschlussarbeit.toc)
+       [1] (./Abschlussarbeit.toc [2])
 \tf@toc=\write4
 \openout4 = `Abschlussarbeit.toc'.
 
- [2] (./Abschlussarbeit.lof)
+ [3] (./Abschlussarbeit.lof)
 \tf@lof=\write5
 \openout5 = `Abschlussarbeit.lof'.
 
- [3]
+ [4]
 (./Abschlussarbeit.lot)
 \tf@lot=\write6
 \openout6 = `Abschlussarbeit.lot'.
@@ -919,8 +931,8 @@ e 140.
 \tf@lol=\write7
 \openout7 = `Abschlussarbeit.lol'.
 
- [4] [5]
-<Bilder/LVKS.png, id=149, 346.29375pt x 293.095pt>
+ [5] [6]
+<Bilder/LVKS.png, id=240, 346.29375pt x 293.095pt>
 File: Bilder/LVKS.png Graphic file (type png)
  <use Bilder/LVKS.png>
 
@@ -947,7 +959,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Bilder/sub.png, id=161, 369.38pt x 289.08pt>
+<Bilder/sub.png, id=251, 369.38pt x 289.08pt>
 File: Bilder/sub.png Graphic file (type png)
  <use Bilder/sub.png>
 
@@ -955,7 +967,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 202.
 See the caption package documentation for explanation.
 
-<Bilder/git.png, id=162, 378.41376pt x 425.59pt>
+<Bilder/git.png, id=252, 378.41376pt x 425.59pt>
 File: Bilder/git.png Graphic file (type png)
  <use Bilder/git.png>
 
@@ -1046,57 +1058,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 452--454
 
  []
 
-<Bilder/flc.png, id=259, 501.875pt x 318.18875pt>
-File: Bilder/flc.png Graphic file (type png)
- <use Bilder/flc.png>
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 461.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Citation `buch' on page 10 undefined on input line 467.
-
-Package acronym Info: Label `acro:OSGi' newly defined as it shall be overridden
-
-although it is yet undefined on input line 469.
-
-LaTeX Warning: Reference `tab:beispiel' on page 10 undefined on input line 523.
-
-
-
-! LaTeX Error: Not in outer par mode.
+! LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.526 \begin{table}[!h]
-                       
-You've lost some text.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+l.456 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-! Undefined control sequence.
-\latex@xfloat ...vf \fi \global \setbox \@currbox 
-                                                  \color@vbox \normalcolor \...
-l.526 \begin{table}[!h]
-                       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-! Missing number, treated as zero.
-<to be read again> 
-                   \vbox 
-l.526 \begin{table}[!h]
-                       
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
+! LaTeX Error: There's no line here to end.
 
-(./Abschlussarbeit.bbl
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.457 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<Bilder/flc.png, id=349, 501.875pt x 318.18875pt>
+File: Bilder/flc.png Graphic file (type png)
+ <use Bilder/flc.png>
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 462.
+See the caption package documentation for explanation.
+
+[10 <./Bilder/flc.png (PNG copy)>]
+
+LaTeX Warning: Citation `buch' on page 11 undefined on input line 484.
+
+Package acronym Info: Label `acro:OSGi' newly defined as it shall be overridden
+
+although it is yet undefined on input line 486.
+[11] [12] [13] [14] (./Abschlussarbeit.bbl
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
 
@@ -1124,67 +1127,52 @@ Underfull \hbox (badness 1337) in paragraph at lines 39--46
 /m/n/12 http : / / wirtschaftslexikon .
  []
 
-)
-Overfull \hbox (3.26385pt too wide) in paragraph at lines 588--589
+[15]) [16]pdfTeX warning (ext4): destination with the same identifier (name{pag
+e.I}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.593 \newpage
+               [1]
+Overfull \hbox (3.26385pt too wide) in paragraph at lines 605--606
 []|\OT1/cmr/m/n/12 .......................................................| 
  []
 
-
-! LaTeX Error: \begin{minipage} on input line 458 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.593 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(./Abschlussarbeit.aux)
+pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.610 \end{document}
+                     [2] (./Abschlussarbeit.aux)
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-! You can't use `\end' in internal vertical mode.
-\enddocument ... \endgroup \deadcycles \z@ \@@end 
-                                                  
-l.593 \end{document}
-                    
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-! LaTeX Error: \begin{minipage} on input line 458 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.593 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-)
-! Emergency stop.
-<*> Abschlussarbeit.tex
-                       
-*** (job aborted, no legal \end found)
-
- 
+ ) 
 Here is how much of TeX's memory you used:
- 12571 strings out of 495021
- 175784 string characters out of 1181036
- 347921 words of memory out of 3000000
- 15446 multiletter control sequences out of 15000+50000
+ 12635 strings out of 495021
+ 176565 string characters out of 1181036
+ 348048 words of memory out of 3000000
+ 15463 multiletter control sequences out of 15000+50000
  14114 words of font info for 54 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 47i,13n,43p,902b,1299s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 47i,12n,43p,902b,1299s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmtt12.pfb>
+Output written on Abschlussarbeit.pdf (25 pages, 406663 bytes).
+PDF statistics:
+ 501 PDF objects out of 1000 (max. 8388607)
+ 142 named destinations out of 1000 (max. 500000)
+ 314 words of extra memory for PDF output out of 10000 (max. 10000000)
+

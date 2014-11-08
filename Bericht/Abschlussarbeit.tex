@@ -201,7 +201,7 @@ Bei zentralisierte Versionskontrollsystemen wird die Versionierung nicht lokal v
 	\includegraphics[width=0.3\linewidth]{Bilder/sub.png}
 	\captionof{figure}[Zentralisierte Architektur]{Zentralisierte Architektur\footnotemark }
 	\label{fig:osgi}
-\end{minipage}    
+\end{minipage} 	
 
 \subsubsection{Verteilte Versionskontrollsysteme}
 GIT gehört zu den Verteilten Systemen, der Unterschied zu den Varianten davor ist das sie beides können. 
@@ -452,14 +452,31 @@ Beim diesem Vorgang legt git ein Verzeichnis namens grit an und installiert .git
 Was da genau vorgeht beschreibt am besten der File Status Lifecyrcle. Jede Datei im Arbeitsverzeichnis kann sich in einem Von zwei Zuständen befinden. Änderungen werden verfolgt (eng. Tracked) oder sie werden nicht mitverfolgt(engl. untracked). 
 Genauer Dateien welche getrackt werden sind nur die, welche sich im letzten Commit befinden. Die anderen Daten die nicht, mit dem add Kommando einem Commit hinzugefügt wurden haben den Status Untracked. \newline
 
-Dateien die nun im Commit befinden haben wiederum zwei mögliche Stadien in denen sie sich befinden können Veränderte (engl. modified) oder unverändert (eng. unmodified). Die veränderten Dateien sind sommit für den nächsten Commit vorgemerkt (engl. staged).Alee anderen Dateien mit dem Status unmodified werden hingegen nicht Versioniert. Sobald man nun Dateien wieder bearbeitet, beginnt dieser Vorgang erneut.
 
-\vspace{3pt}
+\newline
+\newline
+\vspace{1em}
 \begin{minipage}{\linewidth}
 	\centering
-	\includegraphics[width=0.3\linewidth]{Bilder/flc.png}
-	\captionof{figure}[File Life Circle]{File Life Circle\footnotemark }
+	\includegraphics[width=0.6\linewidth]{Bilder/flc.png}
+	\captionof{figure}[Zentralisierte Architektur]{Zentralisierte Architektur\footnotemark }
+	\label{fig:osgi}
+\end{minipage} 	
 
+Dateien die nun im Commit befinden haben wiederum zwei mögliche Stadien in denen sie sich befinden können Veränderte (engl. modified) oder unverändert (eng. unmodified). Die veränderten Dateien sind sommit für den nächsten Commit vorgemerkt (engl. staged).Alee anderen Dateien mit dem Status unmodified werden hingegen nicht Versioniert. Sobald man nun Dateien wieder bearbeitet, beginnt dieser Vorgang erneut.
+
+\paragraph{Zustand der Dateien Prüfen}
+Den befehl \lstinline|git status| wurde weiter oben schon mal erwähnt und kurz erklärt damit man eine grobe Vorstellung hat. Nun schauen wir mal Detailierter an. Im groben Überprüft das Kommando in Welchen Status des File Life Cyrcle man sich befindet. Hat man nun ein Repository gerade geklont bekommt man folgendes ausgegeben.
+
+\vspace{1em}
+\begin{lstlisting}[caption=Git Statusbefehl nach git clone befehl, label=lst:arduino]
+$ git status
+On branch master
+nothing to commit, working directory clean 
+\end{lstlisting}
+
+Nach Abbildung 4 ist der Momentane Status des Arbeitsverzeichnisses Unmodified, dh 
+es wurden weder Dateien hinzugefügt noch wurde an einer anderen Datei was Verändert.  
 
 \subsection{ Mit Git commiten}
 \subsection{Commithistorie anzeigen}
