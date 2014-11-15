@@ -506,9 +506,8 @@ Changes to be committed:
         new file:   TEST.TXT
 
 \end{lstlisting}
-Der Status "Changes to be committed" nun hat sich git die neue Datei Vorgemeerkt (gestaged) und erstellt beim nächsten Commit ein snapshot dieser Datei. Wenn man sich nun den File Status Lifecycle noch einmal anschaut, befindet man sich zwischen modified und staged. 
-Verändert man nun diese Datei indem man einen kleinen Text hinzufügt. 
-Erfolgt wieder eine Statusabfrage, 
+Der Status "Changes to be committed" nun hat sich git die neue Datei Vorgemeerkt (gestaged) und erstellt beim nächsten Commit ein snapshot dieser Datei. Wenn man sich nun den File Status Lifecycle noch einmal anschaut, befindet man sich zwischen modified und staged. Nun bedarf es wieder den git add Befehl um die Datei für den Commit vorzubereiten. Nach dem Commit hat man nun wieder eine Saubere (Clean working directory). 
+
 \vspace{1em}
 \begin{lstlisting}[caption=Git Statusbefehl nachdem verändern einer Datei, label=lst:arduino]
 $ git status
@@ -520,9 +519,49 @@ Changes to be committed:
         modified:   TEST.txt
 
 \end{lstlisting}
-Nach dem File Status Lifecycle ist man im modified status
+Verändert man nun diese Datei indem man einen kleinen Text hinzufügt. Sollte man wider den Status abfragen( Listing 7 )
+Nach dem File Status Lifecycle ist man im modified Status. 
 
-\subsection{ Mit Git commiten}
+\subsection{ Dateien ignorieren}
+In den meisten Fällen, kommt es vor das man einige Dateien gar nicht Verionieren muss/soll, z.B. automatisch generierte Dateien wie Logfiles. In diesem Fall bietet git eine eine Möglichkeit an dies zu Konfigurieren. Wie bei anderen Einstellungen ist es nötig diese in einer Kofigurationsdatei zu hinterlegen für die es klare Regeln gibt. Eine dieser festen Regeln ist der Name dieser Datei. 
+Sie muss .gitignore heißen.
+
+Weitere Regeln im Bezug auf die .gitignore Datei sind:
+
+\begin{compactitem}
+	\item Leere Zeilen oder Zeilen, die mit # beginnen, werden ignoriert.
+	\item Standard glob Muster funktionieren.
+	\item Man kann ein Muster mit einem Schrägstrich (/) abschließen, um ein Verzeichnis zu deklarieren.
+	\item  Man kann ein Muster negieren, indem man ein Ausrufezeichen (!) voranstellt.
+\end{compactitem}
+
+Ein Beispiel für die .gitignore Datei:
+\vspace{1em}
+\begin{lstlisting}[caption=Git Einstellungen der.gitignore Datei, label=lst:arduino]
+# ein Kommentar - dieser wird ignoriert
+# ignoriert alle Dateien, die mit .a enden
+*.a
+# nicht aber lib.a Dateien (obwohl obige Zeile *.a ignoriert)
+!lib.a
+# ignoriert eine TODO Datei nur im Wurzelverzeichnis, nicht aber
+/TODO
+# ignoriert alle Dateien im build/ Verzeichnis
+build/
+# ignoriert doc/notes.txt, aber nicht doc/server/arch.txt
+doc/*.txt
+# ignoriert alle .txt Dateien unterhalb des doc/ Verzeichnis
+doc/**/*.txt
+\end{lstlisting}
+
+Diese Datei lässt sich auch mit Hilfe der Konsole erzeugen, und bearbeiten.
+\vspace{1em}
+\begin{lstlisting}[caption=Git Erstellen der.gitignore Datei, label=lst:arduino]
+$ cat .gitignore
+# ein Kommentar - dieser wird ignoriert
+# ignoriert alle Dateien, die mit .a enden
+*.a
+\end{lstlisting}
+
 \subsection{Commithistorie anzeigen}
 \subsection{ Änderungen rückgängig machen}
 Die Quellen befinden sich in der Datei \textit{bibo.bib}. Ein Buch- und eine Online-Quelle sind beispielhaft eingefügt. [Vgl. \cite{buch}, \cite{online}]

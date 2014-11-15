@@ -20,7 +20,7 @@
 \BOOKMARK [2][-]{subsubsection.4.0.1}{Ein Git Repository anlegen}{section.4}
 \BOOKMARK [3][-]{subsubsection.4.0.2}{Ein Git Repository clonen}{subsubsection.4.0.1}
 \BOOKMARK [2][-]{subsection.4.1}{ \304nderungen nachverfolgen}{section.4}
-\BOOKMARK [2][-]{subsection.4.2}{ Mit Git commiten}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{ Dateien ignorieren}{section.4}
 \BOOKMARK [2][-]{subsection.4.3}{Commithistorie anzeigen}{section.4}
 \BOOKMARK [2][-]{subsection.4.4}{ \304nderungen r\374ckg\344ngig machen}{section.4}
 \BOOKMARK [1][-]{section.5}{Branching mit Git}{}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  8 NOV 2014 19:10
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  15 NOV 2014 21:50
 entering extended mode
  %&-line parsing enabled.
 **Abschlussarbeit.tex
@@ -795,6 +795,9 @@ LaTeX Warning: Label `lst:arduino' multiply defined.
 
 LaTeX Warning: Label `lst:arduino' multiply defined.
 
+
+LaTeX Warning: Label `lst:arduino' multiply defined.
+
 )
 \openout1 = `Abschlussarbeit.aux'.
 
@@ -941,7 +944,7 @@ e 140.
 \openout7 = `Abschlussarbeit.lol'.
 
  [5] [6]
-<Bilder/LVKS.png, id=246, 346.29375pt x 293.095pt>
+<Bilder/LVKS.png, id=248, 346.29375pt x 293.095pt>
 File: Bilder/LVKS.png Graphic file (type png)
  <use Bilder/LVKS.png>
 
@@ -968,7 +971,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Bilder/sub.png, id=257, 369.38pt x 289.08pt>
+<Bilder/sub.png, id=259, 369.38pt x 289.08pt>
 File: Bilder/sub.png Graphic file (type png)
  <use Bilder/sub.png>
 
@@ -976,9 +979,40 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 202.
 See the caption package documentation for explanation.
 
-<Bilder/git.png, id=258, 378.41376pt x 425.59pt>
-File: Bilder/git.png Graphic file (type png)
- <use Bilder/git.png>
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.213 	\\
+         textbf{includegraphics[width=0.3\linewidth]{Bilder/git.png}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.213 ...xtbf{includegraphics[width=0.3\linewidth]
+                                                  {Bilder/git.png}}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.213 ...xtbf{includegraphics[width=0.3\linewidth]
+                                                  {Bilder/git.png}}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 214.
@@ -989,7 +1023,7 @@ Overfull \hbox (2.61888pt too wide) in paragraph at lines 207--217
  $[]$ 
  []
 
-[2 <./Bilder/sub.png (PNG copy)> <./Bilder/git.png (PNG copy)>]
+[2 <./Bilder/sub.png (PNG copy)>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 232.
 
 
@@ -1093,7 +1127,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Bilder/flc.png, id=355, 501.875pt x 318.18875pt>
+<Bilder/flc.png, id=356, 501.875pt x 318.18875pt>
 File: Bilder/flc.png Graphic file (type png)
  <use Bilder/flc.png>
 
@@ -1102,13 +1136,22 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [10 <./Bilder/flc.png (PNG copy)>] [11]
+! You can't use `macro parameter character #' in horizontal mode.
+l.532 	\item Leere Zeilen oder Zeilen, die mit #
+                                                 beginnen, werden ignoriert.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
-LaTeX Warning: Citation `buch' on page 12 undefined on input line 528.
+[12]
+
+LaTeX Warning: Citation `buch' on page 13 undefined on input line 567.
 
 Package acronym Info: Label `acro:OSGi' newly defined as it shall be overridden
 
-although it is yet undefined on input line 530.
-[12] [13] [14] [15] (./Abschlussarbeit.bbl
+although it is yet undefined on input line 569.
+[13] [14] [15] [16] (./Abschlussarbeit.bbl
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
 
@@ -1136,13 +1179,13 @@ Underfull \hbox (badness 1337) in paragraph at lines 39--46
 /m/n/12 http : / / wirtschaftslexikon .
  []
 
-[16]) [17]pdfTeX warning (ext4): destination with the same identifier (name{pag
+[17]) [18]pdfTeX warning (ext4): destination with the same identifier (name{pag
 e.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.637 \newpage
+l.676 \newpage
                [1]
-Overfull \hbox (3.26385pt too wide) in paragraph at lines 649--650
+Overfull \hbox (3.26385pt too wide) in paragraph at lines 688--689
 []|\OT1/cmr/m/n/12 .......................................................| 
  []
 
@@ -1150,7 +1193,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.654 \end{document}
+l.693 \end{document}
                      [2] (./Abschlussarbeit.aux)
 
 LaTeX Warning: There were undefined references.
@@ -1160,10 +1203,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12666 strings out of 495021
- 176960 string characters out of 1181036
- 348048 words of memory out of 3000000
- 15468 multiletter control sequences out of 15000+50000
+ 12682 strings out of 495021
+ 177169 string characters out of 1181036
+ 367048 words of memory out of 3000000
+ 15465 multiletter control sequences out of 15000+50000
  14114 words of font info for 54 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  47i,12n,43p,902b,1299s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1179,9 +1222,9 @@ ve/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/a
 msfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
 cmtt12.pfb>
-Output written on Abschlussarbeit.pdf (26 pages, 413379 bytes).
+Output written on Abschlussarbeit.pdf (27 pages, 374710 bytes).
 PDF statistics:
- 538 PDF objects out of 1000 (max. 8388607)
- 168 named destinations out of 1000 (max. 500000)
- 314 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 566 PDF objects out of 1000 (max. 8388607)
+ 188 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
 
