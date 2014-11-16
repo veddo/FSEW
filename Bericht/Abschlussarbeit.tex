@@ -553,16 +553,52 @@ doc/*.txt
 doc/**/*.txt
 \end{lstlisting}
 
-Diese Datei lässt sich auch mit Hilfe der Konsole erzeugen, und bearbeiten.
+Diese Datei lässt sich auch mit Hilfe der Konsole erzeugen, und bearbeiten. Beim Bearbeiten helfen Editoren wie VIM oder NANO. 
 \vspace{1em}
 \begin{lstlisting}[caption=Git Erstellen der.gitignore Datei, label=lst:arduino]
-$ cat .gitignore
-# ein Kommentar - dieser wird ignoriert
-# ignoriert alle Dateien, die mit .a enden
-*.a
+# Erzeugt die Datei 
+$ touch .gitignore
+$vi .gitignore
 \end{lstlisting}
 
+Nach aufrufen des Editors kann man nun die Dateien ausschließen, welch nicht Versioniert werden sollen.
+ 
+
 \subsection{Commithistorie anzeigen}
+Manchmal ist es nötig einige Commits mehr einzusehen. Diese Funktion erfüllt der Befehl  \lstinline|git log|. Das Kommando listet die Historie der Commits eines Projekts in umgekehrter chronologischer Reihenfolge auf. Des weiteren hat diese Befehl sehr viele Optionen die man wählen kann. Eine sehr nützliche Option ist \lstinline|git log -p|, sie zeigt auf welche Änderungen gemacht wurden, das ganze lässt sich auch eingrenzen indem man einen weiteren Parameter hinzufügt. Als Beispiel \lstinline|git log -p -2| zeigt nur die Änderungen der letzten beiden Commits an.
+
+\vspace{1em}
+\begin{lstlisting}[caption=Git log Unterschiede der letzten 2 Commits, label=lst:arduino]
+commit efb60ed05541f3bfae026c989f8b2f0cf6a2f42e
+Author: Vedad Hamamdzic <vhamamdz@stud.hs-heilbronn.de>
+Date:   Sun Nov 16 14:58:44 2014 +0100
+
+    World
+
+diff --git a/Gittest.txt b/Gittest.txt
+index 336f590..5aae200 100644
+--- a/Gittest.txt
++++ b/Gittest.txt
+@@ -1 +1 @@
+-Hallo World
++Hallo World!
+
+commit 04a24f7d6f2a998ec0f30ae289172e7cf07689d9
+Author: Vedad Hamamdzic <vhamamdz@stud.hs-heilbronn.de>
+Date:   Sun Nov 16 14:58:14 2014 +0100
+
+    World
+
+diff --git a/Gittest.txt b/Gittest.txt
+index e69de29..336f590 100644
+--- a/Gittest.txt
++++ b/Gittest.txt
+@@ -0,0 +1 @@
++Hallo World
+\end{lstlisting}
+
+  
+
 \subsection{ Änderungen rückgängig machen}
 Die Quellen befinden sich in der Datei \textit{bibo.bib}. Ein Buch- und eine Online-Quelle sind beispielhaft eingefügt. [Vgl. \cite{buch}, \cite{online}]
 

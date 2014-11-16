@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  15 NOV 2014 21:50
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  16 NOV 2014 15:01
 entering extended mode
  %&-line parsing enabled.
 **Abschlussarbeit.tex
@@ -798,6 +798,9 @@ LaTeX Warning: Label `lst:arduino' multiply defined.
 
 LaTeX Warning: Label `lst:arduino' multiply defined.
 
+
+LaTeX Warning: Label `lst:arduino' multiply defined.
+
 )
 \openout1 = `Abschlussarbeit.aux'.
 
@@ -944,7 +947,7 @@ e 140.
 \openout7 = `Abschlussarbeit.lol'.
 
  [5] [6]
-<Bilder/LVKS.png, id=248, 346.29375pt x 293.095pt>
+<Bilder/LVKS.png, id=250, 346.29375pt x 293.095pt>
 File: Bilder/LVKS.png Graphic file (type png)
  <use Bilder/LVKS.png>
 
@@ -971,7 +974,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Bilder/sub.png, id=259, 369.38pt x 289.08pt>
+<Bilder/sub.png, id=261, 369.38pt x 289.08pt>
 File: Bilder/sub.png Graphic file (type png)
  <use Bilder/sub.png>
 
@@ -1127,7 +1130,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Bilder/flc.png, id=356, 501.875pt x 318.18875pt>
+<Bilder/flc.png, id=358, 501.875pt x 318.18875pt>
 File: Bilder/flc.png Graphic file (type png)
  <use Bilder/flc.png>
 
@@ -1144,14 +1147,14 @@ I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-[12]
+[12] [13]
 
-LaTeX Warning: Citation `buch' on page 13 undefined on input line 567.
+LaTeX Warning: Citation `buch' on page 14 undefined on input line 603.
 
 Package acronym Info: Label `acro:OSGi' newly defined as it shall be overridden
 
-although it is yet undefined on input line 569.
-[13] [14] [15] [16] (./Abschlussarbeit.bbl
+although it is yet undefined on input line 605.
+[14] [15] [16] [17] (./Abschlussarbeit.bbl
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
 
@@ -1179,13 +1182,13 @@ Underfull \hbox (badness 1337) in paragraph at lines 39--46
 /m/n/12 http : / / wirtschaftslexikon .
  []
 
-[17]) [18]pdfTeX warning (ext4): destination with the same identifier (name{pag
+[18]) [19]pdfTeX warning (ext4): destination with the same identifier (name{pag
 e.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.676 \newpage
+l.712 \newpage
                [1]
-Overfull \hbox (3.26385pt too wide) in paragraph at lines 688--689
+Overfull \hbox (3.26385pt too wide) in paragraph at lines 724--725
 []|\OT1/cmr/m/n/12 .......................................................| 
  []
 
@@ -1193,7 +1196,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.693 \end{document}
+l.729 \end{document}
                      [2] (./Abschlussarbeit.aux)
 
 LaTeX Warning: There were undefined references.
@@ -1203,9 +1206,9 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12682 strings out of 495021
- 177169 string characters out of 1181036
- 367048 words of memory out of 3000000
+ 12709 strings out of 495021
+ 177557 string characters out of 1181036
+ 366050 words of memory out of 3000000
  15465 multiletter control sequences out of 15000+50000
  14114 words of font info for 54 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
@@ -1222,9 +1225,9 @@ ve/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/a
 msfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
 cmtt12.pfb>
-Output written on Abschlussarbeit.pdf (27 pages, 374710 bytes).
+Output written on Abschlussarbeit.pdf (28 pages, 381864 bytes).
 PDF statistics:
- 566 PDF objects out of 1000 (max. 8388607)
- 188 named destinations out of 1000 (max. 500000)
+ 601 PDF objects out of 1000 (max. 8388607)
+ 215 named destinations out of 1000 (max. 500000)
  309 words of extra memory for PDF output out of 10000 (max. 10000000)
 
