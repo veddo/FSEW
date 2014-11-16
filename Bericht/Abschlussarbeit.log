@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  16 NOV 2014 15:28
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  16 NOV 2014 22:40
 entering extended mode
  %&-line parsing enabled.
 **Abschlussarbeit.tex
@@ -802,10 +802,10 @@ LaTeX Warning: Label `lst:arduino' multiply defined.
 LaTeX Warning: Label `lst:arduino' multiply defined.
 
 
+LaTeX Warning: Label `fig:osgi' multiply defined.
+
+
 LaTeX Warning: Label `lst:arduino' multiply defined.
-
-
-LaTeX Warning: Label `tab:beispiel' multiply defined.
 
 )
 \openout1 = `Abschlussarbeit.aux'.
@@ -953,7 +953,7 @@ e 140.
 \openout7 = `Abschlussarbeit.lol'.
 
  [5] [6]
-<Bilder/LVKS.png, id=253, 346.29375pt x 293.095pt>
+<Bilder/LVKS.png, id=255, 346.29375pt x 293.095pt>
 File: Bilder/LVKS.png Graphic file (type png)
  <use Bilder/LVKS.png>
 
@@ -980,7 +980,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Bilder/sub.png, id=264, 369.38pt x 289.08pt>
+<Bilder/sub.png, id=266, 369.38pt x 289.08pt>
 File: Bilder/sub.png Graphic file (type png)
  <use Bilder/sub.png>
 
@@ -1136,7 +1136,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Bilder/flc.png, id=361, 501.875pt x 318.18875pt>
+<Bilder/flc.png, id=363, 501.875pt x 318.18875pt>
 File: Bilder/flc.png Graphic file (type png)
  <use Bilder/flc.png>
 
@@ -1158,7 +1158,15 @@ Overfull \hbox (34.78993pt too wide) in paragraph at lines 608--623
  [][] 
  []
 
-[15] [16] [17] (./Abschlussarbeit.bbl
+<Bilder/gitk.png, id=456, 1574.88374pt x 810.02625pt>
+File: Bilder/gitk.png Graphic file (type png)
+ <use Bilder/gitk.png>
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 634.
+See the caption package documentation for explanation.
+
+[15 <./Bilder/gitk.png (PNG copy)>] [16] [17] [18] (./Abschlussarbeit.bbl
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
 
@@ -1186,13 +1194,13 @@ Underfull \hbox (badness 1337) in paragraph at lines 39--46
 /m/n/12 http : / / wirtschaftslexikon .
  []
 
-[18]) [19]pdfTeX warning (ext4): destination with the same identifier (name{pag
+[19]) [20]pdfTeX warning (ext4): destination with the same identifier (name{pag
 e.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.738 \newpage
+l.750 \newpage
                [1]
-Overfull \hbox (3.26385pt too wide) in paragraph at lines 750--751
+Overfull \hbox (3.26385pt too wide) in paragraph at lines 762--763
 []|\OT1/cmr/m/n/12 .......................................................| 
  []
 
@@ -1200,17 +1208,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.755 \end{document}
+l.767 \end{document}
                      [2] (./Abschlussarbeit.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12705 strings out of 495021
- 177546 string characters out of 1181036
- 365991 words of memory out of 3000000
- 15462 multiletter control sequences out of 15000+50000
+ 12712 strings out of 495021
+ 177648 string characters out of 1181036
+ 366062 words of memory out of 3000000
+ 15466 multiletter control sequences out of 15000+50000
  14114 words of font info for 54 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  47i,12n,43p,902b,1299s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1226,9 +1234,9 @@ ve/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/a
 msfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
 cmtt12.pfb>
-Output written on Abschlussarbeit.pdf (28 pages, 380991 bytes).
+Output written on Abschlussarbeit.pdf (29 pages, 547120 bytes).
 PDF statistics:
- 599 PDF objects out of 1000 (max. 8388607)
- 214 named destinations out of 1000 (max. 500000)
- 309 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 606 PDF objects out of 1000 (max. 8388607)
+ 216 named destinations out of 1000 (max. 500000)
+ 314 words of extra memory for PDF output out of 10000 (max. 10000000)
 

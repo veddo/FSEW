@@ -623,8 +623,20 @@ Eine Commithistorie kann vor allem bei Teamarbeit sehr groß werden. D.h. git es
 	\caption{Befehle zum filtern der Commithistorie}
 	\label{tab:Befehle}
 \end{table}
-  
 
+Es besteht auch noch die Möglichkeit sich die Commithistorie grafisch anzeigen zu lassen, und zwar mit dem Tcl/Tk Programm.
+Dies wird in der Regel mit Git außgelifert und hört auf den befehl gitk es ist im wesentlichen eine grafische Version von git log und akzeptiert fast alle Filteroptionen, die git log auch akzeptiert.
+
+\vspace{3pt}
+\begin{minipage}{\linewidth}
+	\centering
+	\includegraphics[width=0.9\linewidth]{Bilder/gitk.png}
+	\captionof{figure}[gitk Grafische Oberfläche]{gitk Grafische Oberfläche}
+	\label{fig:osgi}
+\end{minipage}
+Falls gitk nicht mit installiert wurde ist es selbstverändlich nötig es zu installieren, unter Ubuntu apt-get install gitk .
+Beim aufrufen sieht man die Commit Historie. Diese wird in der oberen Hälfte des Fensters dargestellt. Daneben ein Graph, der die Branches und Merges zeigt. Nach Auswahl eines Commits, zeigt die Vergleichsanzeige in der unteren Hälfte des Fensters die jeweiligen Änderungen in diesem Commit.
+\newpage
 %\subsection{ Änderungen rückgängig machen}
 %Die Quellen befinden sich in der Datei \textit{bibo.bib}. Ein %Buch- und eine Online-Quelle sind beispielhaft eingefügt. [Vgl. %\cite{buch}, \cite{online}]
 
