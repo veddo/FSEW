@@ -22,7 +22,7 @@
 \BOOKMARK [2][-]{subsection.4.1}{ \304nderungen nachverfolgen}{section.4}
 \BOOKMARK [2][-]{subsection.4.2}{ Dateien ignorieren}{section.4}
 \BOOKMARK [2][-]{subsection.4.3}{Commithistorie anzeigen}{section.4}
-\BOOKMARK [2][-]{subsection.4.4}{ \304nderungen r\374ckg\344ngig machen}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Filtern der Commit historie}{subsection.4.3}
 \BOOKMARK [1][-]{section.5}{Branching mit Git}{}
 \BOOKMARK [2][-]{subsection.5.1}{Was ist ein Branch?}{section.5}
 \BOOKMARK [2][-]{subsection.5.2}{Einfaches Branching}{section.5}

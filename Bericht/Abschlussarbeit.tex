@@ -573,7 +573,7 @@ commit efb60ed05541f3bfae026c989f8b2f0cf6a2f42e
 Author: Vedad Hamamdzic <vhamamdz@stud.hs-heilbronn.de>
 Date:   Sun Nov 16 14:58:44 2014 +0100
 
-    World
+    World!
 
 diff --git a/Gittest.txt b/Gittest.txt
 index 336f590..5aae200 100644
@@ -596,20 +596,46 @@ index e69de29..336f590 100644
 @@ -0,0 +1 @@
 +Hallo World
 \end{lstlisting}
+Dar die Reihenfolge umgekehrt chronologisch aufgelistet wird ist der letzte Commit oben zu sehen. Die beiden Commitnachrichten World ! und World helfen beim Unterscheiden des gesuchten Commits. Man erkennt in Zeile 12 und 13 das zu Hallo World noch ein Ausrufezeichen dazu gekommen ist.
+\newpage
 
+
+\subsubsection{Filtern der Commit historie}
+Eine Commithistorie kann vor allem bei Teamarbeit sehr groß werden. D.h. git es Filter Optionen die eine Suche ein wenig erleichtern kann. 
+ \vspace{1em}
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\textbf{Option} & \textbf{Beschreibung} \\
+		\hline
+		-(n)& Begrenzt die Ausgabe auf die letzten n commits\\
+		\hline
+		--since, --after & eigt nur Commits, die nach dem angegebenen Datum angelegt wurden.\\
+		\hline
+		--until, --before & Zeigt nur Commits, die vor dem angegebenen Datum angelegt wurden.\\
+		\hline
+		--author & Zeigt nur Commits, die von dem angegebenen Autor vorgenommen wurden.\\
+		\hline
+		--committer & Zeigt nur Commits, die von dem angegebenen Committer angelegt wurden.\\
+		\hline
+	\end{tabular}
+	\caption{Befehle zum filtern der Commithistorie}
+	\label{tab:Befehle}
+\end{table}
   
 
-\subsection{ Änderungen rückgängig machen}
-Die Quellen befinden sich in der Datei \textit{bibo.bib}. Ein Buch- und eine Online-Quelle sind beispielhaft eingefügt. [Vgl. \cite{buch}, \cite{online}]
+%\subsection{ Änderungen rückgängig machen}
+%Die Quellen befinden sich in der Datei \textit{bibo.bib}. Ein %Buch- und eine Online-Quelle sind beispielhaft eingefügt. [Vgl. %\cite{buch}, \cite{online}]
 
-Abkürzungen lassen sich natürlich auch nutzen (\ac{OSGi}). Weiter oben im Latex-Code findet sich das Verzeichnis.
+%Abkürzungen lassen sich natürlich auch nutzen (\ac{OSGi}). Weiter %oben im Latex-Code findet sich das Verzeichnis.
 
 
-Abkürzungen lassen sich natürlich auch nutzen (\ac{OSGi}). Weiter oben im Latex-Code findet sich das Verzeichnis.
-\begin{scriptsize}
-bvc
-\end{scriptsize}
-\pagebreak
+%Abkürzungen lassen sich natürlich auch nutzen (\ac{OSGi}). Weiter %oben im Latex-Code findet sich das Verzeichnis.
+%\begin{scriptsize}
+%bvc
+%\end{scriptsize}
+%\pagebreak
 
 % ----------------------------------------------------------------------------------------------------------
 % Kapitel 
