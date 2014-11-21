@@ -178,10 +178,10 @@ Das ganze auf Englisch.
 \section{GIT}
 
 \subsection{Was ist ein Versionskontrollsystem}
-GIT ist ein Versionsverwaltungssystem soviel wissen wir. Doch was ist das, was macht es im Detail? Ein Versionsverwaltungssystem ist ein System, welches Änderungen an einer Datei oder eine Reihe von Dateien protokolliert, so dass  bestimmte Versionen später wieder aufrufbar sind.\footnote{\cite{chacon2009pro} Seite 1 Zeile 1 } Um Problemen entgegenzuwirken die eine Amateurhafte Methoden der Versionsverwaltung mit sich bringen wie z.B das ständige kopieren neuer Versionen in ein Verzeichnis. Wurden diese Systeme entwickelt.Dabei unterscheidet man 3 Arten von Systemen. Der wesentlichste Unterschied besteht darin wie und wo die Daten gehalten werden.
+GIT ist ein Versionsverwaltungssystem, soviel wissen wir. Doch was ist das und was macht es im Detail? Ein Versionsverwaltungssystem ist ein System, welches Änderungen an einer Datei oder eine Reihe von Dateien protokolliert, so dass  bestimmte Versionen später wieder aufrufbar sind.\footnote{\cite{chacon2009pro} Seite 1 Zeile 1 } Um Problemen entgegenzuwirken die eine amateurhafte Methoden der Versionsverwaltung mit sich bringen, wie z.B das ständige kopieren neuer Versionen in ein Verzeichnis, hierfür wurden diese Systeme entwickelt.Dabei unterscheidet man 3 Arten von Systemen. Der wesentlichste Unterschied, besteht darin wie und wo die Daten gehalten werden.
 \subsubsection{Lokale Versionskontrollsysteme}
 
-Von Lokalen Versionskontrollsystemen spricht man wenn die Daten auf dem Lokalen System vorligen (siehe Abbildung 1 ). Dabei werden die Dateien in einer Version Database (Repository) gehalten. Nach jedem Checkout wird automatisch eine neue Version im Repository erstellt. Somit entgeht man der Gefahr durch das oben erwähnte Kopieren in andere Verzeichnisse eine der Versionen zu überschreiben, da man vergessen hat die Datei umzubenennen. Natürlich ist diese Variante der Versionskontrolle für Große Projekte die im Team bearbeitet werden eher destruktiv.Ein Beispiel für Lokale Systeme ist RCS( Revision Control System ).Eher geeignet für Teamwork sind die beiden andern Architekturen. 
+Von Lokalen Versionskontrollsystemen spricht man, wenn die Daten auf dem Lokalen System vorliegen (siehe Abbildung 1 ). Dabei werden die Dateien in einer Version Database (Repository) gehalten. Nach jedem Checkout wird automatisch eine neue Version im Repository erstellt. Somit entgeht man der Gefahr, durch das oben erwähnte Kopieren in andere Verzeichnisse, eine der Versionen zu überschreiben, da man vergessen hat die Datei umzubenennen. Natürlich ist diese Variante der Versionskontrolle, für große Projekte die im Team bearbeitet werden eher destruktiv. Ein Beispiel für Lokale Systeme ist RCS( Revision Control System ). Für Teamwork, eignen sich eher die anderen beiden Architekturen. 
 \newline
 \vspace{3pt}
 \begin{minipage}{\linewidth}
@@ -192,7 +192,7 @@ Von Lokalen Versionskontrollsystemen spricht man wenn die Daten auf dem Lokalen 
 \end{minipage}
 \newpage
 \subsubsection{Zentralisierte Versionskontrollsysteme}
-Bei zentralisierte Versionskontrollsystemen wird die Versionierung nicht lokal vorgenommen. Die Entwickler haben einen Zentralen Punkt(Abbildung 2) , einen Server und dort befindet sich der Quellcode des Projektes in einem Reposytory zu deutsch Lager. Der unterschied zu einfachen Lokalen Systemen ist nun Offensichtlich. Man braucht zumindest ein Netzwerk um solche Systeme zu nutzen. Ein sehr beliebtes zentralisiertes System ist Subversion. Ein weiterer Vorteil gegenüber der lokalen Versionnierung besteht darin das gemeinsames Arbeiten an einem Projekt möglich ist und bei Verwendung eines Servers der Online erreichbar ist kann das Arbeiten auch ohne Ortsbindung ablaufen. Doch dieser Vorteil der Ortsungebundenheit bietet einen enormen „Single Point of Failure“ denn wenn der Server ausfällt ist man nicht in der Lage seiner Arbeit nachzugehen.
+Bei zentralisierten Versionskontrollsystemen wird die Versionierung nicht lokal vorgenommen. Die Entwickler haben einen Zentralen Punkt(Abbildung 2) , einen Server und dort befindet sich der Quellcode des Projektes in einem Reposytory, zu deutsch Lager. Der unterschied zu einfachen Lokalen Systemen ist nun Offensichtlich, man braucht zumindest ein Netzwerk, um solche Systeme zu nutzen. Ein sehr beliebtes zentralisiertes System ist Subversion. Ein weiterer Vorteil gegenüber der lokalen Versionnierung, besteht darin das gemeinsames Arbeiten an einem Projekt möglich ist und bei Verwendung eines Servers der Online erreichbar ist, kann das Arbeiten auch ohne Ortsbindung ablaufen. Doch dieser Vorteil der Ortsungebundenheit, bietet einen enormen „Single Point of Failure“, denn wenn der Server ausfällt ist man nicht in der Lage seiner Arbeit nachzugehen.
 
 \newline
 \vspace{3pt}
@@ -204,8 +204,8 @@ Bei zentralisierte Versionskontrollsystemen wird die Versionierung nicht lokal v
 \end{minipage} 	
 
 \subsubsection{Verteilte Versionskontrollsysteme}
-GIT gehört zu den Verteilten Systemen, der Unterschied zu den Varianten davor ist das sie beides können. 
-Einer Art hybride Lösung. Man ist in der Lage Lokal zu Versionieren aber auch im Netzwerk Versionen, anderen zur Verfügung zu stellen (Abbildung 3). Jeder kann als Server fungieren und somit  wird der „Single Point of Failure“ eliminiert den Zentralisierten Systeme haben. In der Praxis ist aber eher üblich das man einen Server nutzt vor allem bei Teamarbeiten. Wenn dieser jedoch ausfällt ist man in der Lage weiter seine Arbeit zu verrichten.
+GIT gehört zu den verteilten Systemen, der Unterschied zu den Varianten davor ist das sie beides können. 
+Einer Art hybride Lösung, man ist in der Lage Lokal zu Versionieren aber auch im Netzwerk Versionen anderen zur Verfügung zu stellen (Abbildung 3). Jeder kann als Server fungieren und somit  wird der „Single Point of Failure“ eliminiert den zentralisierte Systeme haben. In der Praxis ist aber eher üblich, dass man einen Server nutzt vor allem bei Teamarbeiten. Wenn dieser jedoch ausfällt ist man in der Lage, weiter seine Arbeit zu verrichten.
 \newline
 \vspace{3pt}
 \begin{minipage}{\linewidth}
@@ -226,7 +226,7 @@ Einer Art hybride Lösung. Man ist in der Lage Lokal zu Versionieren aber auch i
 %\footnotetext{Quelle: \url{http://www.osgi.org/Technology/WhatIsOSGi}}
 
 \subsection{GIT Historie }
-Im Jahre 2005 ist es zu unstimmigkeiten zwichen der Etwicklercommunety von Linux und dem Anbieter des proprietären BitKeeper-Systems das vorher kostenfrei genutz wurde. Die Linux-Kernel-Entwickler mussten sich was einfallen lassen.Deswegen begann  Linus Torvalds im April 2005 mit der Entwicklung von GIT und präsentierte auch sehr schnell die erste Version. Git baute auf den Erfahrungen mit BitKeeper auf doch die Hauptziele des neuen Systems waren\footnote{\cite{chacon2009pro} Seite 5}:
+Im Jahre 2005 ist es zu Unstimmigkeiten gekommen, zwischen der Entwicklercommunity von Linux und dem Anbieter des proprietären BitKeeper-Systems, dass vorher kostenfrei genutzt wurde. Die Linux-Kernel-Entwickler mussten sich etwas einfallen lassen. Deswegen begann  Linus Torvalds im April 2005 mit der Entwicklung von GIT und präsentierte auch sehr schnell die erste Version. Git baute auf den Erfahrungen mit BitKeeper auf, doch die Hauptziele des neuen Systems waren\footnote{\cite{chacon2009pro} Seite 5}:
 
 \begin{compactitem}
 	\item Geschwindigkeit
@@ -245,35 +245,35 @@ Ein großen Einfluss auf den Erfolg von Git hat auch die Social Coding Plattform
 	\item Das CMS Joomla\footnote{\cite{joomla}}
 \end{compactitem}
 
-Das sind natürlich nicht alle Open Source Projekte die GIT in Verbindung mit GitHub nutzen, aber einige bekannte die sich für Git entschieden haben. Der Dienst, den GitHub bereitstellt ist kostenfrei, doch nur unter der Bedingung das die Projekte öffentlich zugänglich sind. Des Weiteren gibt es Optional wählbare Services die gegen Bezahlung verfügbar sind, aber auch eine Enterprise version die für Firmen interessant sein kann wird bereitgestellt.    
+Das sind natürlich nicht alle Open Source Projekte die GIT in Verbindung mit GitHub nutzen, aber einige bekannte die sich für Git entschieden haben. Der Dienst, den GitHub bereitstellt ist kostenfrei, doch nur unter der Bedingung das die Projekte öffentlich zugänglich sind. Des Weiteren gibt es Optional wählbare Services, die gegen Bezahlung verfügbar sind, aber es gibt auch eine Enterprise Version, die für Firmen interessant sein kann.    
 \pagebreak
 
 % ----------------------------------------------------------------------------------------------------------
 % Kapitel
 % ----------------------------------------------------------------------------------------------------------
 \section{GIT Grundlagen}
-Um grundlegende Funktionen von GIT zu nutzen, ist es unumgänglich gewisse Begriffe zu kennen. Elementar hingegen ist der Umgang mit der Konsole des jeweiligen Systems. Es existieren einige plugins für Entwicklungsumgebungen wie z.B. Eclipse die mit einem GUI ausgestattet sind. Jedoch sind diese Plugins meistens nicht soweit entwickelt um den Kompletten Funktionsumfang des Systems bedienbar zu machen.
-Weswegen meine Erläuterungen zum Git System sich auf Linux als Betriebssysteme beziehen werden und nur mit der Konsole zu bedienen sind.     
+Um grundlegende Funktionen von GIT zu nutzen, ist es unumgänglich gewisse Begriffe zu kennen. Elementar hingegen, ist der Umgang mit der Konsole des jeweiligen Systems. Es existieren einige plugins für Entwicklungsumgebungen, wie z.B. Eclipse die mit einem GUI ausgestattet sind. Jedoch sind diese Plugins meistens nicht soweit entwickelt, um den kompletten Funktionsumfang des Systems bedienbar zu machen,
+weswegen meine Erläuterungen zum Git System, sich auf Linux als Betriebssysteme beziehen und nur mit der Konsole zu bedienen sind.     
 
 \subsection{Begriffe die man kennen sollte}
-Bevor man mit Versionierungssystemen arbeitet sollte man einige begriffe kennenlernen. 
+Bevor man mit Versionierungssystemen arbeitet, sollte man einige Begriffe kennenlernen. 
 \paragraph{Repository}
-Der Begriff Repository (Englisch für Lager) kommt aus dem Lateinischen Repositorium.
-Eine Repository ist eine spezielle Datenbank zur systematischen Ablage von Modellen und deren Bestandteilen. Das Herz der Datenhaltung eines Versionskontrollsystems. Grundlegende Funktion ist die Speicherung und das Abrufen von gespeichertem Inhalt samt aller Bestandteile wie z.B. Bilder. \footnote{\cite{Leymann}} 
+Der Begriff Repository (Englisch für Lager), kommt aus dem Lateinischen Repositorium.
+Eine Repository ist eine spezielle Datenbank, zur systematischen Ablage von Modellen und deren Bestandteilen, das Herz der Datenhaltung eines Versionskontrollsystems. Grundlegende Funktion ist die Speicherung und das Abrufen von gespeichertem Inhalt samt aller Bestandteile wie z.B. Bilder. \footnote{\cite{Leymann}} 
 
 \paragraph{Clone}
-Ein Clone im Git Kontext ist äquivalent zu dem begriff in der Biologie. Da her es ist eine exakte Kopie von etwas existierendem in diesem Fall der Repository. Im Fall git lässt sich  ein Clone auch durch verschiedene Protokolle umsetzten z.B. git:// ein eigens Protokoll oder auch das https:// Protokoll. Weitere Erläuterungen dazu folgen später. 
+Ein Clone im Git Kontext, ist äquivalent zu dem begriff in der Biologie. Daher ist eine exakte Kopie von etwas existierendem, in diesem Fall der Repository. Im Fall Git lässt sich ein Clone auch durch verschiedene Protokolle umsetzten z.B. git:// ein eigens Protokoll oder auch das https:// Protokoll. Weitere Erläuterungen dazu folgen später. 
 \paragraph{Commit}
-Zu deutsch übergeben, wenn man also eine Änderung im Arbeitsverzeichnis macht wird diese getrackt(verfolgt) um diese zu bestätigen bzw an Git zu übergeben ist ein commit erforderlich. 
-\paragraph{Breanch}
-Zu Deutsch Zweig ist eine Gabelung des Quellcodes. Aus verschiedenen gründen kann es erforderlich sein ein Version des Quellcodes vom Original abzuzweigen um ggf. eine neue Funktion zu implementieren. Dies läuft dann parallel zur Entwicklung des Originalcodes. Der initiale Commit wird auch als Master bezeichnet 
+Zu deutsch "übergeben", wenn man also eine Änderung im Arbeitsverzeichnis vornimmt, wird diese getrackt(verfolgt). Um diese zu bestätigen, bzw. an Git zu übergeben, ist ein commit erforderlich. 
+\paragraph{Branch}
+Zu Deutsch "Zweig" ist eine Gabelung des Quellcodes. Aus verschiedenen Gründen, kann es erforderlich sein eine Version des Quellcodes vom Original abzuzweigen, um ggf. eine neue Funktion zu implementieren. Dies läuft dann parallel zur Entwicklung des Originalcodes. Der initiale Commit, wird auch als Master bezeichnet 
 \paragraph{Merge}
-Ein Merge bzw das Merging ist das zusammenführen eines Breanches und des Master zweiges. 
+Ein Merge, bzw. das Merging ist das zusammenführen eines Branches und des Master zweiges. 
 
 
 
 \section{Installation von GIT unter Linux}
-Unter Linux ist die Installation von Git abhängig welches Distribution genutzt wird d.h. welches Paketmanagement-Programm. Doch es wird empfohlen wenn möglich Git vom Quellcode aus zu installieren. Da man immer die neuste Version erhält.\footnote{\cite{chacon2009pro}} Um Git zu installieren braucht man einige Bibliotheken, die von Git verwendet werden: curl, zlib, openssl, expat und libiconv. 
+Unter Linux ist die Installation von Git abhängig, welche Distribution genutzt wird, d.h. welches Paketmanagement-Programm. Doch es wird empfohlen wenn möglich, Git vom Quellcode aus zu installieren. Da man immer die neuste Version erhält.\footnote{\cite{chacon2009pro}} Um Git zu installieren braucht man einige Bibliotheken, die von Git verwendet werden: curl, zlib, openssl, expat und libiconv. 
 
 Installation unter Fedora Paketmanagement (YUM)
 \begin{lstlisting}
@@ -292,8 +292,8 @@ Download GIT
  \end{lstlisting}
  
  
-Nadem man diese Packete installiert hat ist es noch notwendig Git Selbst zu Downloaden. Auf dieser Seite sind Git Downloads für verschiedenste Betriebssysteme. Um den Quellcode zu laden wird man auf eine GitHub Repository weitergeleitet. Rechts auf dieser GitHub Page ist immer ein Link zum Clonen sowie ein Download link welche auf dem System eine Zipdatei abspeichert. Doch um einen Überblick der verschiedenen Versionen zu bekommen 
-empfehle ich den Older releases  link.
+Nachdem man diese Packete installiert hat, ist es noch notwendig Git selbst, zu downloaden. Auf dieser Seite sind Git Downloads für verschiedenste Betriebssysteme vorhanden. Um den Quellcode zu laden, wird man auf eine GitHub Repository weitergeleitet. Rechts auf dieser GitHub Page, ist immer ein Link zum Clonen, sowie ein Download link der auf dem System eine Zipdatei abspeichert. Doch um einen Überblick der verschiedenen Versionen zu bekommen 
+empfehle ich den "Older releases"  link.
 
 Anschließend wird Git kompiliert und installiert:
 \begin{lstlisting}
@@ -305,7 +305,7 @@ $ sudo make prefix=/usr/local install
 
 \paragraph{Installation über den Paketmanager}
 
-Git über den Paketmanager zu installieren ist für Linux Anfänger durchaus Praktischer. Je nach Distribution unterscheidet die Eingabe in das Terminal jedoch.
+Git über den Paketmanager zu installieren, ist für Linux Anfänger durchaus praktischer. Je nach Distribution unterscheidet sich allerdings die Eingabe in das Terminal.
 \newpage
 Terminal Installation für Fedora/ Ubuntu/ openSUSE 
 
@@ -327,50 +327,49 @@ $ zypper install git
 
 
 \subsection{Installation unter Windows}
-Auf der Homepage git-scm.com findet man im Downloadbereich auch eine Windowsversion.
-Diese wird einfach Installiert. Nach abschluss der installation startet man eine seperate Git Konsole wichtig, diese Konsole hört explizit nur auf Linux befehle. 
+Auf der Homepage git-scm.com, findet man im Downloadbereich auch eine Windowsversion.
+Diese wird einfach Installiert. Nach Abschluss der Installation, startet man eine seperate Git Konsole, wichtig hierbei ist, dass diese Konsole explizit nur auf Linux befehle hört. 
 
 \subsection{Konfiguration von GIT}
-Nachdem git nun erfolgreich auf de System installiert ist, bedarf es noch einigen Konfigurationen. Über das tool \lstinline|git config| ist es möglich durch Eingabe in das Terminal Konfigurationen vorzunehmen welche die Arbeitsweise und die Optik von git beeinflussen. Die Konfiguratins Dateien sind an Drei verschiedenen orten im System
+Nachdem Git nun erfolgreich auf de System installiert ist, bedarf es noch einigen Konfigurationen. Über das tool \lstinline|git config| ist es möglich, durch Eingabe in das Terminal Konfigurationen vorzunehmen welche die Arbeitsweise und die Optik von Git beeinflussen. Die Konfiguratinsdateien, sind an Drei verschiedenen Orten im System
 gespeichert. 
 \begin{compactitem}
-	\item Die Datei gitconfig im etc Verzeichniss enthält Werte, die für jeden Anwender des Systems und all ihre Projekte gelten. Durch eingabe von\lstinline| git config| mit der Option \lstinline|--system| wird diese Datei verwendet.
-\item Die Werte in der Datei \lstinline|~/.gitconfig| gelten explizit für das Systemkonto das gerade genutzt wird.Duch die Eingabe von\lstinline| git config| mit der Option \lstinline|--global| wird diese Datei verwendet. 
-\item Um einem Projekt geltende werte zuzuweisen gibt es noch im die Datei \lstinline|git/config|im Verzeichniss des Projektes selbst. 
+	\item Die Datei gitconfig im etc Verzeichniss enthält Werte, die für jeden Anwender des Systems und all ihre Projekte gelten. Durch Eingabe von\lstinline| git config| mit der Option \lstinline|--system| wird diese Datei verwendet.
+\item Die Werte in der Datei \lstinline|~/.gitconfig|, gelten explizit für das Systemkonto, das gerade genutzt wird. Durch die Eingabe von\lstinline| git config| mit der Option \lstinline|--global|, wird diese Datei verwendet. 
+\item Um einem Projekt, geltende Werte zuzuweisen, gibt es noch die Datei \lstinline|git/config|im Verzeichniss des Projektes selbst. 
 \end{compactitem}
-Wichtig ist jedoch das die Dateien Werte aus den jeweils vorhergehenden Dateien überschreiben. Als Beispiel \lstinline|git/config| überschreibt die Werte in \lstinline|/etc/gitconfig|
+Wichtig ist jedoch, dass die Dateiwerte aus den jeweils vorhergehenden Dateien überschrieben wurden. Als Beispiel: \lstinline|git/config| überschreibt die Werte in \lstinline|/etc/gitconfig|
 
 \paragraph{Konfiguration auf Windows Systemen}
-Auch auf Windows such Git nacht der \lstinline|.gitconfig| Datei im  \lstinline|$Home |Verzeichniss in den meisten Fällen ist das 
-der Pfad \lstinline|C:\Dokumente und Einstellungen\$USER| auch die \lstinline|/etc/gitconfig| Datei wird gesucht im Fall ist diese Datei in dem Verzeichnis in das Git bei Windows installiert wurde.
+Auch auf Windows sucht Git nach der \lstinline|.gitconfig| Datei im  \lstinline|$Home |Verzeichnis.  In den meisten Fällen, ist das 
+der Pfad \lstinline|C:\Dokumente und Einstellungen\$USER|. Auch die \lstinline|/etc/gitconfig| Datei wird gesucht in diesem Fall, ist diese Datei in dem Verzeichnis, in das Git bei Windows installiert wurde.
 
 \paragraph{Identität Konfigurieren}
-Nach dem die Installation erfolgreich abgeschlossen wurde ist es von enormer Wichtigkeit die Konfiguration zur Identität vorzunehmen. Git nutzt diese Parameter bei jedem Commit.
-Um die Einstellungen vorzunehmen das Terminal öffnen und.
+Nachdem die Installation erfolgreich abgeschlossen wurde, ist es von enormer Wichtigkeit die Konfiguration zur Identität vorzunehmen. Git nutzt diese Parameter bei jedem Commit,
+um die Einstellungen vorzunehmen das Terminal öffnen und
 \begin{lstlisting}
 $ git config --global user.name "Max Musterman"
 $ git config --global user.email "mustermann@muster.de"
  \end{lstlisting}
-Wichtig ist dabei das diese Einstellungen in diesem Fall nur ein 
-mal vorgenommen werden. Da die Option \lstinline|--global|verwendet wird. Will man jedoch für ein explizites Projekt andere Identitätsdaten verwenden, muss man im Verzeichnis des Projektes die selben befehle aufrufen. Doch ohne die Option \lstinline|--global|.
+Wichtig ist dabei, dass diese Einstellungen in diesem Fall nur einmal vorgenommen werden, da die Option \lstinline|--global|verwendet wird. Will man jedoch für ein explizites Projekt andere Identitätsdaten verwenden, muss man im Verzeichnis des Projekts, die selben Befehle aufrufen. Doch ohne die Option \lstinline|--global|.
 \paragraph{Editor Konfiguration}
-Da man beim Commiten eine Nachricht mit geben soll  ist es möglich durch die Konsoleneingabe  einen expliziten Texteditor zu bestimmen.
+Da man beim Commiten eine Nachricht mit geben soll,  ist es möglich durch die Konsoleneingabe,  einen expliziten Texteditor zu bestimmen.
 \begin{lstlisting}
-$ git config --global core.editor <gewünster Editor>
+$ git config --global core.editor <gewünschter Editor>
  \end{lstlisting}
-Verändert man diese Einstellungsmöglichkeit jedoch nicht wird die Default Einstellung VIM gewählt.
+Verändert man diese Einstellungsmöglichkeit jedoch nicht, wird die Default Einstellung VIM gewählt.
 
 \paragraph{Konfiguration überprüfen}
-Will man nun die vorgenommenen Einstellungen überprüfen genügt die Eingabe dieses Befehls.
+Will man nun die vorgenommenen Einstellungen überprüfen, genügt die Eingabe dieses Befehls.
 \begin{lstlisting}
 $ git config --list
 \end{lstlisting}
 
-Manche der aufgelisteten Variabelen kommen vermutlich öfter vor, dies liegt jedoch an den Verschiedenen Dateien z.B.\lstinline| /etc/gitconfig| in diesem Fall wird die zuletzt aufgelistete Variable genutzt.
+Manche der aufgelisteten Variablen, kommen vermutlich öfter vor. Dies liegt jedoch an den verschiedenen Dateien, z.B.\lstinline| /etc/gitconfig|.Iin diesem Fall wird die zuletzt aufgelistete Variable genutzt.
 \newpage
 \subsection{Hilfestellungen durch das System}
-Für weitere spezielle Einstellungen gibt es unter Git die Help Option.
-Die gilt für fast alle befehle. Um diese auszurufen gibt es verschiedene Möglichkeiten.
+Für weitere spezielle Einstellungen gibt es unter Git, die Help Option.
+Die gilt für fast alle Befehle, um diese auszurufen gibt es verschiedene Möglichkeiten.
 \begin{lstlisting}
 $ git help <verb>
 $ git <verb> --help
