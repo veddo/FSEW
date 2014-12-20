@@ -179,10 +179,10 @@ Das ganze auf Englisch.
 
 \subsection{Was ist ein Versionskontrollsystem}
 GIT ist ein Versionsverwaltungssystem, soviel wissen wir. Doch was ist das und was macht es im Detail? Ein Versionsverwaltungssystem ist ein System, welches Änderungen an einer Datei oder eine Reihe von Dateien protokolliert, so dass  bestimmte Versionen später wieder aufrufbar sind.\footnote{\cite{chacon2009pro} Seite 1 Zeile 1 } Um Problemen entgegenzuwirken die eine amateurhafte Methoden der Versionsverwaltung mit sich bringen, wie z.B das ständige kopieren neuer Versionen in ein Verzeichnis, hierfür wurden diese Systeme entwickelt.Dabei unterscheidet man 3 Arten von Systemen. Der wesentlichste Unterschied, besteht darin wie und wo die Daten gehalten werden.
-\subsubsection{Lokale Versionskontrollsysteme}
 
+\subsubsection{Lokale Versionskontrollsysteme}
 Von Lokalen Versionskontrollsystemen spricht man, wenn die Daten auf dem Lokalen System vorliegen (siehe Abbildung 1 ). Dabei werden die Dateien in einer Version Database (Repository) gehalten. Nach jedem Checkout wird automatisch eine neue Version im Repository erstellt. Somit entgeht man der Gefahr, durch das oben erwähnte Kopieren in andere Verzeichnisse, eine der Versionen zu überschreiben, da man vergessen hat die Datei umzubenennen. Natürlich ist diese Variante der Versionskontrolle, für große Projekte die im Team bearbeitet werden eher destruktiv. Ein Beispiel für Lokale Systeme ist RCS( Revision Control System ). Für Teamwork, eignen sich eher die anderen beiden Architekturen. 
-\newline
+
 \vspace{3pt}
 \begin{minipage}{\linewidth}
 	\centering
@@ -194,7 +194,7 @@ Von Lokalen Versionskontrollsystemen spricht man, wenn die Daten auf dem Lokalen
 \subsubsection{Zentralisierte Versionskontrollsysteme}
 Bei zentralisierten Versionskontrollsystemen wird die Versionierung nicht lokal vorgenommen. Die Entwickler haben einen Zentralen Punkt(Abbildung 2) , einen Server und dort befindet sich der Quellcode des Projektes in einem Reposytory, zu deutsch Lager. Der unterschied zu einfachen Lokalen Systemen ist nun Offensichtlich, man braucht zumindest ein Netzwerk, um solche Systeme zu nutzen. Ein sehr beliebtes zentralisiertes System ist Subversion. Ein weiterer Vorteil gegenüber der lokalen Versionnierung, besteht darin das gemeinsames Arbeiten an einem Projekt möglich ist und bei Verwendung eines Servers der Online erreichbar ist, kann das Arbeiten auch ohne Ortsbindung ablaufen. Doch dieser Vorteil der Ortsungebundenheit, bietet einen enormen „Single Point of Failure“, denn wenn der Server ausfällt ist man nicht in der Lage seiner Arbeit nachzugehen.
 
-\newline
+
 \vspace{3pt}
 \begin{minipage}{\linewidth}
 	\centering
@@ -458,7 +458,7 @@ Genauer gesagt: Dateien welche getrackt werden sind nur die, die sich im letzten
 \begin{minipage}{\linewidth}
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/flc.png}
-	\captionof{figure}[Zentralisierte Architektur]{Zentralisierte Architektur\footnotemark }
+	\captionof{figure}[File Status Lifecycle]{Zentralisierte Architektur\footnotemark }
 	\label{fig:osgi}
 \end{minipage} 	
 
@@ -527,7 +527,7 @@ In den meisten Fällen kommt es vor, dass man einige Dateien gar nicht versionie
 Weitere Regeln im Bezug auf die .gitignore Datei sind:
 
 \begin{compactitem}
-	\item Leere Zeilen oder Zeilen, die mit # beginnen, werden ignoriert.
+	\item Leere Zeilen oder Zeilen, die mit # beginnen, werden 			     ignoriert.
 	\item Standard glob Muster funktionieren.
 	\item Man kann ein Muster mit einem Schrägstrich (/) abschließen, um ein Verzeichnis zu deklarieren.
 	\item  Man kann ein Muster negieren, indem man ein Ausrufezeichen (!) voranstellt.
@@ -635,6 +635,7 @@ Dies wird in der Regel mit Git ausgeliefert und hört auf den Befehl gitk. Es is
 Falls gitk nicht mit installiert wurde, ist es selbstverständlich nötig es zu installieren, unter Ubuntu apt-get install gitk .
 Beim aufrufen sieht man die Commit Historie. Diese wird in der oberen Hälfte des Fensters dargestellt. Daneben ein Graph, der die Branches und Merges zeigt. Nach Auswahl eines Commits, zeigt die Vergleichsanzeige in der unteren Hälfte des Fensters die jeweiligen Änderungen in diesem Commit.
 \newpage
+
 %\subsection{ Änderungen rückgängig machen}
 %Die Quellen befinden sich in der Datei \textit{bibo.bib}. Ein %Buch- und eine Online-Quelle sind beispielhaft eingefügt. [Vgl. %\cite{buch}, \cite{online}]
 
@@ -654,11 +655,111 @@ Beim aufrufen sieht man die Commit Historie. Diese wird in der oberen Hälfte de
 Lorem ipsum dolor sit amet.
 
 \subsection{Was ist ein Branch?}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Um das Branching wirklich zu verstehen, muss man im Detail verstehen wie Git die Daten speichert.	Wenn man Commitet speichert Git	ein sogenanntes Commit-Objekt.Dieses enthält einen Zeiger zu dem Schnappschuss mit den Objekten der Staging-Area, dem Autor, den Commit-Metadaten und einem Zeiger zu den direkten Eltern des Commits. Beim Commiten bekommt jedes Projektverzeichnis eine Prüfsumme und wird  als sogenanntes tree-Objekt im Git Repository gespeichert. Sommit zeigt das Commit-Objekt auf das Tree-Objekt	diese wiederrum zeigen auf sogenannte Blops, welche den Inhalt der Dateien enthalten.	
+\vspace{1em}
+\begin{minipage}{\linewidth}
+	\centering
+	\includegraphics[width=0.6\linewidth]{Bilder/speichern.png}
+	\captionof{figure}[Zentralisierte Architektur]{Speichern als Modell\footnotemark }
+	\label{fig:gitspeichern}
+\end{minipage} 	
 
-\subsection{Einfaches Branching}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Das Tree-Objekt hat die Funktion einen Inhaltsverzeichnisses im Verzeichnis jede Datei ist dort aufgelistet und  spezifiziert welcher Dateiname zu welchem Blob gehört. Des Weiteren gibt es noch einen  Zeiger, der auf die Wurzel des Projektbaumes und die Metadaten des Commits verweist (Abb.6).	 
+Jede weitere Commt wird einen Zeiger enthalten, der auf den Vorhergehenden verweist. Nach zwei weiteren Commits könnte die Historie wie folgt aussehen (Abb. 7).
+
+\vspace{1em}
+\begin{minipage}{\linewidth}
+	\centering
+	\includegraphics[width=0.6\linewidth]{Bilder/commit.png}
+	\captionof{figure}[Commit Diagramm]{Speichern als Modell\footnotemark }
+	\label{fig:gitspeichern}
+\end{minipage} 	
+
+Ein Branch in Git ist nichts anderes als ein simpler Zeiger auf einen dieser Commits, der Standardname eines Git-Branches lautet master. Diesen master Branch erhällt man durch den Initialen Commit der sich bei jedem neuen Commit um einz nach vorne verschiebt.
+\newline
+\vspace{2em}
+\begin{minipage}{\linewidth}
+	\centering
+	\includegraphics[width=0.6\linewidth]{Bilder/master.png}
+	\captionof{figure}[Commit Diagramm]{Master Branch\footnotemark }
+	\label{fig:gitspeichern}
+\end{minipage} 
+Wenn man nun einen neuen Branch generiert wird ein neuer Zeiger erstellt, der auf den Commit zeigt auf dem man gerade arbeitet.
+
+\begin{lstlisting}[caption=Branch Befehl] label=lst:arduino]
+$ git branch NeuerBranchName
+\end{lstlisting}
+\newline
+\vspace{2em}
+\begin{minipage}{\linewidth}
+	\centering
+	\includegraphics[width=0.6\linewidth]{Bilder/nbranch.png}
+	\captionof{figure}[Commit Diagramm]{Neuer Branch\footnotemark }
+	\label{fig:gitspeichern}
+\end{minipage}
+Nun befinden wir uns immer noch auf dem Masterzweig das bedeutet man muss in den gerade erstellten Branch wechseln.
+Dies macht man mit dem Checkout Befehl.
+\begin{lstlisting}[caption=Branch Befehl] label=lst:arduino]
+$ git checkout 
+$ git checkout NeuerBranchName
+\end{lstlisting}
+Um den zu sehen in welchen Branch man sich befindet kann man auf das Kommando \lstinline|git branch|zurückgreifen. Der Zweig welcher mit dem Sternchen gekennzeichnet ist, ist der indem man Arbeitet. Dieses Sternchen ist ein spezieller Zeiger der sich HEAD nennt. 
+\begin{lstlisting}[caption=Aktuellen Branch prüfen] label=lst:arduino]
+  master
+* neuerBranch
+\end{lstlisting}
+
+
+	
+\subsection{Einfaches Branching und Merging}
+Nachdem Branching ausführlich erläutert wurde, ist Mergigng  nun an der Reihe. Merging ist das zusammenführen zweier Branches zu einem Zweig.
+Das kann man am besten an einem Fallbeispiel erläutern. 
+Man schreibt an einer Software, die schon eine Vorgängerversion besitzt. 
+man erstellt sich einen Branch für die neue Version. 
+Plötzlich wird ihnen ein Fehler gemeldet in der Alten Version. Um nun sicherzustellen das man nicht die bisherigen Änderungen ( neue Version ) und den Fix des Fehlers bereitstellt, wechselt man in den Zweig der alten version. 
+
+\vspace{1em}
+\begin{minipage}{\linewidth}
+	\centering
+	\includegraphics[width=0.6\linewidth]{Bilder/merge.png}
+	\captionof{figure}[Merge]{Speichern als Modell\footnotemark }
+	\label{fig:gitspeichern}
+\end{minipage} 	
+\newpage
+Dort erstellt man sich einen weiteren Branch der als zweig aus der alten Version entsteht. Diesen kann man dann Bearbeiten und mit der alten Version mergen und ausliefern ausliefern.
+ 
+\vspace{1em}
+\begin{minipage}{\linewidth}
+	\centering
+	\includegraphics[width=0.6\linewidth]{Bilder/merge-fix.png}
+	\captionof{figure}[Merge]{Speichern als Modell\footnotemark }
+	\label{fig:gitspeichern}
+\end{minipage}
+Man hat nun nur die Alter Softwareversion bearbeitet ohne den neuen Code
+mit in die Version zu integrieren. Durch ein einfaches checkout Kommando kann man nun wieder in seinen Zweig zurück gehen und weiter arbeiten. Jedoch sollte man auch beim mergen den File Status Lifecycle nicht außer acht lassen. denn es werden nur 2 branches gemerged die auch Commitet sind.
 \pagebreak
+\subsection{Merge-Konflikte}
+Es kommt gelegentlich auch vor das ein Merge nicht zusammengefügt werden kann, wenn man beispielsweise an den selben stellen in Unterschiedlichen Branches was geändert hat.	
+Diese Meldung über ein 'merge'-Konflikt könnte ungefähr so aussehen:
+\begin{lstlisting}[caption=Branch Konfilkt] label=lst:arduino]
+Auto-merging test.txt
+CONFLICT (content): Merge conflict in Gittest.txt
+Automatic merge failed; fix conflicts and then commit the result.
+test@test:~/test$ git status
+# On branch master
+# Unmerged paths:
+#   (use "git add/rm <file>..." as appropriate to mark resolution)
+#
+#	both modified:      test.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+\end{lstlisting}
+
+
+
+
 
 % ----------------------------------------------------------------------------------------------------------
 % Kapitel

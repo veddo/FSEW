@@ -25,7 +25,8 @@
 \BOOKMARK [3][-]{subsubsection.4.3.1}{Filtern der Commit historie}{subsection.4.3}
 \BOOKMARK [1][-]{section.5}{Branching mit Git}{}
 \BOOKMARK [2][-]{subsection.5.1}{Was ist ein Branch?}{section.5}
-\BOOKMARK [2][-]{subsection.5.2}{Einfaches Branching}{section.5}
+\BOOKMARK [2][-]{subsection.5.2}{Einfaches Branching und Merging}{section.5}
+\BOOKMARK [2][-]{subsection.5.3}{Merge-Konflikte}{section.5}
 \BOOKMARK [1][-]{section.6}{Merging mit Git}{}
 \BOOKMARK [2][-]{subsection.6.1}{Einfaches und Merging}{section.6}
 \BOOKMARK [1][-]{section.7}{Git in Netzwerken}{}
