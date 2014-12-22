@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  20 DEC 2014 21:31
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  21 DEC 2014 18:17
 entering extended mode
  %&-line parsing enabled.
 **Abschlussarbeit.tex
@@ -820,7 +820,7 @@ LaTeX Warning: Label `fig:gitspeichern' multiply defined.
 LaTeX Warning: Label `fig:gitspeichern' multiply defined.
 
 
-LaTeX Warning: Label `lst:arduino' multiply defined.
+LaTeX Warning: Label `fig:gitspeichern' multiply defined.
 
 )
 \openout1 = `Abschlussarbeit.aux'.
@@ -921,9 +921,9 @@ LaTeX Info: Redefining \pageref on input line 46.
 \AtBeginShipoutBox=\box37
 \c@lstlisting=\count141
 
-<Bilder/hs_os.png, id=151, 243.0681pt x 82.8696pt>
-File: Bilder/hs_os.png Graphic file (type png)
- <use Bilder/hs_os.png>
+<Bilder/hshn.jpeg, id=131, 200.75pt x 65.24374pt>
+File: Bilder/hshn.jpeg Graphic file (type jpg)
+ <use Bilder/hshn.jpeg>
 LaTeX Font Info:    Try loading font information for U+msa on input line 91.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
@@ -935,21 +935,21 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 91.
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Bilder/hs_os.png>]pdfTeX
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Bilder/hshn.jpeg>]pdfTeX
  warning (ext4): destination with the same identifier (name{page.I}) has been a
 lready used, duplicate ignored
 <to be read again> 
                    \relax 
 l.115 
-       [1] (./Abschlussarbeit.toc [2])
+       [1] (./Abschlussarbeit.toc)
 \tf@toc=\write4
 \openout4 = `Abschlussarbeit.toc'.
 
- [3] (./Abschlussarbeit.lof)
+ [2] (./Abschlussarbeit.lof)
 \tf@lof=\write5
 \openout5 = `Abschlussarbeit.lof'.
 
- [4]
+ [3]
 (./Abschlussarbeit.lot)
 \tf@lot=\write6
 \openout6 = `Abschlussarbeit.lot'.
@@ -967,8 +967,8 @@ e 140.
 \tf@lol=\write7
 \openout7 = `Abschlussarbeit.lol'.
 
- [5] [6]
-<Bilder/LVKS.png, id=274, 346.29375pt x 293.095pt>
+ [4] [5]
+<Bilder/LVKS.png, id=240, 346.29375pt x 293.095pt>
 File: Bilder/LVKS.png Graphic file (type png)
  <use Bilder/LVKS.png>
 
@@ -977,7 +977,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [1 <./Bilder/LVKS.png (PNG copy)>]
-<Bilder/sub.png, id=285, 369.38pt x 289.08pt>
+<Bilder/sub.png, id=252, 369.38pt x 289.08pt>
 File: Bilder/sub.png Graphic file (type png)
  <use Bilder/sub.png>
 
@@ -1110,7 +1110,7 @@ Type  H <return>  for immediate help.
 l.456 \newline
               
 ? 
-<Bilder/flc.png, id=382, 501.875pt x 318.18875pt>
+<Bilder/flc.png, id=349, 501.875pt x 318.18875pt>
 File: Bilder/flc.png Graphic file (type png)
  <use Bilder/flc.png>
 
@@ -1129,7 +1129,7 @@ Overfull \hbox (34.78993pt too wide) in paragraph at lines 606--621
  [][] 
  []
 
-<Bilder/gitk.png, id=475, 1574.88374pt x 810.02625pt>
+<Bilder/gitk.png, id=442, 1574.88374pt x 810.02625pt>
 File: Bilder/gitk.png Graphic file (type png)
  <use Bilder/gitk.png>
 
@@ -1138,7 +1138,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [15 <./Bilder/gitk.png (PNG copy)>]
-<Bilder/speichern.png, id=480, 501.875pt x 339.2675pt>
+<Bilder/speichern.png, id=447, 501.875pt x 339.2675pt>
 File: Bilder/speichern.png Graphic file (type png)
 
 <use Bilder/speichern.png>
@@ -1152,7 +1152,7 @@ Overfull \hbox (53.8614pt too wide) in paragraph at lines 658--666
 \OT1/cmr/m/n/12 ent-hal-ten. $[]$ 
  []
 
-<Bilder/commit.png, id=481, 501.875pt x 223.83624pt>
+<Bilder/commit.png, id=448, 501.875pt x 223.83624pt>
 File: Bilder/commit.png Graphic file (type png)
  <use Bilder/commit.png>
 
@@ -1161,7 +1161,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [16 <./Bilder/speichern.png (PNG copy)>]
-<Bilder/master.png, id=487, 501.875pt x 251.94125pt>
+<Bilder/master.png, id=454, 501.875pt x 251.94125pt>
 File: Bilder/master.png Graphic file (type png)
  <use Bilder/master.png>
 
@@ -1188,7 +1188,7 @@ Type  H <return>  for immediate help.
 l.692 \newline
               
 ? 
-<Bilder/nbranch.png, id=488, 446.66875pt x 223.83624pt>
+<Bilder/nbranch.png, id=455, 446.66875pt x 223.83624pt>
 File: Bilder/nbranch.png Graphic file (type png)
 
 <use Bilder/nbranch.png>
@@ -1213,7 +1213,7 @@ Overfull \hbox (1.7922pt too wide) in paragraph at lines 715--720
 re, die schon ei-ne Vorg[]angerversion
  []
 
-<Bilder/merge.png, id=497, 310.15875pt x 187.70125pt>
+<Bilder/merge.png, id=464, 310.15875pt x 187.70125pt>
 File: Bilder/merge.png Graphic file (type png)
  <use Bilder/merge.png>
 
@@ -1222,7 +1222,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [18 <./Bilder/merge.png (PNG copy)>]
-<Bilder/merge-fix.png, id=510, 312.16624pt x 253.94875pt>
+<Bilder/merge-fix.png, id=476, 312.16624pt x 253.94875pt>
 File: Bilder/merge-fix.png Graphic file (type png)
 
 <use Bilder/merge-fix.png>
@@ -1231,12 +1231,42 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 735.
 See the caption package documentation for explanation.
 
-[19 <./Bilder/merge-fix.png (PNG copy)>]
 
 Package Listings Warning: Text dropped after begin of listing on input line 744
 .
 
-[20] [21] (./Abschlussarbeit.bbl
+[19 <./Bilder/merge-fix.png (PNG copy)>]
+
+Package Listings Warning: Text dropped after begin of listing on input line 759
+.
+
+
+Package Listings Warning: Text dropped after begin of listing on input line 770
+.
+
+<Bilder/mergetool.png, id=495, 1054.94125pt x 598.235pt>
+File: Bilder/mergetool.png Graphic file (type png)
+
+<use Bilder/mergetool.png>
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 778.
+See the caption package documentation for explanation.
+
+[20 <./Bilder/mergetool.png (PNG copy)>]
+
+Package Listings Warning: Text dropped after begin of listing on input line 795
+.
+
+
+Package Listings Warning: Text dropped after begin of listing on input line 799
+.
+
+
+Package Listings Warning: Text dropped after begin of listing on input line 808
+.
+
+[21] [22] (./Abschlussarbeit.bbl
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
 
@@ -1264,31 +1294,26 @@ Underfull \hbox (badness 1337) in paragraph at lines 39--46
 /m/n/12 http : / / wirtschaftslexikon .
  []
 
-[22]) [23]pdfTeX warning (ext4): destination with the same identifier (name{pag
-e.I}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.849 \newpage
-               [1]
-Overfull \hbox (3.26385pt too wide) in paragraph at lines 861--862
+) [23]
+Overfull \hbox (3.26385pt too wide) in paragraph at lines 864--865
 []|\OT1/cmr/m/n/12 .......................................................| 
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
- been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.866 \end{document}
-                     [2] (./Abschlussarbeit.aux)
+l.869 \end{document}
+                     [1] (./Abschlussarbeit.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12780 strings out of 495021
- 178747 string characters out of 1181036
- 366093 words of memory out of 3000000
- 15498 multiletter control sequences out of 15000+50000
+ 12775 strings out of 495021
+ 178720 string characters out of 1181036
+ 366039 words of memory out of 3000000
+ 15489 multiletter control sequences out of 15000+50000
  14114 words of font info for 54 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  47i,12n,43p,909b,1299s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1304,9 +1329,9 @@ ve/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/a
 msfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
 cmtt12.pfb>
-Output written on Abschlussarbeit.pdf (32 pages, 621622 bytes).
+Output written on Abschlussarbeit.pdf (30 pages, 627230 bytes).
 PDF statistics:
- 677 PDF objects out of 1000 (max. 8388607)
- 246 named destinations out of 1000 (max. 500000)
- 352 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 649 PDF objects out of 1000 (max. 8388607)
+ 248 named destinations out of 1000 (max. 500000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -27,11 +27,6 @@
 \BOOKMARK [2][-]{subsection.5.1}{Was ist ein Branch?}{section.5}
 \BOOKMARK [2][-]{subsection.5.2}{Einfaches Branching und Merging}{section.5}
 \BOOKMARK [2][-]{subsection.5.3}{Merge-Konflikte}{section.5}
-\BOOKMARK [1][-]{section.6}{Merging mit Git}{}
-\BOOKMARK [2][-]{subsection.6.1}{Einfaches und Merging}{section.6}
-\BOOKMARK [1][-]{section.7}{Git in Netzwerken}{}
-\BOOKMARK [2][-]{subsection.7.1}{Welche Protokolle unters\374tzt Git}{section.7}
-\BOOKMARK [2][-]{subsection.7.2}{weg}{section.7}
-\BOOKMARK [1][-]{section.8}{Quellenverzeichnis}{}
-\BOOKMARK [1][-]{section*.16}{Anhang}{}
-\BOOKMARK [1][-]{section.A}{GUI}{}
+\BOOKMARK [1][-]{section.6}{Git in Netzwerken}{}
+\BOOKMARK [2][-]{subsection.6.1}{Welche Protokolle unters\374tzt Git}{section.6}
+\BOOKMARK [1][-]{section.7}{Quellenverzeichnis}{}

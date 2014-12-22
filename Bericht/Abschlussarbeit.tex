@@ -70,7 +70,7 @@
 % ----------------------------------------------------------------------------------------------------------
 \thispagestyle{empty}
 \begin{center}
-	\includegraphics[scale=1]{Bilder/hs_os.png}\\
+	\includegraphics[scale=1]{Bilder/hshn.jpeg}\\
 	\vspace*{2cm}
 	\Large
 	\textbf{Fallstudie Entwicklungswerkzeuge}\\
@@ -737,7 +737,7 @@ Dort erstellt man sich einen weiteren Branch der als zweig aus der alten Version
 \end{minipage}
 Man hat nun nur die Alter Softwareversion bearbeitet ohne den neuen Code
 mit in die Version zu integrieren. Durch ein einfaches checkout Kommando kann man nun wieder in seinen Zweig zurück gehen und weiter arbeiten. Jedoch sollte man auch beim mergen den File Status Lifecycle nicht außer acht lassen. denn es werden nur 2 branches gemerged die auch Commitet sind.
-\pagebreak
+
 \subsection{Merge-Konflikte}
 Es kommt gelegentlich auch vor das ein Merge nicht zusammengefügt werden kann, wenn man beispielsweise an den selben stellen in Unterschiedlichen Branches was geändert hat.	
 Diese Meldung über ein 'merge'-Konflikt könnte ungefähr so aussehen:
@@ -755,63 +755,68 @@ test@test:~/test$ git status
 no changes added to commit (use "git add" and/or "git commit -a")
 \end{lstlisting}
 
+Die Dateien die einen Mergekonflikt aufweisen werden auf unmerged gesetzt und es werden Konfliktlösungsmarker hinzugefügt. Dies kann dann so aussehen.  	
+\begin{lstlisting}[caption=Branch Konfilkt] label=lst:arduino]
+<<<<<<< HEAD
+Hallo
+=======
 
+Hallo Welt
+>>>>>>> fix
+\end{lstlisting}
 
+Diesen Konflickt muss man manuel auflösen. Der als Head Markierte Teil ist der Branch auf dem man sich gerade befindet.Überhalb von ====== unterhalb ist der Branch der gemerged werden soll. Es ist nun notwendig sich zu entscheiden was man nimmt. Aber auch ein komplettes ersetzen des ungemergten Teils ist möglich. Nachdem man den Konflikt aufgelöst hat, einfach dem File Status Lifecycle nach weiter arbeiten.
+Es besteht noch die Möglichkeit ein grafisches Tool zur Bereinigung zu nutzen. Falls keines Installiert ist erscheint eine Liste der Tools die man Problemlos nutzen kann.
+\begin{lstlisting}[caption=Merge Tools] label=lst:git]
+merge tool candidates: meld opendiff kdiff3 tkdiff xxdiff tortoisemerge gvimdiff diffuse ecmerge p4merge araxis bc3 emerge vimdiff
+\end{lstlisting}
 
-
+\vspace{1em}
+\begin{minipage}{\linewidth}
+	\centering
+	\includegraphics[width=0.6\linewidth]{Bilder/mergetool.png}
+	\captionof{figure}[Merge]{Mergetool Meld\footnotemark }
+	\label{fig:gitspeichern}
+\end{minipage}
+Abbildung 12 zeigt das Mergetool Meld, es zeigt den komflikt auf und ermöglicht mit einigen Klicks das lösen des Problems.
 % ----------------------------------------------------------------------------------------------------------
 % Kapitel
 % ----------------------------------------------------------------------------------------------------------
-\section{Merging mit Git}
-Lorem ipsum dolor sit amet.
 
-\subsection{Einfaches und Merging}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-\pagebreak
 \section{Git in Netzwerken}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Semih Baby
+Um das zusammenarbeiten in Grupppen möglich zu machen aber auch dem Singe Poit of Failure  entgegenzuwirken gibt es noch die möglichkeit  ein Git Repository extern zur Verfügung zu stellen. Es besteht die Möglichkeit git auf dem eigenen Computer Kolaborativ zu nutzen jedoch hat sich das in der Praxis nicht durchgesetzt. Git als Server zu betreiben ist in der Praxis üblich. Ein externes Repository  ist im Allgemeinen ein einfaches Repository ohne Arbeitsverzeichnis. 
+Aus dem Einfachen Grund da ein Knotenpunkt ist. Auf dem Server Befinden sich nur einfache inhalte aus der .git Datei und Projektdateien.
 
 \subsection{Welche Protokolle untersützt Git}
-\pagebreak
-
-\subsection{weg}
-Zuletzt ein Beispiel für ein Listing, in dem Quellcode eingebunden werden kann, siehe Listing \ref{lst:arduino}.
-
-\vspace{1em}
-\begin{lstlisting}[caption=Arduino Beispielprogramm, label=lst:arduino]
-int ledPin = 13;
-void setup() {
-    pinMode(ledPin, OUTPUT);
-}
-void loop() {
-    digitalWrite(ledPin, HIGH);
-    delay(500);
-    digitalWrite(ledPin, LOW);
-    delay(500);
-}
+Git ist in der Lage vier verschieden Protokolle zum Datentransfer zu nutzen.
+\paragraph{Lokales Protokoll}
+Das lokale Protokoll kommt zum Einsatz wenn man im Team ein Gemeinsames Dateisystem nutzt z.B. ein eingebundenes NFS. Man ist ist der Lage  von einem lokalen Datei-basiertem Repository zu clonen, pushen und pullen. 
+Es gibt aber zwei unterschiedliche Befehle die man nutzen kann. Mit Präfix oder ohne.
+\begin{lstlisting}[caption=Ohne Präfix] label=lst:git]
+$ git clone /opt/git/Myproject.git
 \end{lstlisting}
 
-In diesem Abschnitt wird eine Tabelle (siehe Tabelle \ref{tab:beispiel}) dargestellt.
+\begin{lstlisting}[caption=Mit Präfix] label=lst:git]
+$ git clone file:///opt/git/Myproject.git
+\end{lstlisting}
+Die beiden Arten unterscheiden sich auch von einander.
+Wenn man nur den Pfad angibt, und sowohl die Quelle, als auch das Ziel sich auf dem selben Dateisystem befinden, versucht Git harte Links zu benutzen. Wenn man die Variante mit dem Präfix nutzt, startet Git den Prozess, den es normalerweise zum Übertragen von Daten über ein Netzwerk verwenden würde, dass ist gewöhnlich die ineffizientere Methode zum Übertragen der Daten. In der Regel benutzt die Variante ohne Präfix da diese auch die Schnellere ist.	
+\paragraph{Das SSH Protokoll}
+Das vermutlich gebräuchlichste Transport-Protokoll für Git ist SSH.
+Es ist weit verbreitet und leicht einzurichten des weiteren unterstützt es lesende und schreibende Zugriffe.
 
-\vspace{1em}
-\begin{table}[!h]
-	\centering
-	\begin{tabular}{|l|l|l|}
-		\hline
-		\textbf{Name} & \textbf{Name} & \textbf{Name}\\
-		\hline
-		1 & 2 & 3\\
-		\hline
-		4 & 5 & 6\\
-		\hline
-		7 & 8 & 9\\
-		\hline
-	\end{tabular}
-	\caption{Beispieltabelle}
-	\label{tab:beispiel}
-\end{table}
+\begin{lstlisting}[caption=Mit Präfix] label=lst:git]
+$ git clone ssh://user@server/Myproject.git
+\end{lstlisting}
+\pagebreak
+\paragraph{Das Git Protokoll}
+Das Git Protokoll kommt mit Dem Versionsverwaltungsystem.
+Dieser Service ist vergleichbar mit dem SSH-Protokoll, aber ohne jegliche Authentifizierung. Das Git Protokoll ist das schnellste verfügbare Transfer Protokoll, dar es den selben Daten-Transfer Mechanismus wie das SSH-Protokoll nutzt, aber ohne den Entschlüsselungs- und Authentifizierungs-Overhead.
 
+\paragraph{Das HTTP/S Protokoll}
+Ist der Einfachheit wegen sehr beliebt, man braucht nur die Git Repository in das HTTP Hauptverzeichnis zu legen und einen speziellen post-update hook einrichten, schon ist das Clonen über HTTP eingerichtet.  
 
+\pagebreak
 
 % ----------------------------------------------------------------------------------------------------------
 % Literatur
@@ -828,20 +833,20 @@ In diesem Abschnitt wird eine Tabelle (siehe Tabelle \ref{tab:beispiel}) dargest
 \setcounter{page}{1}
 \lhead{Anhang \thesection}
 
-\begin{appendix}
-\section*{Anhang}
-\phantomsection
-\addcontentsline{toc}{section}{Anhang}
-\addtocontents{toc}{\vspace{-0.5em}}
+%\begin{appendix}
+%\section*{Anhang}
+%\phantomsection
+%\addcontentsline{toc}{section}{Anhang}
+%\addtocontents{toc}{\vspace{-0.5em}}
 
-\section{GUI}
-Ein toller Anhang.
+%\section{GUI}
+%Ein toller Anhang.
 
-\subsection*{Screenshot}
-\label{app:screenshot}
-Unterkategorie, die nicht im Inhaltsverzeichnis auftaucht.
+%\subsection*{Screenshot}
+%\label{app:screenshot}
+%Unterkategorie, die nicht im Inhaltsverzeichnis auftaucht.
 
-\end{appendix}
+%\end{appendix}
 
 
 \newpage
