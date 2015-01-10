@@ -1,49 +1,55 @@
 \select@language {ngerman}
 \contentsline {section}{\numberline {I}Zusammenfassung}{I}{section.I}
 \contentsline {section}{II \hspace {0.35em}Inhaltsverzeichnis}{II}{section*.1}
-\contentsline {section}{\numberline {III}Abbildungsverzeichnis}{III}{section.III}
-\contentsline {section}{\numberline {IV}Tabellenverzeichnis}{IV}{section.IV}
-\contentsline {section}{\numberline {V}Listing-Verzeichnis}{IV}{section.V}
-\contentsline {section}{\numberline {VI}Abk\IeC {\"u}rzungsverzeichnis}{V}{section.VI}
+\contentsline {section}{\numberline {III}Abbildungsverzeichnis}{IV}{section.III}
+\contentsline {section}{\numberline {IV}Tabellenverzeichnis}{V}{section.IV}
+\contentsline {section}{\numberline {V}Listing-Verzeichnis}{VI}{section.V}
+\contentsline {section}{\numberline {VI}Abk\IeC {\"u}rzungsverzeichnis}{VII}{section.VI}
 \contentsline {section}{\numberline {1}GIT}{1}{section.1}
 \contentsline {subsection}{\numberline {1.1}Was ist ein Versionskontrollsystem}{1}{subsection.1.1}
 \contentsline {subsubsection}{\numberline {1.1.1}Lokale Versionskontrollsysteme}{1}{subsubsection.1.1.1}
 \contentsline {subsubsection}{\numberline {1.1.2}Zentralisierte Versionskontrollsysteme}{2}{subsubsection.1.1.2}
 \contentsline {subsubsection}{\numberline {1.1.3}Verteilte Versionskontrollsysteme}{2}{subsubsection.1.1.3}
-\contentsline {subsection}{\numberline {1.2}GIT Historie }{2}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.2}GIT Historie }{3}{subsection.1.2}
 \contentsline {section}{\numberline {2}GIT Grundlagen}{4}{section.2}
 \contentsline {subsection}{\numberline {2.1}Begriffe die man kennen sollte}{4}{subsection.2.1}
-\contentsline {paragraph}{Repository}{4}{paragraph*.2}
-\contentsline {paragraph}{Clone}{4}{paragraph*.3}
-\contentsline {paragraph}{Commit}{4}{paragraph*.4}
-\contentsline {paragraph}{Branch}{4}{paragraph*.5}
-\contentsline {paragraph}{Merge}{4}{paragraph*.6}
-\contentsline {section}{\numberline {3}Installation von GIT unter Linux}{5}{section.3}
-\contentsline {paragraph}{Installation \IeC {\"u}ber den Paketmanager}{5}{paragraph*.7}
-\contentsline {subsection}{\numberline {3.1}Installation unter Windows}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Konfiguration von GIT}{6}{subsection.3.2}
-\contentsline {paragraph}{Konfiguration auf Windows Systemen}{7}{paragraph*.8}
-\contentsline {paragraph}{Identit\IeC {\"a}t Konfigurieren}{7}{paragraph*.9}
-\contentsline {paragraph}{Editor Konfiguration}{7}{paragraph*.10}
-\contentsline {paragraph}{Konfiguration \IeC {\"u}berpr\IeC {\"u}fen}{7}{paragraph*.11}
-\contentsline {subsection}{\numberline {3.3}Hilfestellungen durch das System}{8}{subsection.3.3}
-\contentsline {section}{\numberline {4}Mit Git Arbeiten }{8}{section.4}
-\contentsline {subsubsection}{\numberline {4.0.1}Ein Git Repository anlegen}{9}{subsubsection.4.0.1}
-\contentsline {subsubsection}{\numberline {4.0.2}Ein Git Repository clonen}{9}{subsubsection.4.0.2}
-\contentsline {subsection}{\numberline {4.1} \IeC {\"A}nderungen nachverfolgen}{10}{subsection.4.1}
-\contentsline {paragraph}{File Status Lifecyrcle}{10}{paragraph*.12}
-\contentsline {paragraph}{Zustand der Dateien Pr\IeC {\"u}fen}{11}{paragraph*.13}
-\contentsline {subsection}{\numberline {4.2} Dateien ignorieren}{12}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Commithistorie anzeigen}{13}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Filtern der Commit historie}{15}{subsubsection.4.3.1}
-\contentsline {section}{\numberline {5}Branching mit Git}{16}{section.5}
-\contentsline {subsection}{\numberline {5.1}Was ist ein Branch?}{16}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Einfaches Branching und Merging}{18}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Merge-Konflikte}{19}{subsection.5.3}
-\contentsline {section}{\numberline {6}Git in Netzwerken}{21}{section.6}
-\contentsline {subsection}{\numberline {6.1}Welche Protokolle unters\IeC {\"u}tzt Git}{21}{subsection.6.1}
-\contentsline {paragraph}{Lokales Protokoll}{21}{paragraph*.15}
-\contentsline {paragraph}{Das SSH Protokoll}{21}{paragraph*.16}
-\contentsline {paragraph}{Das Git Protokoll}{22}{paragraph*.17}
-\contentsline {paragraph}{Das HTTP/S Protokoll}{22}{paragraph*.18}
-\contentsline {section}{\numberline {7}Quellenverzeichnis}{23}{section.7}
+\contentsline {subsection}{\numberline {2.2}Repository}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Clone}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Commit}{4}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Branch}{4}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Merge}{5}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Snapshot}{5}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Zust\IeC {\"a}nde der Dateien}{5}{subsection.2.8}
+\contentsline {section}{\numberline {3}Installation von GIT unter Linux}{6}{section.3}
+\contentsline {paragraph}{Installation \IeC {\"u}ber den Paketmanager}{7}{paragraph*.2}
+\contentsline {subsection}{\numberline {3.1}Installation unter Windows}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Konfiguration von GIT}{7}{subsection.3.2}
+\contentsline {paragraph}{Konfiguration auf Windows Systemen}{8}{paragraph*.3}
+\contentsline {paragraph}{Identit\IeC {\"a}t Konfigurieren}{8}{paragraph*.4}
+\contentsline {paragraph}{Editor Konfiguration}{8}{paragraph*.5}
+\contentsline {paragraph}{Konfiguration \IeC {\"u}berpr\IeC {\"u}fen}{9}{paragraph*.6}
+\contentsline {subsection}{\numberline {3.3}Hilfestellungen durch das System}{9}{subsection.3.3}
+\contentsline {section}{\numberline {4}Mit Git Arbeiten }{9}{section.4}
+\contentsline {subsubsection}{\numberline {4.0.1}Ein Git Repository anlegen}{10}{subsubsection.4.0.1}
+\contentsline {subsubsection}{\numberline {4.0.2}Ein Git Repository clonen}{10}{subsubsection.4.0.2}
+\contentsline {subsection}{\numberline {4.1} \IeC {\"A}nderungen nachverfolgen}{11}{subsection.4.1}
+\contentsline {paragraph}{File Status Lifecyrcle}{11}{paragraph*.7}
+\contentsline {paragraph}{Zustand der Dateien Pr\IeC {\"u}fen}{12}{paragraph*.8}
+\contentsline {subsection}{\numberline {4.2} Dateien ignorieren}{13}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Commithistorie anzeigen}{14}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Filtern der Commit historie}{16}{subsubsection.4.3.1}
+\contentsline {section}{\numberline {5}Branching mit Git}{17}{section.5}
+\contentsline {subsection}{\numberline {5.1}Was ist ein Branch?}{17}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Alte Version Wiederherstellen}{19}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Einfaches Branching und Merging}{20}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Merge-Konflikte}{21}{subsection.5.4}
+\contentsline {section}{\numberline {6}Git in Netzwerken}{22}{section.6}
+\contentsline {subsection}{\numberline {6.1}Welche Protokolle unters\IeC {\"u}tzt Git}{22}{subsection.6.1}
+\contentsline {paragraph}{Lokales Protokoll}{22}{paragraph*.10}
+\contentsline {paragraph}{Das SSH Protokoll}{23}{paragraph*.11}
+\contentsline {paragraph}{Das Git Protokoll}{23}{paragraph*.12}
+\contentsline {paragraph}{Das HTTP/S Protokoll}{23}{paragraph*.13}
+\contentsline {section}{\numberline {7}Quellenverzeichnis}{24}{section.7}
+\contentsline {section}{Anhang}{I}{section*.14}
+\vspace {-0.5em}
+\contentsline {section}{\numberline {A}GUI}{I}{section.A}

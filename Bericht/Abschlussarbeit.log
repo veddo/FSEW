@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  21 DEC 2014 18:17
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  10 JAN 2015 01:32
 entering extended mode
  %&-line parsing enabled.
 **Abschlussarbeit.tex
@@ -772,6 +772,15 @@ LaTeX Warning: Label `fig:osgi' multiply defined.
 LaTeX Warning: Label `fig:osgi' multiply defined.
 
 
+LaTeX Warning: Label `fig:osgi' multiply defined.
+
+
+LaTeX Warning: Label `fig:osgi' multiply defined.
+
+
+LaTeX Warning: Label `fig:osgi' multiply defined.
+
+
 LaTeX Warning: Label `lst:arduino' multiply defined.
 
 
@@ -921,7 +930,7 @@ LaTeX Info: Redefining \pageref on input line 46.
 \AtBeginShipoutBox=\box37
 \c@lstlisting=\count141
 
-<Bilder/hshn.jpeg, id=131, 200.75pt x 65.24374pt>
+<Bilder/hshn.jpeg, id=171, 200.75pt x 65.24374pt>
 File: Bilder/hshn.jpeg Graphic file (type jpg)
  <use Bilder/hshn.jpeg>
 LaTeX Font Info:    Try loading font information for U+msa on input line 91.
@@ -941,20 +950,24 @@ lready used, duplicate ignored
 <to be read again> 
                    \relax 
 l.115 
-       [1] (./Abschlussarbeit.toc)
+       [1] (./Abschlussarbeit.toc
+Overfull \hbox (2.41267pt too wide) detected at line 7
+ \OT1/cmr/bx/n/12 VII
+ []
+
+[2])
 \tf@toc=\write4
 \openout4 = `Abschlussarbeit.toc'.
 
- [2] (./Abschlussarbeit.lof)
+ [3] (./Abschlussarbeit.lof)
 \tf@lof=\write5
 \openout5 = `Abschlussarbeit.lof'.
 
- [3]
-(./Abschlussarbeit.lot)
+ [4] (./Abschlussarbeit.lot)
 \tf@lot=\write6
 \openout6 = `Abschlussarbeit.lot'.
 
-
+ [5]
 
 Class scrartcl Warning: Usage of deprecated \float@listhead!
 (scrartcl)              You should use the features of package `tocbasic'
@@ -967,8 +980,8 @@ e 140.
 \tf@lol=\write7
 \openout7 = `Abschlussarbeit.lol'.
 
- [4] [5]
-<Bilder/LVKS.png, id=240, 346.29375pt x 293.095pt>
+ [6] [7]
+<Bilder/LVKS.png, id=307, 346.29375pt x 293.095pt>
 File: Bilder/LVKS.png Graphic file (type png)
  <use Bilder/LVKS.png>
 
@@ -977,84 +990,99 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [1 <./Bilder/LVKS.png (PNG copy)>]
-<Bilder/sub.png, id=252, 369.38pt x 289.08pt>
+<Bilder/sub.png, id=318, 369.38pt x 289.08pt>
 File: Bilder/sub.png Graphic file (type png)
  <use Bilder/sub.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 202.
+(caption)                particular \caption on input line 201.
 See the caption package documentation for explanation.
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+<Bilder/git.png, id=319, 378.41376pt x 425.59pt>
+File: Bilder/git.png Graphic file (type png)
+ <use Bilder/git.png>
+! Extra }, or forgotten \endgroup.
+l.212 ...ics[width=0.3\linewidth]{Bilder/git.png}}
                                                   
-l.213 	\\
-         textbf{includegraphics[width=0.3\linewidth]{Bilder/git.png}}
-? 
-! Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.213 ...xtbf{includegraphics[width=0.3\linewidth]
-                                                  {Bilder/git.png}}
-? 
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.213 ...xtbf{includegraphics[width=0.3\linewidth]
-                                                  {Bilder/git.png}}
 ? 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 214.
+(caption)                particular \caption on input line 213.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (2.61888pt too wide) in paragraph at lines 207--217
+Overfull \hbox (2.61888pt too wide) in paragraph at lines 206--216
  $[]$ 
  []
 
-[2 <./Bilder/sub.png (PNG copy)>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 232.
+[2 <./Bilder/sub.png (PNG copy)> <./Bilder/git.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 222.
 
 
 (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 232.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 222.
 
-Overfull \hbox (12.3982pt too wide) in paragraph at lines 248--250
+Overfull \hbox (12.3982pt too wide) in paragraph at lines 238--240
 \OT1/cmr/m/n/12 be-reit-stellt ist kos-ten-frei, doch nur un-ter der Be-din-gun
 g das die Pro-jek-te []offentlich zug[]anglich
  []
 
-[3]
-Overfull \hbox (5.73732pt too wide) in paragraph at lines 269--270
-[] []\OT1/cmss/bx/n/12 Branch[] \OT1/cmr/m/n/12 Zu Deutsch SZweig^^?^^Pst ei-ne
- Ga-be-lung des Quell-co-des. Aus ver-schie-de-nen Gr[]unden,
- []
+[3] [4] <Bilder/spli.png, id=344, 472.76625pt x 217.81375pt>
+File: Bilder/spli.png Graphic file (type png)
 
-[4]
+<use Bilder/spli.png>
+! Extra }, or forgotten \endgroup.
+l.269 ...cs[width=0.6\linewidth]{Bilder/spli.png}}
+                                                  
+? 
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 270.
+See the caption package documentation for explanation.
+
+<Bilder/gitsp.png, id=345, 479.7925pt x 221.82875pt>
+File: Bilder/gitsp.png Graphic file (type png)
+ <use Bilder/gitsp.png>
+! Extra }, or forgotten \endgroup.
+l.280 ...s[width=0.6\linewidth]{Bilder/gitsp.png}}
+                                                  
+? 
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 281.
+See the caption package documentation for explanation.
+
+<Bilder/zustand.png, id=346, 400.49625pt x 353.32pt>
+File: Bilder/zustand.png Graphic file (type png)
+ <use Bilder/zustand.png>
+! Extra }, or forgotten \endgroup.
+l.295 ...width=0.6\linewidth]{Bilder/zustand.png}}
+                                                  
+? 
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 296.
+See the caption package documentation for explanation.
+
+[5 <./Bilder/spli.png (PNG copy)> <./Bilder/gitsp.png (PNG copy)>]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 280.
- [5]
-Overfull \hbox (14.15651pt too wide) in paragraph at lines 341--342
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 307.
+ [6 <./Bilder/zustand.png (PNG copy)>] [7]
+Overfull \hbox (14.15651pt too wide) in paragraph at lines 368--369
 \OT1/cmr/m/n/12 Wichtig ist je-doch, dass die Datei-wer-te aus den je-weils vor
 -her-ge-hen-den Da-tei-en []uberschrieben
  []
 
-[6]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 358.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 385.
 
- (/usr/share/texmf-texlive/tex/latex/base/omlcmr.fd
+(/usr/share/texmf-texlive/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 358.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 385.
 
 
 ! Package inputenc Error: Unicode char \u8:�\expandafter not set up for use wit
@@ -1064,7 +1092,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.358 ...onfig --global core.editor <gewünschter 
+l.385 ...onfig --global core.editor <gewünschter 
                                                   Editor>
 ? 
 
@@ -1075,18 +1103,18 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.358 ...onfig --global core.editor <gewünschter 
+l.385 ...onfig --global core.editor <gewünschter 
                                                   Editor>
 ? 
-[7] [8]
+[8] [9]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 402.
+(hyperref)                than one, level fixed on input line 425.
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 406.
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 451--453
+nput line 429.
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 476--478
 
  []
 
@@ -1097,7 +1125,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.455 \newline
+l.480 \newline
               
 ? 
 
@@ -1107,75 +1135,75 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.456 \newline
+l.481 \newline
               
 ? 
-<Bilder/flc.png, id=349, 501.875pt x 318.18875pt>
+<Bilder/flc.png, id=418, 501.875pt x 318.18875pt>
 File: Bilder/flc.png Graphic file (type png)
  <use Bilder/flc.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 461.
+(caption)                particular \caption on input line 486.
 See the caption package documentation for explanation.
 
-[10 <./Bilder/flc.png (PNG copy)>] [11]
+[11 <./Bilder/flc.png (PNG copy)>] [12]
 ! You can't use `macro parameter character #' in horizontal mode.
-l.530 	\item Leere Zeilen oder Zeilen, die mit #
+l.555 	\item Leere Zeilen oder Zeilen, die mit #
                                                  beginnen, werden 			     ig...
 
 ? 
-[12] [13] [14]
-Overfull \hbox (34.78993pt too wide) in paragraph at lines 606--621
+[13] [14] [15]
+Overfull \hbox (34.78993pt too wide) in paragraph at lines 631--646
  [][] 
  []
 
-<Bilder/gitk.png, id=442, 1574.88374pt x 810.02625pt>
+<Bilder/gitk.png, id=511, 1574.88374pt x 810.02625pt>
 File: Bilder/gitk.png Graphic file (type png)
  <use Bilder/gitk.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 632.
+(caption)                particular \caption on input line 657.
 See the caption package documentation for explanation.
 
-[15 <./Bilder/gitk.png (PNG copy)>]
-<Bilder/speichern.png, id=447, 501.875pt x 339.2675pt>
+[16 <./Bilder/gitk.png (PNG copy)>]
+<Bilder/speichern.png, id=516, 501.875pt x 339.2675pt>
 File: Bilder/speichern.png Graphic file (type png)
 
 <use Bilder/speichern.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 663.
+(caption)                particular \caption on input line 689.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (53.8614pt too wide) in paragraph at lines 658--666
+Overfull \hbox (53.8614pt too wide) in paragraph at lines 684--692
 \OT1/cmr/m/n/12 ent-hal-ten. $[]$ 
  []
 
-<Bilder/commit.png, id=448, 501.875pt x 223.83624pt>
+<Bilder/commit.png, id=517, 501.875pt x 223.83624pt>
 File: Bilder/commit.png Graphic file (type png)
  <use Bilder/commit.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 674.
+(caption)                particular \caption on input line 700.
 See the caption package documentation for explanation.
 
-[16 <./Bilder/speichern.png (PNG copy)>]
-<Bilder/master.png, id=454, 501.875pt x 251.94125pt>
+[17 <./Bilder/speichern.png (PNG copy)>]
+<Bilder/master.png, id=524, 501.875pt x 251.94125pt>
 File: Bilder/master.png Graphic file (type png)
  <use Bilder/master.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 684.
+(caption)                particular \caption on input line 710.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (2.61888pt too wide) in paragraph at lines 678--688
- $[]$
+Overfull \hbox (2.61888pt too wide) in paragraph at lines 704--713
+ $[]$ 
  []
 
 
-Package Listings Warning: Text dropped after begin of listing on input line 689
+Package Listings Warning: Text dropped after begin of listing on input line 716
 .
 
 
@@ -1185,88 +1213,102 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.692 \newline
+l.720 \newline
               
 ? 
-<Bilder/nbranch.png, id=455, 446.66875pt x 223.83624pt>
+<Bilder/nbranch.png, id=525, 446.66875pt x 223.83624pt>
 File: Bilder/nbranch.png Graphic file (type png)
 
 <use Bilder/nbranch.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 697.
+(caption)                particular \caption on input line 726.
 See the caption package documentation for explanation.
 
-[17 <./Bilder/commit.png (PNG copy)> <./Bilder/master.png (PNG copy)> <./Bilder
+[18 <./Bilder/commit.png (PNG copy)> <./Bilder/master.png (PNG copy)> <./Bilder
 /nbranch.png (PNG copy)>]
 
-Package Listings Warning: Text dropped after begin of listing on input line 702
+Package Listings Warning: Text dropped after begin of listing on input line 732
 .
 
 
-Package Listings Warning: Text dropped after begin of listing on input line 707
+Package Listings Warning: Text dropped after begin of listing on input line 737
 .
 
 
-Overfull \hbox (1.7922pt too wide) in paragraph at lines 715--720
-\OT1/cmr/m/n/12 nem Fall-bei-spiel erl[]autern. Man schreibt an ei-ner Soft-wa-
-re, die schon ei-ne Vorg[]angerversion
+Overfull \hbox (10.36911pt too wide) in paragraph at lines 743--744
+[]\OT1/cmr/m/n/12 Um einen ex-pli-zi-ten snaps-hot wie-der-her-zu-stel-len ist 
+es wich-tig zu wis-sen das al-le []Anderungen
  []
-
-<Bilder/merge.png, id=464, 310.15875pt x 187.70125pt>
-File: Bilder/merge.png Graphic file (type png)
- <use Bilder/merge.png>
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 725.
-See the caption package documentation for explanation.
-
-[18 <./Bilder/merge.png (PNG copy)>]
-<Bilder/merge-fix.png, id=476, 312.16624pt x 253.94875pt>
-File: Bilder/merge-fix.png Graphic file (type png)
-
-<use Bilder/merge-fix.png>
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 735.
-See the caption package documentation for explanation.
 
 
 Package Listings Warning: Text dropped after begin of listing on input line 744
 .
 
-[19 <./Bilder/merge-fix.png (PNG copy)>]
 
-Package Listings Warning: Text dropped after begin of listing on input line 759
+Package Listings Warning: Text dropped after begin of listing on input line 751
 .
 
 
-Package Listings Warning: Text dropped after begin of listing on input line 770
+Overfull \hbox (1.7922pt too wide) in paragraph at lines 762--767
+\OT1/cmr/m/n/12 nem Fall-bei-spiel erl[]autern. Man schreibt an ei-ner Soft-wa-
+re, die schon ei-ne Vorg[]angerversion
+ []
+
+[19] <Bilder/merge.png, id=551, 310.15875pt x 187.70125pt>
+File: Bilder/merge.png Graphic file (type png)
+
+<use Bilder/merge.png>
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 772.
+See the caption package documentation for explanation.
+
+<Bilder/merge-fix.png, id=552, 312.16624pt x 253.94875pt>
+File: Bilder/merge-fix.png Graphic file (type png)
+
+<use Bilder/merge-fix.png>
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 782.
+See the caption package documentation for explanation.
+
+[20 <./Bilder/merge.png (PNG copy)> <./Bilder/merge-fix.png (PNG copy)>]
+
+Package Listings Warning: Text dropped after begin of listing on input line 791
 .
 
-<Bilder/mergetool.png, id=495, 1054.94125pt x 598.235pt>
+
+Package Listings Warning: Text dropped after begin of listing on input line 806
+.
+
+
+Package Listings Warning: Text dropped after begin of listing on input line 817
+.
+
+[21] <Bilder/mergetool.png, id=582, 1054.94125pt x 598.235pt>
 File: Bilder/mergetool.png Graphic file (type png)
 
 <use Bilder/mergetool.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 778.
+(caption)                particular \caption on input line 825.
 See the caption package documentation for explanation.
 
-[20 <./Bilder/mergetool.png (PNG copy)>]
 
-Package Listings Warning: Text dropped after begin of listing on input line 795
+Package Listings Warning: Text dropped after begin of listing on input line 843
+.
+
+[22 <./Bilder/mergetool.png (PNG copy)>]
+
+Package Listings Warning: Text dropped after begin of listing on input line 847
 .
 
 
-Package Listings Warning: Text dropped after begin of listing on input line 799
+Package Listings Warning: Text dropped after begin of listing on input line 856
 .
 
-
-Package Listings Warning: Text dropped after begin of listing on input line 808
-.
-
-[21] [22] (./Abschlussarbeit.bbl
+[23] (./Abschlussarbeit.bbl
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
 
@@ -1294,26 +1336,31 @@ Underfull \hbox (badness 1337) in paragraph at lines 39--46
 /m/n/12 http : / / wirtschaftslexikon .
  []
 
-) [23]
-Overfull \hbox (3.26385pt too wide) in paragraph at lines 864--865
+) [24]pdfTeX warning (ext4): destination with the same identifier (name{page.I}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.899 \newpage
+               [1]
+Overfull \hbox (3.26385pt too wide) in paragraph at lines 912--913
 []|\OT1/cmr/m/n/12 .......................................................| 
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has 
-been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.869 \end{document}
-                     [1] (./Abschlussarbeit.aux)
+l.916 \end{document}
+                     [2] (./Abschlussarbeit.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12775 strings out of 495021
- 178720 string characters out of 1181036
- 366039 words of memory out of 3000000
- 15489 multiletter control sequences out of 15000+50000
+ 12828 strings out of 495021
+ 179519 string characters out of 1181036
+ 366062 words of memory out of 3000000
+ 15519 multiletter control sequences out of 15000+50000
  14114 words of font info for 54 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  47i,12n,43p,909b,1299s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1329,9 +1376,9 @@ ve/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/a
 msfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
 cmtt12.pfb>
-Output written on Abschlussarbeit.pdf (30 pages, 627230 bytes).
+Output written on Abschlussarbeit.pdf (34 pages, 799551 bytes).
 PDF statistics:
- 649 PDF objects out of 1000 (max. 8388607)
- 248 named destinations out of 1000 (max. 500000)
- 317 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 733 PDF objects out of 1000 (max. 8388607)
+ 267 named destinations out of 1000 (max. 500000)
+ 417 words of extra memory for PDF output out of 10000 (max. 10000000)
 

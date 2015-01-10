@@ -12,6 +12,13 @@
 \BOOKMARK [2][-]{subsection.1.2}{GIT Historie }{section.1}
 \BOOKMARK [1][-]{section.2}{GIT Grundlagen}{}
 \BOOKMARK [2][-]{subsection.2.1}{Begriffe die man kennen sollte}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{Repository}{section.2}
+\BOOKMARK [2][-]{subsection.2.3}{Clone}{section.2}
+\BOOKMARK [2][-]{subsection.2.4}{Commit}{section.2}
+\BOOKMARK [2][-]{subsection.2.5}{Branch}{section.2}
+\BOOKMARK [2][-]{subsection.2.6}{Merge}{section.2}
+\BOOKMARK [2][-]{subsection.2.7}{Snapshot}{section.2}
+\BOOKMARK [2][-]{subsection.2.8}{Zust\344nde der Dateien}{section.2}
 \BOOKMARK [1][-]{section.3}{Installation von GIT unter Linux}{}
 \BOOKMARK [2][-]{subsection.3.1}{Installation unter Windows}{section.3}
 \BOOKMARK [2][-]{subsection.3.2}{Konfiguration von GIT}{section.3}
@@ -25,8 +32,11 @@
 \BOOKMARK [3][-]{subsubsection.4.3.1}{Filtern der Commit historie}{subsection.4.3}
 \BOOKMARK [1][-]{section.5}{Branching mit Git}{}
 \BOOKMARK [2][-]{subsection.5.1}{Was ist ein Branch?}{section.5}
-\BOOKMARK [2][-]{subsection.5.2}{Einfaches Branching und Merging}{section.5}
-\BOOKMARK [2][-]{subsection.5.3}{Merge-Konflikte}{section.5}
+\BOOKMARK [2][-]{subsection.5.2}{Alte Version Wiederherstellen}{section.5}
+\BOOKMARK [2][-]{subsection.5.3}{Einfaches Branching und Merging}{section.5}
+\BOOKMARK [2][-]{subsection.5.4}{Merge-Konflikte}{section.5}
 \BOOKMARK [1][-]{section.6}{Git in Netzwerken}{}
 \BOOKMARK [2][-]{subsection.6.1}{Welche Protokolle unters\374tzt Git}{section.6}
 \BOOKMARK [1][-]{section.7}{Quellenverzeichnis}{}
+\BOOKMARK [1][-]{section*.14}{Anhang}{}
+\BOOKMARK [1][-]{section.A}{GUI}{}
