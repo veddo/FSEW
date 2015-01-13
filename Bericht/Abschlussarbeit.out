@@ -18,18 +18,19 @@
 \BOOKMARK [2][-]{subsection.2.5}{Branch}{section.2}
 \BOOKMARK [2][-]{subsection.2.6}{Merge}{section.2}
 \BOOKMARK [2][-]{subsection.2.7}{Snapshot}{section.2}
-\BOOKMARK [2][-]{subsection.2.8}{Zust\344nde der Dateien}{section.2}
+\BOOKMARK [2][-]{subsection.2.8}{Querschnitt von Git }{section.2}
 \BOOKMARK [1][-]{section.3}{Installation von GIT unter Linux}{}
 \BOOKMARK [2][-]{subsection.3.1}{Installation unter Windows}{section.3}
 \BOOKMARK [2][-]{subsection.3.2}{Konfiguration von GIT}{section.3}
 \BOOKMARK [2][-]{subsection.3.3}{Hilfestellungen durch das System}{section.3}
 \BOOKMARK [1][-]{section.4}{Mit Git Arbeiten }{}
-\BOOKMARK [2][-]{subsubsection.4.0.1}{Ein Git Repository anlegen}{section.4}
-\BOOKMARK [3][-]{subsubsection.4.0.2}{Ein Git Repository clonen}{subsubsection.4.0.1}
-\BOOKMARK [2][-]{subsection.4.1}{ \304nderungen nachverfolgen}{section.4}
-\BOOKMARK [2][-]{subsection.4.2}{ Dateien ignorieren}{section.4}
-\BOOKMARK [2][-]{subsection.4.3}{Commithistorie anzeigen}{section.4}
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Filtern der Commit historie}{subsection.4.3}
+\BOOKMARK [2][-]{subsection.4.1}{Ein Git Repository anlegen}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{Das .git Repository}{section.4}
+\BOOKMARK [2][-]{subsection.4.3}{Ein Git Repository clonen}{section.4}
+\BOOKMARK [2][-]{subsection.4.4}{\304nderungen nachverfolgen}{section.4}
+\BOOKMARK [2][-]{subsection.4.5}{Dateien ignorieren}{section.4}
+\BOOKMARK [2][-]{subsection.4.6}{Commithistorie anzeigen}{section.4}
+\BOOKMARK [2][-]{subsection.4.7}{Filtern der Commit historie}{section.4}
 \BOOKMARK [1][-]{section.5}{Branching mit Git}{}
 \BOOKMARK [2][-]{subsection.5.1}{Was ist ein Branch?}{section.5}
 \BOOKMARK [2][-]{subsection.5.2}{Alte Version Wiederherstellen}{section.5}

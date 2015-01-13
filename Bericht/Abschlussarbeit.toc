@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {2.5}Branch}{4}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Merge}{5}{subsection.2.6}
 \contentsline {subsection}{\numberline {2.7}Snapshot}{5}{subsection.2.7}
-\contentsline {subsection}{\numberline {2.8}Zust\IeC {\"a}nde der Dateien}{5}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.8}Querschnitt von Git }{5}{subsection.2.8}
 \contentsline {section}{\numberline {3}Installation von GIT unter Linux}{6}{section.3}
 \contentsline {paragraph}{Installation \IeC {\"u}ber den Paketmanager}{7}{paragraph*.2}
 \contentsline {subsection}{\numberline {3.1}Installation unter Windows}{7}{subsection.3.1}
@@ -30,26 +30,27 @@
 \contentsline {paragraph}{Konfiguration \IeC {\"u}berpr\IeC {\"u}fen}{9}{paragraph*.6}
 \contentsline {subsection}{\numberline {3.3}Hilfestellungen durch das System}{9}{subsection.3.3}
 \contentsline {section}{\numberline {4}Mit Git Arbeiten }{9}{section.4}
-\contentsline {subsubsection}{\numberline {4.0.1}Ein Git Repository anlegen}{10}{subsubsection.4.0.1}
-\contentsline {subsubsection}{\numberline {4.0.2}Ein Git Repository clonen}{10}{subsubsection.4.0.2}
-\contentsline {subsection}{\numberline {4.1} \IeC {\"A}nderungen nachverfolgen}{11}{subsection.4.1}
-\contentsline {paragraph}{File Status Lifecyrcle}{11}{paragraph*.7}
+\contentsline {subsection}{\numberline {4.1}Ein Git Repository anlegen}{10}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Das .git Repository}{10}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Ein Git Repository clonen}{11}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}\IeC {\"A}nderungen nachverfolgen}{12}{subsection.4.4}
+\contentsline {paragraph}{File Status Lifecyrcle}{12}{paragraph*.7}
 \contentsline {paragraph}{Zustand der Dateien Pr\IeC {\"u}fen}{12}{paragraph*.8}
-\contentsline {subsection}{\numberline {4.2} Dateien ignorieren}{13}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Commithistorie anzeigen}{14}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Filtern der Commit historie}{16}{subsubsection.4.3.1}
-\contentsline {section}{\numberline {5}Branching mit Git}{17}{section.5}
-\contentsline {subsection}{\numberline {5.1}Was ist ein Branch?}{17}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Alte Version Wiederherstellen}{19}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Einfaches Branching und Merging}{20}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Merge-Konflikte}{21}{subsection.5.4}
-\contentsline {section}{\numberline {6}Git in Netzwerken}{22}{section.6}
-\contentsline {subsection}{\numberline {6.1}Welche Protokolle unters\IeC {\"u}tzt Git}{22}{subsection.6.1}
-\contentsline {paragraph}{Lokales Protokoll}{22}{paragraph*.10}
-\contentsline {paragraph}{Das SSH Protokoll}{23}{paragraph*.11}
-\contentsline {paragraph}{Das Git Protokoll}{23}{paragraph*.12}
-\contentsline {paragraph}{Das HTTP/S Protokoll}{23}{paragraph*.13}
-\contentsline {section}{\numberline {7}Quellenverzeichnis}{24}{section.7}
+\contentsline {subsection}{\numberline {4.5}Dateien ignorieren}{14}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Commithistorie anzeigen}{15}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Filtern der Commit historie}{17}{subsection.4.7}
+\contentsline {section}{\numberline {5}Branching mit Git}{18}{section.5}
+\contentsline {subsection}{\numberline {5.1}Was ist ein Branch?}{18}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Alte Version Wiederherstellen}{20}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Einfaches Branching und Merging}{21}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Merge-Konflikte}{22}{subsection.5.4}
+\contentsline {section}{\numberline {6}Git in Netzwerken}{23}{section.6}
+\contentsline {subsection}{\numberline {6.1}Welche Protokolle unters\IeC {\"u}tzt Git}{23}{subsection.6.1}
+\contentsline {paragraph}{Lokales Protokoll}{23}{paragraph*.10}
+\contentsline {paragraph}{Das SSH Protokoll}{24}{paragraph*.11}
+\contentsline {paragraph}{Das Git Protokoll}{24}{paragraph*.12}
+\contentsline {paragraph}{Das HTTP/S Protokoll}{24}{paragraph*.13}
+\contentsline {section}{\numberline {7}Quellenverzeichnis}{25}{section.7}
 \contentsline {section}{Anhang}{I}{section*.14}
 \vspace {-0.5em}
 \contentsline {section}{\numberline {A}GUI}{I}{section.A}

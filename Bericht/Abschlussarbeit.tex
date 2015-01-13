@@ -284,7 +284,7 @@ GIT hingegen Speichert alle Dateien bei jedem Commit. Unveränderte Dateien werd
 
 Somit ist ein Snapshot die im Letzten commit gespeicherte Version des Projektes.
 
-\subsection{Zustände der Dateien}
+\subsection{Querschnitt von Git }
 GIT ist wie in der Abbildung 6 aufgebaut
 Das Repository enthält die Metadaten und die lokale Datenbank für das Projekt. Die Staging area ist der Bereich indem sich Dateien befinden welche Vorgemerkt sind, um bei dem nächsten commit samt Änderungen in der GIT Directory gespeichert werden(snapshot). 
 
@@ -422,7 +422,7 @@ Der Grundstein ist gelegt, um das Arbeiten mit Git zu beginnen. Da unser System 
 \end{compactitem}
 Die Git Befehle, welche die Konsole entgegenimmt beginnen alle mit dem Signalwort GIT.  
 \newpage 
-\subsubsection{Ein Git Repository anlegen}
+\subsection{Ein Git Repository anlegen}
 Um nun ein Repository anzulegen, navigiert man sich mit dem cd(Change Directory) Befehl in den Ordner, in welchen das Repository angelegt werden soll. Es ist aber auch Möglich ein neues Verzeichnis anzulegen mit mkdir <Name>. 
 
 \vspace{1em}
@@ -449,8 +449,32 @@ $ git commit -m 'initial project version'
 
 Einzeln durch das Kommando \lstinline|git add DATEINAME| oder wenn es alle Dateien im Verzeichnis sind durch den Befehl \lstinline|git add -A|. Hat man seine Dateien nun hinzugefügt folgt ein Commit mit dem Kommando \lstinline|git commit-m "TEXT "|. Hat man nun alles Richtig gemacht erscheint bei der Status abfrage von git mit dem Befehl \lstinline|git status| nothing to commit (working directory clean).
 
+\subsection{Das .git Repository}
+Wenn man durch das Kommando \lstinline|git init|	ein Repository erzeugt, erstelt das System einen Unterordner im Verzeichnis. Den .git Verzeichnis hat folgende Struktur
 
-\subsubsection{Ein Git Repository clonen}
+\begin{lstlisting}
+$ cd .git
+$ ls
+HEAD
+branches/
+config
+description
+hooks/
+index
+info/
+objects/
+refs/
+\end{lstlisting}
+
+das sind die Standardinhalte des .git Ordners. Die Datei config enthält Die projekt-spezifischen Konfigurationsoptionen, und im Ordner info befindet sich eine Datei, die globale Dateiausschlussmuster enthält, so das nicht jedes mal eine  .gitignore-Datei neu erstellt werden muss. Das hooks-Verzeichnis enthält die client- oder serverseitigen Hook-Skripte.
+Der Ordner branches wird von neueren Git-Versionen nicht mehr verwendet, und die Datei descriptions wird nur vom Programm GitWeb genutzt. Das Herz des Systems  bilden die Dateien HEAD und index, sowie die Verzeichnisse objects und refs. Dies sind die Kernkomponenten eines Git-Repositorys. Jegliche Versionen der Dateien werden in der Objektdatenbank gehalten, welche im Unterverzeichnis .git/objects liegt. Die Darin enthaltenen Daten sind mit sind mit zlib komprimiert. Die Head Datei  ist eine symbolische Referenz auf den jeweiligen Branch, auf dem man sich gerade befindet.	Das refs-Verzeichnis enthält Referenzen auf Commit-Objekte (Branches) in dieser Datenbank und in der Datei index verwaltet Git die Informationen der Staging-Area. Die Datei 	descriptions wird nur vom Programm GitWeb benötigt und der Ordener Branches wird bei neueren Git Versionen gar nicht erst benötigt.
+	
+
+
+
+
+
+\subsection{Ein Git Repository clonen}
 Wenn im Git Kontext von Klonen die Rede ist, geht es darum ein bereits existierendes Repository, für eigene Zwecke zu Kopieren. Dies ist meist bei bereits vorhandenen Projekten der Fall. Mit \lstinline| clone [url]| wird jede einzelne Version, jeder einzelnen Datei in der Historie des Repositorys heruntergeladen. Das hat zur Folge, dass selbst wenn der Server, von dem man ursprünglich den Klone hat beschädigt wird, ist man in der Lage ihn wiederherzustellen, da der Klon alle Versionen hat. Als Beispiel ein Klon dieser Seminararbeit.
 
 \vspace{1em}
@@ -463,7 +487,7 @@ Beim diesem Vorgang legt Git ein Verzeichnis namens grit an und installiert die 
 
 
 
-\subsection{ Änderungen nachverfolgen}
+\subsection{Änderungen nachverfolgen}
 Man hat jetzt ein voll funktionsfähiges Git Repository und eine ausgecheckte Arbeitskopie.  Wie bereits vorher erwähnt, hat Git immer die selbe Abfolge von Kommandos, wenn man eine oder auch mehrere Dateien dem Repository hinzufügen möchte. Zur Wiederholung
 
 \begin{compactitem}
@@ -546,7 +570,7 @@ Changes to be committed:
 Verändert man nun diese Datei, indem man einen kleinen Text hinzufügt. Sollte man wieder den Status abfragen( Listing 7 )
 Dem File Status Lifecycle zufolge ist man im modified Status. 
 
-\subsection{ Dateien ignorieren}
+\subsection{Dateien ignorieren}
 In den meisten Fällen kommt es vor, dass man einige Dateien gar nicht versionieren muss/soll, z.B. automatisch generierte Dateien wie Logfiles. In diesem Fall bietet Git eine Möglichkeit, dies zu Konfigurieren. Wie bei anderen Einstellungen ist es nötig, diese in einer Konfigurationsdatei zu hinterlegen, für die es klare Regeln gibt. Eine dieser festen Regeln ist der Name dieser Datei, sie muss .gitignore heißen.
 
 Weitere Regeln im Bezug auf die .gitignore Datei sind:
@@ -623,7 +647,7 @@ Da die Reihenfolge umgekehrt chronologisch aufgelistet wird, ist der letzte Comm
 \newpage
 
 
-\subsubsection{Filtern der Commit historie}
+\subsection{Filtern der Commit historie}
 Eine Commithistorie kann vor allem bei Teamarbeit sehr groß werden, hierzu gibt es Filter Optionen die eine Suche ein wenig erleichtern können. 
  \vspace{1em}
 \begin{table}[!h]
@@ -662,17 +686,6 @@ Falls gitk nicht mit installiert wurde, ist es selbstverständlich nötig es zu 
 Beim aufrufen sieht man die Commit Historie. Diese wird in der oberen Hälfte des Fensters dargestellt. Daneben ein Graph, der die Branches und Merges zeigt. Nach Auswahl eines Commits, zeigt die Vergleichsanzeige in der unteren Hälfte des Fensters die jeweiligen Änderungen in diesem Commit.
 \newpage
 
-%\subsection{ Änderungen rückgängig machen}
-%Die Quellen befinden sich in der Datei \textit{bibo.bib}. Ein %Buch- und eine Online-Quelle sind beispielhaft eingefügt. [Vgl. %\cite{buch}, \cite{online}]
-
-%Abkürzungen lassen sich natürlich auch nutzen (\ac{OSGi}). Weiter %oben im Latex-Code findet sich das Verzeichnis.
-
-
-%Abkürzungen lassen sich natürlich auch nutzen (\ac{OSGi}). Weiter %oben im Latex-Code findet sich das Verzeichnis.
-%\begin{scriptsize}
-%bvc
-%\end{scriptsize}
-%\pagebreak
 
 % ----------------------------------------------------------------------------------------------------------
 % Kapitel 
@@ -865,6 +878,7 @@ Dieser Service ist vergleichbar mit dem SSH-Protokoll, aber ohne jegliche Authen
 Ist der Einfachheit wegen sehr beliebt, man braucht nur die Git Repository in das HTTP Hauptverzeichnis zu legen und einen speziellen post-update hook einrichten, schon ist das Clonen über HTTP eingerichtet.  
 
 \newpage
+
 % ----------------------------------------------------------------------------------------------------------
 % Literatur
 % ----------------------------------------------------------------------------------------------------------
