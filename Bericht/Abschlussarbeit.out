@@ -1,9 +1,8 @@
-\BOOKMARK [1][-]{section.I}{Zusammenfassung}{}
 \BOOKMARK [1][-]{section*.1}{Inhaltsverzeichnis}{}
-\BOOKMARK [1][-]{section.III}{Abbildungsverzeichnis}{}
-\BOOKMARK [1][-]{section.IV}{Tabellenverzeichnis}{}
-\BOOKMARK [1][-]{section.V}{Listing-Verzeichnis}{}
-\BOOKMARK [1][-]{section.VI}{Abk\374rzungsverzeichnis}{}
+\BOOKMARK [1][-]{section.II}{Abbildungsverzeichnis}{}
+\BOOKMARK [1][-]{section.III}{Tabellenverzeichnis}{}
+\BOOKMARK [1][-]{section.IV}{Listing-Verzeichnis}{}
+\BOOKMARK [1][-]{section.V}{Abk\374rzungsverzeichnis}{}
 \BOOKMARK [1][-]{section.1}{GIT}{}
 \BOOKMARK [2][-]{subsection.1.1}{Was ist ein Versionskontrollsystem}{section.1}
 \BOOKMARK [3][-]{subsubsection.1.1.1}{Lokale Versionskontrollsysteme}{subsection.1.1}
@@ -18,7 +17,7 @@
 \BOOKMARK [2][-]{subsection.2.5}{Branch}{section.2}
 \BOOKMARK [2][-]{subsection.2.6}{Merge}{section.2}
 \BOOKMARK [2][-]{subsection.2.7}{Snapshot}{section.2}
-\BOOKMARK [2][-]{subsection.2.8}{Querschnitt von Git }{section.2}
+\BOOKMARK [2][-]{subsection.2.8}{Querschnitt von GIT }{section.2}
 \BOOKMARK [1][-]{section.3}{Installation von GIT unter Linux}{}
 \BOOKMARK [2][-]{subsection.3.1}{Installation unter Windows}{section.3}
 \BOOKMARK [2][-]{subsection.3.2}{Konfiguration von GIT}{section.3}
@@ -33,11 +32,3 @@
 \BOOKMARK [2][-]{subsection.4.7}{Filtern der Commit historie}{section.4}
 \BOOKMARK [1][-]{section.5}{Branching mit Git}{}
 \BOOKMARK [2][-]{subsection.5.1}{Was ist ein Branch?}{section.5}
-\BOOKMARK [2][-]{subsection.5.2}{Alte Version Wiederherstellen}{section.5}
-\BOOKMARK [2][-]{subsection.5.3}{Einfaches Branching und Merging}{section.5}
-\BOOKMARK [2][-]{subsection.5.4}{Merge-Konflikte}{section.5}
-\BOOKMARK [1][-]{section.6}{Git in Netzwerken}{}
-\BOOKMARK [2][-]{subsection.6.1}{Welche Protokolle unters\374tzt Git}{section.6}
-\BOOKMARK [1][-]{section.7}{Quellenverzeichnis}{}
-\BOOKMARK [1][-]{section*.14}{Anhang}{}
-\BOOKMARK [1][-]{section.A}{GUI}{}

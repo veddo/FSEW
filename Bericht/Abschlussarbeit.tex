@@ -89,9 +89,9 @@
 	\normalsize
 	\newcolumntype{x}[1]{>{\raggedleft\arraybackslash\hspace{0pt}}p{#1}}
 	\begin{tabular}{x{6cm}p{7.5cm}}
-		\rule{0mm}{5ex}\textbf{Autor:} & Vedad Hamamdzic\newline email@email.de \\ 
+		\rule{0mm}{5ex}\textbf{Autor:} & Vedad Hamamdzic\newline vhamamdz@stud.hs-heilbronn.de \\ 
 		\rule{0mm}{5ex}\textbf{Prüfer:} & Paul Lajer \\ 
-		\rule{0mm}{5ex}\textbf{Abgabedatum:} & 18.11.2014 \\ 
+		\rule{0mm}{5ex}\textbf{Abgabedatum:} & 13.01.2015 \\ 
 	\end{tabular} 
 \end{center}
 \pagebreak
@@ -99,24 +99,12 @@
 % ----------------------------------------------------------------------------------------------------------
 % Abstract
 % ----------------------------------------------------------------------------------------------------------
-\setcounter{page}{1}
-\onehalfspacing
-\titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{2pt plus 2pt minus 2pt}
-\rhead{KURZFASSUNG}
-\section{Zusammenfassung}
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-\vspace{-1,2em}
-\titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
-\section*{Abstract}
-Das ganze auf Englisch.
-\pagebreak
 
 % ----------------------------------------------------------------------------------------------------------
 % Verzeichnisse
 % ----------------------------------------------------------------------------------------------------------
 % TODO Typ vor Nummer
+\setcounter{page}{1}
 \renewcommand{\cfttabpresnum}{Tab. }
 \renewcommand{\cftfigpresnum}{Abb. }
 \settowidth{\cfttabnumwidth}{Abb. 10\quad}
@@ -178,40 +166,40 @@ Das ganze auf Englisch.
 \section{GIT}
 
 \subsection{Was ist ein Versionskontrollsystem}
-GIT ist ein Versionsverwaltungssystem, soviel wissen wir. Doch was ist das und was macht es im Detail? Ein Versionsverwaltungssystem ist ein System, welches Änderungen an einer Datei oder eine Reihe von Dateien protokolliert, so dass  bestimmte Versionen später wieder aufrufbar sind.\footnote{\cite{chacon2009pro} Seite 1 Zeile 1 } Um Problemen entgegenzuwirken die eine amateurhafte Methoden der Versionsverwaltung mit sich bringen, wie z.B das ständige kopieren neuer Versionen in ein Verzeichnis, hierfür wurden diese Systeme entwickelt.Dabei unterscheidet man 3 Arten von Systemen. Der wesentlichste Unterschied, besteht darin wie und wo die Daten gehalten werden.
+GIT ist ein Versionsverwaltungssystem, soviel wissen wir. Doch was ist das und was macht es im Detail? Ein Versionsverwaltungssystem ist ein System, welches Änderungen an einer Datei oder eine Reihe von Dateien protokolliert, so dass  bestimmte Versionen später wieder aufrufbar sind.\footnote{\cite{chacon2009pro} Seite 1 Zeile 1 } Um Problemen entgegenzuwirken, die eine amateurhafte Methoden der Versionsverwaltung mit sich bringen, wie z.B das ständige kopieren neuer Versionen in ein Verzeichnis, hierfür wurden diese Systeme entwickelt. Dabei unterscheidet man 3 Arten von Systemen. Der wesentlichste Unterschied, besteht darin wie und wo die Daten gehalten werden.
 
 \subsubsection{Lokale Versionskontrollsysteme}
-Von Lokalen Versionskontrollsystemen spricht man, wenn die Daten auf dem Lokalen System vorliegen (siehe Abbildung 1 ). Dabei werden die Dateien in einer Version Database (Repository) gehalten. Nach jedem Checkout wird automatisch eine neue Version im Repository erstellt. Somit entgeht man der Gefahr, durch das oben erwähnte Kopieren in andere Verzeichnisse, eine der Versionen zu überschreiben, da man vergessen hat die Datei umzubenennen. Natürlich ist diese Variante der Versionskontrolle, für große Projekte die im Team bearbeitet werden eher destruktiv. Ein Beispiel für Lokale Systeme ist RCS( Revision Control System ). Für Teamwork, eignen sich eher die anderen beiden Architekturen. 
+Von Lokalen Versionskontrollsystemen spricht man, wenn die Daten auf dem Lokalen System vorliegen (siehe Abbildung 1 ). Dabei werden die Dateien in einer Version, Database (Repository) gehalten. Nach jedem Checkout wird automatisch eine neue Version im Repository erstellt. Somit entgeht man der Gefahr, durch das oben erwähnte Kopieren in andere Verzeichnisse, eine der Versionen zu überschreiben, da man vergessen hat die Datei umzubenennen. Natürlich ist diese Variante der Versionskontrolle, für große Projekte die im Team bearbeitet werden, eher destruktiv. Ein Beispiel für Lokale Systeme ist RCS( Revision Control System ). Für Teamwork, eignen sich eher die anderen beiden Architekturen. 
 
 \vspace{3pt}
 \begin{minipage}{\linewidth}
 	\centering
 	\includegraphics[width=0.4\linewidth]{Bilder/LVKS.png}
 	\captionof{figure}[Lokale Architektur]{Lokale Architektur  \cite{chacon2009pro}\footnotemark }
-	\label{fig:osgi}
+	\label{Lokale Architektur}
 \end{minipage}
 \newpage
 \subsubsection{Zentralisierte Versionskontrollsysteme}
-Bei zentralisierten Versionskontrollsystemen wird die Versionierung nicht lokal vorgenommen. Die Entwickler haben einen Zentralen Punkt(Abbildung 2) , einen Server und dort befindet sich der Quellcode des Projektes in einem Reposytory, zu deutsch Lager. Der unterschied zu einfachen Lokalen Systemen ist nun Offensichtlich, man braucht zumindest ein Netzwerk, um solche Systeme zu nutzen. Ein sehr beliebtes zentralisiertes System ist Subversion. Ein weiterer Vorteil gegenüber der lokalen Versionnierung, besteht darin das gemeinsames Arbeiten an einem Projekt möglich ist und bei Verwendung eines Servers der Online erreichbar ist, kann das Arbeiten auch ohne Ortsbindung ablaufen. Doch dieser Vorteil der Ortsungebundenheit, bietet einen enormen „Single Point of Failure“, denn wenn der Server ausfällt ist man nicht in der Lage seiner Arbeit nachzugehen.
+Bei zentralisierten Versionskontrollsystemen, wird die Versionierung nicht lokal vorgenommen. Die Entwickler haben einen zentralen Punkt(Abbildung 2), einen Server und dort befindet sich der Quellcode des Projektes in einem Reposytory, zu deutsch Lager. Der unterschied zu einfachen lokalen Systemen ist nun Offensichtlich, man braucht zumindest ein Netzwerk, um solche Systeme zu nutzen. Ein sehr beliebtes zentralisiertes System ist Subversion. Ein weiterer Vorteil gegenüber der lokalen Versionierung, besteht darin das gemeinsames Arbeiten an einem Projekt möglich ist und bei Verwendung eines Servers der Online erreichbar ist, kann das Arbeiten auch ohne Ortsbindung ablaufen. Doch dieser Vorteil der Ortsungebundenheit, bietet einen enormen „Single Point of Failure“, denn wenn der Server ausfällt, ist man nicht in der Lage seiner Arbeit nachzugehen.
 
 \vspace{3pt}
 \begin{minipage}{\linewidth}
 	\centering
 	\includegraphics[width=0.3\linewidth]{Bilder/sub.png}
 	\captionof{figure}[Zentralisierte Architektur]{Zentralisierte Architektur\footnotemark }
-	\label{fig:osgi}
+	\label{Zentralisierte Architektur}
 \end{minipage} 	
 
 \subsubsection{Verteilte Versionskontrollsysteme}
 GIT gehört zu den verteilten Systemen, der Unterschied zu den Varianten davor ist das sie beides können. 
-Einer Art hybride Lösung, man ist in der Lage Lokal zu Versionieren aber auch im Netzwerk Versionen anderen zur Verfügung zu stellen (Abbildung 3). Jeder kann als Server fungieren und somit  wird der „Single Point of Failure“ eliminiert den zentralisierte Systeme haben. In der Praxis ist aber eher üblich, dass man einen Server nutzt vor allem bei Teamarbeiten. Wenn dieser jedoch ausfällt ist man in der Lage, weiter seine Arbeit zu verrichten.
+Einer Art hybride Lösung, man ist in der Lage Lokal zu versionieren aber auch im Netzwerk Versionen, anderen zur Verfügung zu stellen (Abbildung 3). Jeder kann als Server fungieren und somit  wird der „Single Point of Failure“ eliminiert den zentralisierte Systeme haben. In der Praxis ist aber eher üblich, dass man einen Server nutzt vor allem bei Teamarbeiten. Wenn dieser jedoch ausfällt ist man in der Lage, weiter seine Arbeit zu verrichten.
 \newline
 \vspace{3pt}
 \begin{minipage}{\linewidth}
 	\centering
 	\includegraphics[width=0.3\linewidth]{Bilder/git.png}}
 	\captionof{figure}[Verteilte Architektur]{Verteilte Architektur\footnotemark }
-	\label{fig:osgi}
+	\label{Verteilte Architektur}
 \end{minipage}
 
 
@@ -221,12 +209,11 @@ Im Jahre 2005 ist es zu Unstimmigkeiten gekommen, zwischen der Entwicklercommuni
 \begin{compactitem}
 	\item Geschwindigkeit
 	\item Einfaches Design
-	\item Gute Unterstützung von nicht-linearer Entwicklung (tausende paralleler verschiedener Verzweigungen der Versionen)
+	\item Gute Unterstützung von nicht-linearer Entwicklung 
 	\item Vollständig verteilt
-	\item Fähig, große Projekte wie den Linux Kernel effektiv zu verwalten
 \end{compactitem}
-Durch die kontinuierliche Weiterentwicklung des Systems und die Benutzerfreundlichkeit wurde Git zu einen sehr beliebten Tool.
-Ein großen Einfluss auf den Erfolg von Git hat auch die Social Coding Plattform GitHub auf der man viele Open Source Projekte findet wie z.B :
+Durch die kontinuierliche Weiterentwicklung des Systems und die Benutzerfreundlichkeit wurde Git zu einem sehr beliebten Tool.
+Einen großen Einfluss auf den Erfolg von Git hat auch die Social Coding Plattform GitHub, auf der man viele open source Projekte findet wie z.B :
 
 \begin{compactitem}
 	\item Der Linux Kernel\footnote{\cite{linux}}
@@ -235,7 +222,7 @@ Ein großen Einfluss auf den Erfolg von Git hat auch die Social Coding Plattform
 	\item Das CMS Joomla\footnote{\cite{joomla}}
 \end{compactitem}
 
-Das sind natürlich nicht alle Open Source Projekte die GIT in Verbindung mit GitHub nutzen, aber einige bekannte die sich für Git entschieden haben. Der Dienst, den GitHub bereitstellt ist kostenfrei, doch nur unter der Bedingung das die Projekte öffentlich zugänglich sind. Des Weiteren gibt es Optional wählbare Services, die gegen Bezahlung verfügbar sind, aber es gibt auch eine Enterprise Version, die für Firmen interessant sein kann.    
+Das sind natürlich nicht alle Open Source Projekte, die GIT in Verbindung mit GitHub nutzen, aber einige bekannte die sich für Git entschieden haben. Der Dienst, den GitHub bereitstellt ist kostenfrei, doch nur unter der Bedingung das die Projekte öffentlich zugänglich sind. Des Weiteren gibt es Optional wählbare Services, die gegen Bezahlung verfügbar sind, aber es gibt auch eine Enterprise Version, die für Firmen interessant sein kann.    
 \pagebreak
 
 % ----------------------------------------------------------------------------------------------------------
@@ -249,29 +236,29 @@ weswegen meine Erläuterungen zum Git System, sich auf Linux als Betriebssysteme
 Bevor man mit Versionierungssystemen arbeitet, sollte man einige Begriffe kennenlernen. 
 \subsection{Repository}
 Der Begriff Repository (Englisch für Lager), kommt aus dem Lateinischen Repositorium.
-Eine Repository ist eine spezielle Datenbank, zur systematischen Ablage von Modellen und deren Bestandteilen, das Herz der Datenhaltung eines Versionskontrollsystems. Grundlegende Funktion ist die Speicherung und das Abrufen von gespeichertem Inhalt samt aller Bestandteile wie z.B. Bilder. \footnote{\cite{Leymann}} 
+Eine Repository ist eine spezielle Datenbank, zur systematischen Ablage von Modellen und deren Bestandteilen das Herz der Datenhaltung eines Versionskontrollsystems. Grundlegende Funktion ist, die Speicherung und das Abrufen von gespeichertem Inhalt samt aller Bestandteile, wie z.B. Bilder. \footnote{\cite{Leymann}} 
 
 \subsection{Clone}
-Ein Clone im Git Kontext, ist äquivalent zu dem begriff in der Biologie. Daher ist eine exakte Kopie von etwas existierendem, in diesem Fall der Repository. Im Fall Git lässt sich ein Clone auch durch verschiedene Protokolle umsetzten z.B. git:// ein eigens Protokoll oder auch das https:// Protokoll. Weitere Erläuterungen dazu folgen später. 
+Ein Clone im Git Kontext, ist äquivalent zu dem Begriff in der Biologie. Daher ist eine exakte Kopie von etwas existierendem, in diesem Fall der Repository. Im Fall Git lässt sich ein Clone, auch durch verschiedene Protokolle umsetzten z.B. git:// ein eigens Protokoll oder auch das https:// Protokoll. Weitere Erläuterungen dazu folgen später. 
 \subsection{Commit}
-Zu deutsch "übergeben", wenn man also eine Änderung im Arbeitsverzeichnis vornimmt, wird diese getrackt(verfolgt). Um diese zu bestätigen, bzw. an Git zu übergeben, ist ein commit erforderlich. 
+Zu deutsch "übergeben", wenn man also eine Änderung im Arbeitsverzeichnis vornimmt, wird diese getrackt (verfolgt). Um diese zu bestätigen, bzw. an Git zu übergeben, ist ein commit erforderlich. 
 \subsection{Branch}
-Zu Deutsch "Zweig" ist eine Gabelung des Quellcodes. Aus verschiedenen Gründen, kann es erforderlich sein eine Version des Quellcodes vom Original abzuzweigen, um ggf. eine neue Funktion zu implementieren. Dies läuft dann parallel zur Entwicklung des Originalcodes. Der initiale Commit, wird auch als Master bezeichnet 
+Zu Deutsch Zweig ist eine Gabelung des Quellcodes. Aus verschiedenen Gründen, kann es erforderlich sein eine Version des Quellcodes vom Original abzuzweigen, um ggf. eine neue Funktion zu implementieren. Dies läuft dann parallel zur Entwicklung des Originalcodes. Der initiale Commit, wird auch als Master bezeichnet 
 \subsection{Merge}
-Ein Merge, bzw. das Merging ist das zusammenführen eines Branches und des Master zweiges. 
+Ein Merge, bzw. das Merging ist das zusammenführen zweier Branches. 
 
 \subsection{Snapshot}
-Ist die Art und weise wie GIT daten betrachtet. Viele anderen Systeme speichern Information als eine fortlaufende Liste von Änderungen an Dateien. 
+Ist die Art und Weise wie GIT Daten betrachtet. Viele anderen Systeme speichern Information als eine fortlaufende Liste von Änderungen an Dateien. 
 
 \vspace{1em}
 \begin{minipage}{\linewidth}
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/spli.png}}
 	\captionof{figure}[Liste von Änderungen]{Liste von Änderungen\footnotemark }
-	\label{fig:osgi}
+	\label{Liste von Änderungen}
 \end{minipage}
 
-GIT hingegen Speichert alle Dateien bei jedem Commit. Unveränderte Dateien werden nicht Kopiert, sondern es wird eine Verknüpfung zu der vorherigen Version der Datei angelegt. Abbx zeit die Art und weise wie GIT Daten speichert.
+GIT hingegen Speichert alle Dateien bei jedem Commit. Unveränderte Dateien werden nicht Kopiert, sondern es wird eine Verknüpfung zu der vorherigen Version der Datei angelegt. Abb. 5 zeigt die Art und Weise wie GIT Daten speichert.
 
 
  \vspace{1em}
@@ -279,28 +266,28 @@ GIT hingegen Speichert alle Dateien bei jedem Commit. Unveränderte Dateien werd
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/gitsp.png}}
 	\captionof{figure}[Wie GIT speichert]{Wie GIT speichert\footnotemark }
-	\label{fig:osgi}
+	\label{Wie GIT speichert}
 \end{minipage}
 
-Somit ist ein Snapshot die im Letzten commit gespeicherte Version des Projektes.
+Somit ist ein Snapshot die im letzten Commit gespeicherte Version des Projektes.
 
-\subsection{Querschnitt von Git }
+\subsection{Querschnitt von GIT }
 GIT ist wie in der Abbildung 6 aufgebaut
-Das Repository enthält die Metadaten und die lokale Datenbank für das Projekt. Die Staging area ist der Bereich indem sich Dateien befinden welche Vorgemerkt sind, um bei dem nächsten commit samt Änderungen in der GIT Directory gespeichert werden(snapshot). 
+Das Repository enthält die Metadaten und die lokale Datenbank für das Projekt. Die staging area ist der Bereich, indem sich Dateien befinden, welche Vorgemerkt sind, um bei dem nächsten commit samt Änderungen in der GIT Directory gespeichert werden (snapshot). 
 
 
 \vspace{1em}
 \begin{minipage}{\linewidth}
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/zustand.png}}
-	\captionof{figure}[Drei Zustände einer Datei]{Drei Zustände einer Datei\footnotemark }
-	\label{fig:osgi}
+	\captionof{figure}[Querschnitt von GIT]{Querschnitt von GIT\footnotemark }
+	\label{Querschnitt von GIT}
 \end{minipage}
 
 
 
 \section{Installation von GIT unter Linux}
-Unter Linux ist die Installation von Git abhängig, welche Distribution genutzt wird, d.h. welches Paketmanagement-Programm. Doch es wird empfohlen wenn möglich, Git vom Quellcode aus zu installieren. Da man immer die neuste Version erhält.\footnote{\cite{chacon2009pro}} Um Git zu installieren braucht man einige Bibliotheken, die von Git verwendet werden: curl, zlib, openssl, expat und libiconv. 
+Unter Linux ist die Installation von Git abhängig davon, welche Distribution genutzt wird, d.h. welches Paketmanagement-Programm. Doch es wird empfohlen wenn möglich, Git vom Quellcode aus zu installieren, da man immer die neuste Version erhält.\footnote{\cite{chacon2009pro}} Um Git zu installieren braucht man einige Bibliotheken, die von Git verwendet werden: curl, zlib, openssl, expat und libiconv. 
 
 Installation unter Fedora Paketmanagement (YUM)
 \begin{lstlisting}
@@ -319,8 +306,8 @@ Download GIT
  \end{lstlisting}
  
  
-Nachdem man diese Packete installiert hat, ist es noch notwendig Git selbst, zu downloaden. Auf dieser Seite sind Git Downloads für verschiedenste Betriebssysteme vorhanden. Um den Quellcode zu laden, wird man auf eine GitHub Repository weitergeleitet. Rechts auf dieser GitHub Page, ist immer ein Link zum Clonen, sowie ein Download link der auf dem System eine Zipdatei abspeichert. Doch um einen Überblick der verschiedenen Versionen zu bekommen 
-empfehle ich den "Older releases"  link.
+Nachdem man diese Pakete installiert hat, ist es noch erforderlich Git selbst, zu downloaden. Auf dieser Seite sind Git Downloads für verschiedenste Betriebssysteme vorhanden. Um den Quellcode zu laden, wird man auf eine GitHub Repository weitergeleitet. Rechts auf dieser GitHub Page, ist immer ein Link zum Clonen, sowie ein Download link, der auf dem System eine Zipdatei abspeichert. Doch um einen Überblick der verschiedenen Versionen zu bekommen 
+empfehle ich den  	\grqq Older releases\grqq  link.
 
 Anschließend wird Git kompiliert und installiert:
 \begin{lstlisting}
@@ -354,16 +341,16 @@ $ zypper install git
 
 
 \subsection{Installation unter Windows}
-Auf der Homepage git-scm.com, findet man im Downloadbereich auch eine Windowsversion.
-Diese wird einfach Installiert. Nach Abschluss der Installation, startet man eine seperate Git Konsole, wichtig hierbei ist, dass diese Konsole explizit nur auf Linux befehle hört. 
+Auf der Homepage git-scm.com, findet man im Downloadbereich auch eine Windowsversion,
+diese wird einfach Installiert. Nach Abschluss der Installation, startet man eine seperate Git Konsole. Wichtig hierbei ist, dass diese Konsole explizit nur auf Linux Befehle hört. 
 
 \subsection{Konfiguration von GIT}
-Nachdem Git nun erfolgreich auf de System installiert ist, bedarf es noch einigen Konfigurationen. Über das tool \lstinline|git config| ist es möglich, durch Eingabe in das Terminal Konfigurationen vorzunehmen welche die Arbeitsweise und die Optik von Git beeinflussen. Die Konfiguratinsdateien, sind an Drei verschiedenen Orten im System
+Nachdem Git nun erfolgreich auf de System installiert ist, bedarf es noch einigen Konfigurationen. Über das tool \lstinline|git config| ist es möglich, durch Eingabe in das Terminal Konfigurationen vorzunehmen, welche die Arbeitsweise und die Optik von Git beeinflussen. Die Konfiguratinsdateien, sind an drei verschiedenen Orten im System
 gespeichert. 
 \begin{compactitem}
 	\item Die Datei gitconfig im etc Verzeichniss enthält Werte, die für jeden Anwender des Systems und all ihre Projekte gelten. Durch Eingabe von\lstinline| git config| mit der Option \lstinline|--system| wird diese Datei verwendet.
 \item Die Werte in der Datei \lstinline|~/.gitconfig|, gelten explizit für das Systemkonto, das gerade genutzt wird. Durch die Eingabe von\lstinline| git config| mit der Option \lstinline|--global|, wird diese Datei verwendet. 
-\item Um einem Projekt, geltende Werte zuzuweisen, gibt es noch die Datei \lstinline|git/config|im Verzeichniss des Projektes selbst. 
+\item Um einem Projekt, geltende Werte zuzuweisen, gibt es noch die Datei \lstinline|git/config| im Verzeichniss des Projektes selbst. 
 \end{compactitem}
 Wichtig ist jedoch, dass die Dateiwerte aus den jeweils vorhergehenden Dateien überschrieben wurden. Als Beispiel: \lstinline|git/config| überschreibt die Werte in \lstinline|/etc/gitconfig|
 
@@ -373,16 +360,18 @@ der Pfad \lstinline|C:\Dokumente und Einstellungen\$USER|. Auch die \lstinline|/
 
 \paragraph{Identität Konfigurieren}
 Nachdem die Installation erfolgreich abgeschlossen wurde, ist es von enormer Wichtigkeit die Konfiguration zur Identität vorzunehmen. Git nutzt diese Parameter bei jedem Commit,
-um die Einstellungen vorzunehmen das Terminal öffnen und
+um die Einstellungen vorzunehmen ist das Terminal öffnen und folgende Werte zu setzen.
+
 \begin{lstlisting}
 $ git config --global user.name "Max Musterman"
 $ git config --global user.email "mustermann@muster.de"
 \end{lstlisting}
-Wichtig ist dabei, dass diese Einstellungen in diesem Fall nur einmal vorgenommen werden, da die Option \lstinline|--global|verwendet wird. Will man jedoch für ein explizites Projekt andere Identitätsdaten verwenden, muss man im Verzeichnis des Projekts, die selben Befehle aufrufen. Doch ohne die Option \lstinline|--global|.
+
+Wichtig ist dabei, dass diese Einstellungen in diesem Fall nur einmal vorgenommen werden, da die Option \lstinline|--global| verwendet wird. Will man jedoch für ein explizites Projekt andere Identitätsdaten verwenden, muss man im Verzeichnis des Projekts, die selben Befehle aufrufen. Doch ohne die Option \lstinline|--global|.
 \paragraph{Editor Konfiguration}
 Da man beim Commiten eine Nachricht mit geben soll,  ist es möglich durch die Konsoleneingabe,  einen expliziten Texteditor zu bestimmen.
 \begin{lstlisting}
-$ git config --global core.editor <gewünschter Editor>
+$ git config --global core.editor <gewuenschter Editor>
 \end{lstlisting}
 Verändert man diese Einstellungsmöglichkeit jedoch nicht, wird die Default Einstellung VIM gewählt.
 
@@ -392,38 +381,38 @@ Will man nun die vorgenommenen Einstellungen überprüfen, genügt die Eingabe d
 $ git config --list
 \end{lstlisting}
 
-Manche der aufgelisteten Variablen, kommen vermutlich öfter vor. Dies liegt jedoch an den verschiedenen Dateien, z.B.\lstinline| /etc/gitconfig|.Iin diesem Fall wird die zuletzt aufgelistete Variable genutzt.
+Manche der aufgelisteten Variablen, kommen vermutlich öfter vor. Dies liegt jedoch an den verschiedenen Dateien, z.B.\lstinline| /etc/gitconfig|. In diesem Fall wird die zuletzt aufgelistete Variable genutzt.
 
 \subsection{Hilfestellungen durch das System}
-Für weitere spezielle Einstellungen gibt es unter Git, die Help Option.
-Die gilt für fast alle Befehle, um diese auszurufen gibt es verschiedene Möglichkeiten.
+Für weitere spezielle Einstellungen, gibt es unter Git die Help Option.
+Die gilt für fast alle Befehle und um diese auszurufen gibt es verschiedene Möglichkeiten.
 \begin{lstlisting}
 $ git help <verb>
 $ git <verb> --help
 $ man git-<verb>
 \end{lstlisting} 
 
-Braucht man nun andere Optionen zum Befehl \lstinline| git config| Tippt man folgendes in die Konsole. 
+Braucht man nun andere Optionen zum Befehl \lstinline| git config| , Tippt man folgendes in die Konsole: 
 \begin{lstlisting}
 $ git help config
 \end{lstlisting}
-Es erscheint nun ein Manual für den jeweiligen Befehl. Diese beinhaltet eine kurze Beschreibung zu der Funktion, sowie die Optionen die einem zur Verfügung stehen.  
+Es erscheint nun ein Manual für den jeweiligen Befehl. Dieses beinhaltet eine kurze Beschreibung zu der Funktion, sowie die Optionen die einem zur Verfügung stehen.  
   
 
 
 \section{Mit Git Arbeiten }
 
-Der Grundstein ist gelegt, um das Arbeiten mit Git zu beginnen. Da unser System verteilt ist, also Lokal in jedem Fall vorliegt, ist die erste Aufgabe nach erfolgreichem Installieren eine Versionierungsdatenbank zu erzeugen, ein Sogenanntes Repository. Im Allgemeinen, setzt das Arbeiten mit Git auch das Arbeiten mit der Konsole vorraus. Es besteht auch die Möglichkeit, Plugins zu nutzen die einige Funktionen unterstützen. Jedoch unterstützen diese Plugins meistens nicht alle Funktionen die Git bietet. Somit sollten die grundlegenden Konsolenbefehle bekannt sein.  
+Der Grundstein ist gelegt, um das Arbeiten mit Git zu beginnen. Da unser System verteilt ist, also Lokal in jedem Fall vorliegt, ist die erste Aufgabe nach erfolgreichem installieren eine Versionierungsdatenbank zu erzeugen, ein sogenanntes Repository. Im Allgemeinen, setzt das Arbeiten mit Git, auch das Arbeiten mit der Konsole voraus. Es besteht auch die Möglichkeit, Plugins zu nutzen die einige Funktionen unterstützen. Jedoch unterstützen diese Plugins meistens nicht alle Funktionen die Git bietet. Somit sollten die grundlegenden Konsolenbefehle bekannt sein.  
 \begin{compactitem}
 	\item ls - listet alle Verzeichnisse und Dateien auf, Bei Windows gilt der Befehl "dir". Mit dem Parameter -a werden auch unsichtbare Dateien angezeigt. 
 	\item cd - Wechselt das Verzeichnis.
 	\item cd .. - geht ein Verzeichnis zurück.
 	\item mkdir - Erzeugt ein neues Verzeichnis. 
 \end{compactitem}
-Die Git Befehle, welche die Konsole entgegenimmt beginnen alle mit dem Signalwort GIT.  
-\newpage 
+Die Git Befehle, welche die Konsole entgegenimmt, beginnen alle mit dem Signalwort GIT.  
+ 
 \subsection{Ein Git Repository anlegen}
-Um nun ein Repository anzulegen, navigiert man sich mit dem cd(Change Directory) Befehl in den Ordner, in welchen das Repository angelegt werden soll. Es ist aber auch Möglich ein neues Verzeichnis anzulegen mit mkdir <Name>. 
+Um nun ein Repository anzulegen, navigiert man sich mit dem cd(Change Directory) Befehl in den Ordner, in welchen das Repository angelegt werden soll. Es ist aber auch Möglich ein neues Verzeichnis anzulegen mit mkdir. 
 
 \vspace{1em}
 \begin{lstlisting}[caption=Git Repository anlegen, label=lst:arduino]
@@ -432,12 +421,12 @@ name@comp:~$ cd GITtest(Springt in das Verzeichnis GITtest)
 name@comp:~/GITtest$ git init 
 (Erzeugt ein leeres Git Repository im Ordner GITtest)
 name@comp:~/GITtest$ ls -a
-.  ..  .git (Erzeugntes Repository)
+.  ..  .git (Erzeugtes Repository)
 
 \end{lstlisting}
 
 Nun ist ein Repository angelegt.
-Will man nun in Zukunft ein weiteres Repository nutzen, erzeugt oder wechselt man in das Verzeichnis seiner Wahl und Tippt  \lstinline| git init| . Damit Git nun Veränderungen an Dateien tracken kann, muss man selbstverständlich diese auch in diesem Verzeichnis speichern. Doch nur das Speichern genügt Git nicht, man muss die Dateien dem Repository hinzufügen. 
+Will man nun in Zukunft ein weiteres Repository nutzen, erzeugt oder wechselt man in das Verzeichnis seiner Wahl und tippt  \lstinline| git init| . Damit Git nun Veränderungen an Dateien tracken kann, muss man selbstverständlich diese auch in diesem Verzeichnis speichern. Doch nur das Speichern genügt Git nicht, man muss die Dateien dem Repository hinzufügen. 
 
  \vspace{1em}
 \begin{lstlisting}[caption=Git Repository Dateien hinzufügen, label=lst:arduino]
@@ -447,10 +436,10 @@ $ git commit -m 'initial project version'
 \end{lstlisting}
 
 
-Einzeln durch das Kommando \lstinline|git add DATEINAME| oder wenn es alle Dateien im Verzeichnis sind durch den Befehl \lstinline|git add -A|. Hat man seine Dateien nun hinzugefügt folgt ein Commit mit dem Kommando \lstinline|git commit-m "TEXT "|. Hat man nun alles Richtig gemacht erscheint bei der Status abfrage von git mit dem Befehl \lstinline|git status| nothing to commit (working directory clean).
+Einzeln durch das Kommando \lstinline|git add DATEINAME| oder wenn es alle Dateien im Verzeichnis sind, durch den Befehl \lstinline|git add -A|. Hat man seine Dateien nun hinzugefügt, folgt ein commit mit dem Kommando \lstinline|git commit-m "TEXT "|. Hat man nun alles Richtig gemacht, erscheint bei der Statusabfrage von GIT mit dem Befehl \lstinline|git status| nothing to commit (working directory clean).
 
 \subsection{Das .git Repository}
-Wenn man durch das Kommando \lstinline|git init|	ein Repository erzeugt, erstelt das System einen Unterordner im Verzeichnis. Den .git Verzeichnis hat folgende Struktur
+Wenn man durch das Kommando \lstinline|git init|	ein Repository erzeugt, erstellt das System einen Unterordner im Verzeichnis. Den .git Ordner. Das Verzeichnis hat folgende Struktur:
 
 \begin{lstlisting}
 $ cd .git
@@ -466,16 +455,11 @@ objects/
 refs/
 \end{lstlisting}
 
-das sind die Standardinhalte des .git Ordners. Die Datei config enthält Die projekt-spezifischen Konfigurationsoptionen, und im Ordner info befindet sich eine Datei, die globale Dateiausschlussmuster enthält, so das nicht jedes mal eine  .gitignore-Datei neu erstellt werden muss. Das hooks-Verzeichnis enthält die client- oder serverseitigen Hook-Skripte.
-Der Ordner branches wird von neueren Git-Versionen nicht mehr verwendet, und die Datei descriptions wird nur vom Programm GitWeb genutzt. Das Herz des Systems  bilden die Dateien HEAD und index, sowie die Verzeichnisse objects und refs. Dies sind die Kernkomponenten eines Git-Repositorys. Jegliche Versionen der Dateien werden in der Objektdatenbank gehalten, welche im Unterverzeichnis .git/objects liegt. Die Darin enthaltenen Daten sind mit sind mit zlib komprimiert. Die Head Datei  ist eine symbolische Referenz auf den jeweiligen Branch, auf dem man sich gerade befindet.	Das refs-Verzeichnis enthält Referenzen auf Commit-Objekte (Branches) in dieser Datenbank und in der Datei index verwaltet Git die Informationen der Staging-Area. Die Datei 	descriptions wird nur vom Programm GitWeb benötigt und der Ordener Branches wird bei neueren Git Versionen gar nicht erst benötigt.
-	
-
-
-
-
+Das sind die Standardinhalte des .git Ordners. Die Datei config enthält die Projekt-spezifischen Konfigurationsoptionen und im Ordner info befindet sich eine Datei, die globale Dateiausschlussmuster enthält, sodass nicht jedes mal eine  .gitignore-Datei neu erstellt werden muss. Das hooks-Verzeichnis enthält die client- oder serverseitigen Hook-Skripte.
+Der Ordner branches wird von neueren Git-Versionen nicht mehr verwendet und die Datei descriptions wird nur vom Programm GitWeb genutzt. Das Herz des Systems  bilden die Dateien HEAD und index, sowie die Verzeichnisse objects und refs. Dies sind die Kernkomponenten eines Git-Repositorys. Jegliche Versionen der Dateien werden in der Objektdatenbank gehalten, welche im Unterverzeichnis .git/objects liegt. Die darin enthaltenen Daten sind mit sind mit zlib komprimiert. Die Head Datei,  ist eine symbolische Referenz auf den jeweiligen Branch, auf dem man sich gerade befindet.	Das refs-Verzeichnis enthält Referenzen auf Commit-Objekte (Branches) in dieser Datenbank und in der Datei index, verwaltet Git die Informationen der Staging-Area. Die Datei descriptions wird nur vom Programm GitWeb benötigt und der Ordener Branches wird bei neueren Git Versionen gar nicht erst benötigt.
 
 \subsection{Ein Git Repository clonen}
-Wenn im Git Kontext von Klonen die Rede ist, geht es darum ein bereits existierendes Repository, für eigene Zwecke zu Kopieren. Dies ist meist bei bereits vorhandenen Projekten der Fall. Mit \lstinline| clone [url]| wird jede einzelne Version, jeder einzelnen Datei in der Historie des Repositorys heruntergeladen. Das hat zur Folge, dass selbst wenn der Server, von dem man ursprünglich den Klone hat beschädigt wird, ist man in der Lage ihn wiederherzustellen, da der Klon alle Versionen hat. Als Beispiel ein Klon dieser Seminararbeit.
+Wenn im Git Kontext von Klonen die Rede ist, geht es darum ein bereits existierendes Repository, für eigene Zwecke zu Kopieren. Dies ist meist bei bereits vorhandenen Projekten der Fall. Mit \lstinline| clone [url]| wird jede einzelne Version, jeder einzelnen Datei in der Historie des Repositorys heruntergeladen. Das hat zur Folge, dass selbst wenn der Server, von dem man ursprünglich den Klone hat, beschädigt wird, ist man in der Lage ihn wiederherzustellen, da der Klone alle Versionen hat. Als Beispiel ein Klone dieser Seminararbeit.
 
 \vspace{1em}
 \begin{lstlisting}[caption=Git Repository Klonen, label=lst:arduino]
@@ -488,7 +472,7 @@ Beim diesem Vorgang legt Git ein Verzeichnis namens grit an und installiert die 
 
 
 \subsection{Änderungen nachverfolgen}
-Man hat jetzt ein voll funktionsfähiges Git Repository und eine ausgecheckte Arbeitskopie.  Wie bereits vorher erwähnt, hat Git immer die selbe Abfolge von Kommandos, wenn man eine oder auch mehrere Dateien dem Repository hinzufügen möchte. Zur Wiederholung
+Man hat jetzt ein voll funktionsfähiges Git Repository und eine ausgecheckte Arbeitskopie.  Wie bereits vorher erwähnt, hat Git immer die selbe Abfolge von Kommandos, wenn man eine oder auch mehrere Dateien dem Repository hinzufügen möchte. Zur Wiederholung:
 
 \begin{compactitem}
 	\item \lstinline|git status| - Überprüft den Status der Dateien im Repository.
@@ -496,8 +480,8 @@ Man hat jetzt ein voll funktionsfähiges Git Repository und eine ausgecheckte Ar
 	\item \lstinline|git commit -m "TEXT"| - Erzeugt einen snapshot aller zum Repository hinzugefügten Dateien.
 \end{compactitem}
 
-\paragraph{File Status Lifecyrcle}
-Was da genau vorgeht, beschreibt am besten der File Status Lifecyrcle. Jede Datei im Arbeitsverzeichnis, kann sich in einem von zwei Zuständen befinden. Änderungen werden verfolgt (eng. Tracked) oder sie werden nicht mitverfolgt(engl. untracked). 
+\paragraph{File Status Lifecycle}
+Was da genau vorgeht, beschreibt am besten der File Status Lifecycle. Jede Datei im Arbeitsverzeichnis, kann sich in einem von zwei Zuständen befinden. Änderungen werden verfolgt (eng. tracked) oder sie werden nicht mitverfolgt(engl. untracked). 
 Genauer gesagt: Dateien welche getrackt werden sind nur die, die sich im letzten Commit befinden. Die anderen Daten die nicht, mit dem add Kommando einem Commit hinzugefügt wurden, haben den Status Untracked. \newline
 
 
@@ -507,14 +491,14 @@ Genauer gesagt: Dateien welche getrackt werden sind nur die, die sich im letzten
 \begin{minipage}{\linewidth}
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/flc.png}
-	\captionof{figure}[File Status Lifecycle]{Zentralisierte Architektur\footnotemark }
-	\label{fig:osgi}
+	\captionof{figure}[File Status Lifecycle]{File Status Lifecycle\footnotemark }
+	\label{File Status Lifecycle}
 \end{minipage} 	
 
-Dateien die sich nun im Commit befinden, haben wiederum zwei mögliche Stadien in denen sie sich befinden können, Veränderte (engl. modified) oder unverändert (eng. unmodified). Die veränderten Dateien sind somit für den nächsten Commit vorgemerkt (engl. staged). Alle anderen Dateien, mit dem Status unmodified werden hingegen nicht Versioniert. Sobald man nun Dateien wieder bearbeitet, beginnt dieser Vorgang erneut.
+Dateien die sich nun im Commit befinden, haben wiederum zwei mögliche Stadien in denen sie sich befinden können, veränderte (engl. modified) oder unverändert (eng. unmodified). Die veränderten Dateien sind somit für den nächsten Commit vorgemerkt (engl. staged). Alle anderen Dateien, mit dem Status unmodified werden hingegen nicht Versioniert. Sobald man nun Dateien wieder bearbeitet, beginnt dieser Vorgang erneut.
 
 \paragraph{Zustand der Dateien Prüfen}
-Der Befehl \lstinline|git status| wurde bereits weiter oben schon erwähnt und kurz erklärt, damit man eine grobe Vorstellung hat. Nun schauen wir ihn detaillierter an. Im Groben überprüft das Kommando, in welchen Status des File Life Cyrcle man sich befindet. Hat man nun ein Repository gerade geklont, bekommt man folgendes ausgegeben:
+Der Befehl \lstinline|git status| wurde bereits weiter oben schon erwähnt und kurz erklärt, damit man eine grobe Vorstellung hat. Nun schauen wir ihn detaillierter an. Im Groben überprüft das Kommando, in welchen Status des File Lifecycle man sich befindet. Hat man nun ein Repository gerade geklont, bekommt man folgendes ausgegeben:
 
 \vspace{1em}
 \begin{lstlisting}[caption=Git Statusbefehl nach git clone befehl, label=lst:arduino]
@@ -523,12 +507,12 @@ On branch master
 nothing to commit, working directory clean 
 \end{lstlisting}
 
-Nach Abbildung 4 ist der momentane Status des Arbeitsverzeichnisses Unmodified, d.h. 
+Nach Abbildung 4 ist der momentane Status des Arbeitsverzeichnisses unmodified, d.h. 
 es wurden weder Dateien hinzugefügt, noch wurde an einer anderen Datei etwas verändert. Wenn doch, würde git die veränderten und hinzugefügten Dateien auflisten.
 
-Fügen wir nun eine neue Datei hinzu. 
+Fügen wir nun eine neue Datei hinzu: 
 \vspace{1em}
-\begin{lstlisting}[caption=Git Statusbefehl nachdem erzeugen einer Datei, label=lst:arduino]
+\begin{lstlisting}[caption=Git Statusbefehl nach dem erzeugen einer Datei, label=lst:arduino]
 $ touch TEST.txt
 $ git status
 On branch master
@@ -541,11 +525,11 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 \end{lstlisting}
 
-Wie man an der Meldung von Git erkennen kann, gibt es Dateien, die sich im untracked status befinden. Mit der Anmerkung use \lstinline|git add| to Track, weist Git nun daraufhin, dass die neue Datei in den Status unmodified gebracht werden muss. Nach dem hinzufügen der Datei, durch \lstinline|git add[Dateiname]| und einer erneuten Statusabfrage, meldet Git folgendes:
+Wie man an der Meldung von Git erkennen kann, gibt es Dateien, die sich im untracked Status befinden. Mit der Anmerkung use \lstinline|git add| to track, weist Git nun daraufhin, dass die neue Datei in den Status unmodified gebracht werden muss. Nach dem hinzufügen der Datei, durch \lstinline|git add[Dateiname]| und einer erneuten Statusabfrage, meldet Git Changes to be committed
 Im File Lifecycle ist man also an erster Stelle.
 \newpage
 \vspace{1em}
-\begin{lstlisting}[caption=Git Statusbefehl nachdem erzeugen einer Datei, label=lst:arduino]
+\begin{lstlisting}[caption=Git Statusbefehl nach dem erzeugen einer Datei, label=lst:arduino]
 $ git status
 On branch master
 Changes to be committed:
@@ -554,10 +538,10 @@ Changes to be committed:
         new file:   TEST.TXT
 
 \end{lstlisting}
-Der Status "Changes to be committed" sagt aus, dass sich Git die neue Datei vorgemerkt (gestaged) hat und erstellt beim nächsten Commit, einen snapshot dieser Datei. Wenn man sich nun den File Status Lifecycle noch einmal anschaut, befindet man sich zwischen modified und staged. Nun bedarf es wieder dem Git add Befehl, um die Datei für den Commit vorzubereiten. Nach dem Commit hat man nun wieder eine Saubere (Clean working directory). 
+Der Status \grqq Changes to be committed\grqq sagt aus, dass sich Git die neue Datei vorgemerkt (gestaged) hat und erstellt beim nächsten Commit, einen snapshot dieser Datei. Wenn man sich nun den File Status Lifecycle noch einmal anschaut, befindet man sich zwischen modified und staged. Nun bedarf es wieder dem Git add Befehl, um die Datei für den Commit vorzubereiten. Nach dem Commit hat man nun wieder eine saubere (clean) working directory. 
 
 \vspace{1em}
-\begin{lstlisting}[caption=Git Statusbefehl nachdem verändern einer Datei, label=lst:arduino]
+\begin{lstlisting}[caption=Git Statusbefehl nach dem verändern einer Datei, label=lst:arduino]
 $ git status
 On branch master
 Changes to be committed:
@@ -568,7 +552,7 @@ Changes to be committed:
 
 \end{lstlisting}
 Verändert man nun diese Datei, indem man einen kleinen Text hinzufügt. Sollte man wieder den Status abfragen( Listing 7 )
-Dem File Status Lifecycle zufolge ist man im modified Status. 
+Dem File Status Lifecycle zufolge, ist man im modified Status. 
 
 \subsection{Dateien ignorieren}
 In den meisten Fällen kommt es vor, dass man einige Dateien gar nicht versionieren muss/soll, z.B. automatisch generierte Dateien wie Logfiles. In diesem Fall bietet Git eine Möglichkeit, dies zu Konfigurieren. Wie bei anderen Einstellungen ist es nötig, diese in einer Konfigurationsdatei zu hinterlegen, für die es klare Regeln gibt. Eine dieser festen Regeln ist der Name dieser Datei, sie muss .gitignore heißen.
@@ -576,7 +560,7 @@ In den meisten Fällen kommt es vor, dass man einige Dateien gar nicht versionie
 Weitere Regeln im Bezug auf die .gitignore Datei sind:
 
 \begin{compactitem}
-	\item Leere Zeilen oder Zeilen, die mit # beginnen, werden 			     ignoriert.
+	\item Leere Zeilen oder Zeilen, die mit \# beginnen, werden 			     ignoriert.
 	\item Standard glob Muster funktionieren.
 	\item Man kann ein Muster mit einem Schrägstrich (/) abschließen, um ein Verzeichnis zu deklarieren.
 	\item  Man kann ein Muster negieren, indem man ein Ausrufezeichen (!) voranstellt.
@@ -602,7 +586,7 @@ doc/**/*.txt
 
 Diese Datei lässt sich auch mit Hilfe der Konsole erzeugen und bearbeiten. Beim Bearbeiten helfen Editoren wie VIM oder NANO. 
 \vspace{1em}
-\begin{lstlisting}[caption=Git Erstellen der.gitignore Datei, label=lst:arduino]
+\begin{lstlisting}[caption=Erstellen der.gitignore Datei, label=lst:arduino]
 # Erzeugt die Datei 
 $ touch .gitignore
 $vi .gitignore
@@ -612,7 +596,7 @@ Nach aufrufen des Editors, kann man nun die Dateien ausschließen, welch nicht v
  
 
 \subsection{Commithistorie anzeigen}
-Manchmal ist es nötig einige Commits genauer einzusehen. Diese Funktion erfüllt der Befehl  \lstinline|git log|. Das Kommando listet die Historie der Commits eines Projekts, in umgekehrter chronologischer Reihenfolge auf. Des weiteren hat dieser Befehl sehr viele Optionen die man wählen kann. Eine sehr nützliche Option ist \lstinline|git log -p|, sie zeigt auf welche Änderungen gemacht wurden. Das ganze lässt sich auch eingrenzen, indem man einen weiteren Parameter hinzufügt. Als Beispiel \lstinline|git log -p -2| zeigt nur die Änderungen der letzten beiden Commits an.
+Manchmal ist es nötig einige Commits genauer einzusehen. Diese Funktion erfüllt der Befehl  \lstinline|git log|. Das Kommando listet die Historie der Commits eines Projekts, in umgekehrter chronologischer Reihenfolge auf. Des Weiteren hat dieser Befehl sehr viele Optionen die man wählen kann. Eine sehr nützliche Option ist \lstinline|git log -p|, sie zeigt auf welche Änderungen gemacht wurden. Das Ganze lässt sich auch eingrenzen, indem man einen weiteren Parameter hinzufügt. Als Beispiel \lstinline|git log -p -2| zeigt nur die Änderungen der letzten beiden Commits an.
 
 \vspace{1em}
 \begin{lstlisting}[caption=Git log Unterschiede der letzten 2 Commits, label=lst:arduino]
@@ -648,7 +632,7 @@ Da die Reihenfolge umgekehrt chronologisch aufgelistet wird, ist der letzte Comm
 
 
 \subsection{Filtern der Commit historie}
-Eine Commithistorie kann vor allem bei Teamarbeit sehr groß werden, hierzu gibt es Filter Optionen die eine Suche ein wenig erleichtern können. 
+Eine Commithistorie kann vor allem bei Teamarbeit sehr groß werden. Hierzu gibt es Filter Optionen die eine Suche ein wenig erleichtern können. 
  \vspace{1em}
 \begin{table}[!h]
 	\centering
@@ -658,7 +642,7 @@ Eine Commithistorie kann vor allem bei Teamarbeit sehr groß werden, hierzu gibt
 		\hline
 		-(n)& Begrenzt die Ausgabe auf die letzten n commits\\
 		\hline
-		--since, --after & eigt nur Commits, die nach dem angegebenen Datum angelegt wurden.\\
+		--since, --after & Zeigt nur Commits, die nach dem angegebenen Datum angelegt wurden.\\
 		\hline
 		--until, --before & Zeigt nur Commits, die vor dem angegebenen Datum angelegt wurden.\\
 		\hline
@@ -674,133 +658,143 @@ Eine Commithistorie kann vor allem bei Teamarbeit sehr groß werden, hierzu gibt
 Es besteht auch noch die Möglichkeit, sich die Commithistorie grafisch anzeigen zu lassen, und zwar mit dem Tcl/Tk Programm.
 Dies wird in der Regel mit Git ausgeliefert und hört auf den Befehl gitk. Es ist im wesentlichen eine grafische Version von Git log und akzeptiert fast alle Filteroptionen, die Git log auch akzeptiert.
 
-\vspace{3pt}
+\vspace{1em}
 \begin{minipage}{\linewidth}
 	\centering
 	\includegraphics[width=0.9\linewidth]{Bilder/gitk.png}
 	\captionof{figure}[gitk Grafische Oberfläche]{gitk Grafische Oberfläche}
-	\label{fig:osgi}
+	\label{gitk Grafische Oberfläche}
 \end{minipage}
 
 Falls gitk nicht mit installiert wurde, ist es selbstverständlich nötig es zu installieren, unter Ubuntu apt-get install gitk .
 Beim aufrufen sieht man die Commit Historie. Diese wird in der oberen Hälfte des Fensters dargestellt. Daneben ein Graph, der die Branches und Merges zeigt. Nach Auswahl eines Commits, zeigt die Vergleichsanzeige in der unteren Hälfte des Fensters die jeweiligen Änderungen in diesem Commit.
-\newpage
+
 
 
 % ----------------------------------------------------------------------------------------------------------
 % Kapitel 
 % ----------------------------------------------------------------------------------------------------------
 \section{Branching mit Git}
-Lorem ipsum dolor sit amet.
 
 \subsection{Was ist ein Branch?}
-Um das Branching wirklich zu verstehen, muss man im Detail verstehen wie Git die Daten speichert.	Wenn man Commitet speichert Git	ein sogenanntes Commit-Objekt.Dieses enthält einen Zeiger zu dem Schnappschuss mit den Objekten der Staging-Area, dem Autor, den Commit-Metadaten und einem Zeiger zu den direkten Eltern des Commits. Beim Commiten bekommt jedes Projektverzeichnis eine Prüfsumme und wird  als sogenanntes tree-Objekt im Git Repository gespeichert. Sommit zeigt das Commit-Objekt auf das Tree-Objekt	diese wiederrum zeigen auf sogenannte Blops, welche den Inhalt der Dateien enthalten.	
+Um das Branching wirklich zu verstehen, muss man im Detail verstehen, wie Git die Daten speichert. Wenn man Commitet, speichert Git ein sogenanntes Commit-Objekt. Dieses enthält einen Zeiger, zu dem Schnappschuss mit den Objekten der Staging-Area, dem Autor, den Commit-Metadaten und einem Zeiger zu den direkten Eltern des Commits. Beim Commiten bekommt jedes Projektverzeichnis eine Prüfsumme und wird  als sogenanntes tree-Objekt im Git Repository gespeichert. Somit zeigt das Commit-Objekt auf das tree-Objekt,	diese wiederrum zeigen auf sogenannte Blops, welche den Inhalt der Dateien enthalten.	
+
 \vspace{1em}
 \begin{minipage}{\linewidth}
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/speichern.png}
-	\captionof{figure}[Zentralisierte Architektur]{Speichern als Modell\footnotemark }
-	\label{fig:gitspeichern}
+	\captionof{figure}[Speichern als Modell]{Speichern als Modell\footnotemark }
+	\label{Speichern als Modell}
 \end{minipage} 	
 
-Das Tree-Objekt hat die Funktion einen Inhaltsverzeichnisses im Verzeichnis jede Datei ist dort aufgelistet und  spezifiziert welcher Dateiname zu welchem Blob gehört. Des Weiteren gibt es noch einen  Zeiger, der auf die Wurzel des Projektbaumes und die Metadaten des Commits verweist (Abb.6).	 
-Jede weitere Commt wird einen Zeiger enthalten, der auf den Vorhergehenden verweist. Nach zwei weiteren Commits könnte die Historie wie folgt aussehen (Abb. 7).
+Das Tree-Objekt  fungiert als ein Inhaltsverzeichnis im Verzeichnis. Jede Datei ist dort aufgelistet und  spezifiziert. Des Weiteren gibt es noch einen  Zeiger, der auf die Wurzel des Projektbaumes und die Metadaten des Commits verweist (Abb.6).	 
+Jede weitere Commit wird einen Zeiger enthalten, der auf den vorhergehenden verweist. Nach zwei weiteren Commits könnte die Historie wie folgt aussehen (Abb. 7).
 
 \vspace{1em}
 \begin{minipage}{\linewidth}
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/commit.png}
-	\captionof{figure}[Commit Diagramm]{Speichern als Modell\footnotemark }
-	\label{fig:gitspeichern}
+	\captionof{figure}[Commit Diagramm]{Commit Diagramm\footnotemark }
+	\label{Commit Diagramm}
 \end{minipage} 	
 
-Ein Branch in Git ist nichts anderes als ein simpler Zeiger auf einen dieser Commits, der Standardname eines Git-Branches lautet master. Diesen master Branch erhällt man durch den Initialen Commit der sich bei jedem neuen Commit um einz nach vorne verschiebt.
+Ein Branch in Git, ist nichts anderes als ein simpler Zeiger auf einen dieser Commits, der Standardname eines Git-Branches lautet master. Diesen master Branch erhält man durch den Initialen Commit der sich bei jedem neuen Commit um eins nach vorne verschiebt.
 \newline
+
 \vspace{2em}
 \begin{minipage}{\linewidth}
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/master.png}
-	\captionof{figure}[Commit Diagramm]{Master Branch\footnotemark }
-	\label{fig:gitspeichern}
+	\captionof{figure}[Master Branch{Master Branch\footnotemark }
+	\label{Master Branch}
 \end{minipage} 
 
-Wenn man nun einen neuen Branch generiert wird ein neuer Zeiger erstellt, der auf den Commit zeigt auf dem man gerade arbeitet.
+Wenn man nun einen neuen Branch generiert, wird ein neuer Zeiger erstellt, der auf den Commit zeigt auf dem man gerade arbeitet.
 
-\begin{lstlisting}[caption=Branch Befehl] label=lst:arduino]
+\begin{lstlisting}[caption=Branch Befeh] label=lst:git]
 $ git branch NeuerBranchName
 \end{lstlisting}
 
-\newline
 
 \vspace{2em}
 \begin{minipage}{\linewidth}
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/nbranch.png}
-	\captionof{figure}[Commit Diagramm]{Neuer Branch\footnotemark }
-	\label{fig:gitspeichern}
+	\captionof{figure}[Neuer Branch]{Neuer Branch\footnotemark }
+	\label{Neuer Branch}
 \end{minipage}
 
-Nun befinden wir uns immer noch auf dem Masterzweig das bedeutet man muss in den gerade erstellten Branch wechseln.
+Nun befinden wir uns immer noch auf dem Masterzweig, das bedeutet man muss in den gerade erstellten Branch wechseln.
 Dies macht man mit dem Checkout Befehl.
-\begin{lstlisting}[caption=Branch Befehl] label=lst:arduino]
+
+\begin{lstlisting}[caption=Branch Befehl] label=lst:git]
 $ git checkout 
 $ git checkout NeuerBranchName
 \end{lstlisting}
-Um den zu sehen in welchen Branch man sich befindet kann man auf das Kommando \lstinline|git branch|zurückgreifen. Der Zweig welcher mit dem Sternchen gekennzeichnet ist, ist der indem man Arbeitet. Dieses Sternchen ist ein spezieller Zeiger der sich HEAD nennt. 
-\begin{lstlisting}[caption=Aktuellen Branch prüfen] label=lst:arduino]
+
+Um zu prüfen in welchen Branch man sich befindet, kann man auf das Kommando \lstinline|git branch| zurückgreifen. Der Zweig, welcher mit dem Sternchen gekennzeichnet ist, ist der indem man Arbeitet. Dieses Sternchen ist ein spezieller Zeiger der sich HEAD nennt. 
+
+\begin{lstlisting}[caption=Aktuellen Branch prüfen] label=lst:git]
   master
 * neuerBranch
 \end{lstlisting}
 
-\subsection{Alte Version Wiederherstellen}
-Um einen expliziten snapshot wiederherzustellen ist es wichtig zu wissen das alle Änderungen die nach diesem commit gemacht wurden für immer gelöscht werden. 
+\subsection{Alte Version wiederherstellen}
+Um einen expliziten snapshot wiederherzustellen, ist es wichtig zu wissen, dass alle Änderungen die nach diesem commit gemacht wurden für immer gelöscht werden. 
+
 \begin{lstlisting}[caption=git log Befehl] label=lst:arduino]
 commit d16a885e0d3a8bad5aebf9f1e5a6c80326e3c4f2
 Author: vhx <vhx@example.com>
 Date:   Sat Nov 8 02:04:17 2014 +0100
 \end{lstlisting}
-Um den snapshot wiederherzustellen braucht man die Hash Nummer welche jeder commit automatisch zugeteilt bekommt.
+
+Um den snapshot wiederherzustellen, braucht man die Hash Nummer welche jeder commit automatisch zugeteilt bekommt.
 Danach führt man  folgenden Befehl aus:
+
 \begin{lstlisting}[caption=snapshot wiederherstellen (wird gelöst)] label=lst:arduino]
 git reset --hard d16a885e0d3a8bad5aebf9f1e5a6c80326e3c4f2
 \end{lstlisting}
 
-Will man jedoch nur kurz in eine ältere Version einsehen kann man die auch mit folgendem Kommando machen.
+Will man jedoch nur kurz in eine ältere Version einsehen, kann man die auch mit folgendem Kommando machen.
+
 \begin{lstlisting}[caption=snapshot wiederherstellen (wird nicht gelöscht)]
 $ git checkout 82f5
 \end{lstlisting}
+
 Mit dem Checkout Befehl und der Commitnummer werden die Versionen die nach dem commit erstellt wurden nicht gelöst.  
 	
 \subsection{Einfaches Branching und Merging}
-Nachdem Branching ausführlich erläutert wurde, ist Mergigng  nun an der Reihe. Merging ist das zusammenführen zweier Branches zu einem Zweig.
+Nachdem Branching ausführlich erläutert wurde, ist merging  nun an der Reihe. Das Zusammenführen zweier Branches zu einem Zweig.
 Das kann man am besten an einem Fallbeispiel erläutern. 
 Man schreibt an einer Software, die schon eine Vorgängerversion besitzt. 
-man erstellt sich einen Branch für die neue Version. 
-Plötzlich wird ihnen ein Fehler gemeldet in der Alten Version. Um nun sicherzustellen das man nicht die bisherigen Änderungen ( neue Version ) und den Fix des Fehlers bereitstellt, wechselt man in den Zweig der alten version. 
+Man erstellt sich einen Branch für die neue Version. 
+Plötzlich wird ihnen ein Fehler gemeldet in der alten Version. Um nun sicherzustellen, dass man nicht die bisherigen Änderungen ( neue Version ) und den Fix des Fehlers bereitstellt, wechselt man in den Zweig der alten Version. 
 
 \vspace{1em}
 \begin{minipage}{\linewidth}
 	\centering
 	\includegraphics[width=0.5\linewidth]{Bilder/merge.png}
 	\captionof{figure}[Merge]{Speichern als Modell\footnotemark }
-	\label{fig:gitspeichern}
+	\label{Speichern als Modell}
 \end{minipage} 	
 
-Dort erstellt man sich einen weiteren Branch der als zweig aus der alten Version entsteht. Diesen kann man dann Bearbeiten und mit der alten Version mergen und ausliefern ausliefern.
+Dort erstellt man sich einen weiteren Branch der als Zweig aus der alten Version entsteht. Diesen kann man dann bearbeiten und mit der alten Version mergen und ausliefern.
  
 \vspace{1em}
 \begin{minipage}{\linewidth}
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/merge-fix.png}
 	\captionof{figure}[Merge]{Speichern als Modell\footnotemark }
-	\label{fig:gitspeichern}
+	\label{Speichern als Modell}
 \end{minipage}
-Man hat nun nur die Alter Softwareversion bearbeitet ohne den neuen Code
-mit in die Version zu integrieren. Durch ein einfaches checkout Kommando kann man nun wieder in seinen Zweig zurück gehen und weiter arbeiten. Jedoch sollte man auch beim mergen den File Status Lifecycle nicht außer acht lassen. denn es werden nur 2 branches gemerged die auch Commitet sind.
+
+Man hat nun nur die Alte Softwareversion bearbeitet, ohne den neuen Code 
+mit in die Version zu integrieren. Durch ein einfaches checkout Kommando, kann man nun wieder in seinen Zweig zurück gehen und weiter arbeiten. Jedoch sollte man auch beim mergen den File Status Lifecycle nicht außer acht lassen, denn es werden nur 2 Branches gemerged die auch Commitet sind.
 
 \subsection{Merge-Konflikte}
-Es kommt gelegentlich auch vor das ein Merge nicht zusammengefügt werden kann, wenn man beispielsweise an den selben stellen in Unterschiedlichen Branches was geändert hat.	
+Es kommt gelegentlich auch vor, dass ein Merge nicht zusammengefügt werden kann, wenn man beispielsweise an den selben stellen in unterschiedlichen Branches was geändert hat.	
 Diese Meldung über ein 'merge'-Konflikt könnte ungefähr so aussehen:
+
 \begin{lstlisting}[caption=Branch Konfilkt] label=lst:arduino]
 Auto-merging test.txt
 CONFLICT (content): Merge conflict in Gittest.txt
@@ -815,7 +809,8 @@ test@test:~/test$ git status
 no changes added to commit (use "git add" and/or "git commit -a")
 \end{lstlisting}
 
-Die Dateien die einen Mergekonflikt aufweisen werden auf unmerged gesetzt und es werden Konfliktlösungsmarker hinzugefügt. Dies kann dann so aussehen.  	
+Die Dateien die einen Mergekonflikt aufweisen, werden auf unmerged gesetzt und es werden Konfliktlösungsmarker hinzugefügt. Dies kann dann so aussehen:  	
+
 \begin{lstlisting}[caption=Branch Konfilkt] label=lst:arduino]
 <<<<<<< HEAD
 Hallo
@@ -825,8 +820,8 @@ Hallo Welt
 >>>>>>> fix
 \end{lstlisting}
 
-Diesen Konflickt muss man manuel auflösen. Der als Head Markierte Teil ist der Branch auf dem man sich gerade befindet.Überhalb von ====== unterhalb ist der Branch der gemerged werden soll. Es ist nun notwendig sich zu entscheiden was man nimmt. Aber auch ein komplettes ersetzen des ungemergten Teils ist möglich. Nachdem man den Konflikt aufgelöst hat, einfach dem File Status Lifecycle nach weiter arbeiten.
-Es besteht noch die Möglichkeit ein grafisches Tool zur Bereinigung zu nutzen. Falls keines Installiert ist erscheint eine Liste der Tools die man Problemlos nutzen kann.
+Diesen Konflickt muss man manuell auflösen. Der als Head markierte Teil ist der Branch auf dem man sich gerade befindet. Überhalb von ====== unterhalb ist der Branch der gemerged werden soll. Es ist nun notwendig sich zu entscheiden was man nimmt. Aber auch ein komplettes ersetzen des ungemergten Teils ist möglich. Nachdem man den Konflikt aufgelöst hat, wird einfach dem File Status Lifecycle nach weiter gearbeiten.
+Es besteht noch die Möglichkeit ein grafisches Tool zur Bereinigung zu nutzen. Falls keines installiert ist, erscheint eine Liste der Tools die man problemlos nutzen kann.
 \begin{lstlisting}[caption=Merge Tools] label=lst:git]
 merge tool candidates: meld opendiff kdiff3 tkdiff xxdiff tortoisemerge gvimdiff diffuse ecmerge p4merge araxis bc3 emerge vimdiff
 \end{lstlisting}
@@ -836,23 +831,24 @@ merge tool candidates: meld opendiff kdiff3 tkdiff xxdiff tortoisemerge gvimdiff
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/mergetool.png}
 	\captionof{figure}[Merge]{Mergetool Meld\footnotemark }
-	\label{fig:gitspeichern}
+	\label{Mergetool Meld}
 \end{minipage}
 
-Abbildung 12 zeigt das Mergetool Meld, es zeigt den komflikt auf und ermöglicht mit einigen Klicks das lösen des Problems.
+Abbildung 12 zeigt das Mergetool Meld, es zeigt den  Konflikt auf und ermöglicht mit einigen Klicks das Lösen des Problems.
 % ----------------------------------------------------------------------------------------------------------
 % Kapitel
 % ----------------------------------------------------------------------------------------------------------
 
 \section{Git in Netzwerken}
-Um das zusammenarbeiten in Grupppen möglich zu machen aber auch dem Singe Poit of Failure  entgegenzuwirken gibt es noch die möglichkeit  ein Git Repository extern zur Verfügung zu stellen. Es besteht die Möglichkeit git auf dem eigenen Computer Kolaborativ zu nutzen jedoch hat sich das in der Praxis nicht durchgesetzt. Git als Server zu betreiben ist in der Praxis üblich. Ein externes Repository  ist im Allgemeinen ein einfaches Repository ohne Arbeitsverzeichnis. 
-Aus dem Einfachen Grund da ein Knotenpunkt ist. Auf dem Server Befinden sich nur einfache inhalte aus der .git Datei und Projektdateien.
+Um das zusammenarbeiten in Gruppen möglich zu machen, aber auch dem Single Poit of Failure  entgegenzuwirken, gibt es noch die Möglichkeit  ein Git Repository extern zur Verfügung zu stellen. Es besteht die Möglichkeit git auf dem eigenen Computer Kolaborativ zu nutzen, jedoch hat sich das in der Praxis nicht durchgesetzt. Git als Server zu betreiben ist in der Praxis üblich. Ein externes Repository  ist im Allgemeinen ein einfaches Repository ohne Arbeitsverzeichnis. 
+Aus dem einfachen Grund da es ein Knotenpunkt ist. Auf dem Server Befinden sich nur einfache Inhalte aus der .git Datei und Projektdateien.
 
 \subsection{Welche Protokolle untersützt Git}
-Git ist in der Lage vier verschieden Protokolle zum Datentransfer zu nutzen.
+Git ist in der Lage vier verschiedene Protokolle zum Datentransfer zu nutzen.
 \paragraph{Lokales Protokoll}
-Das lokale Protokoll kommt zum Einsatz wenn man im Team ein Gemeinsames Dateisystem nutzt z.B. ein eingebundenes NFS. Man ist ist der Lage  von einem lokalen Datei-basiertem Repository zu clonen, pushen und pullen. 
-Es gibt aber zwei unterschiedliche Befehle die man nutzen kann. Mit Präfix oder ohne.
+Das lokale Protokoll kommt zum Einsatz, wenn man im Team ein gemeinsames Dateisystem nutzt, z.B. ein eingebundenes NFS. Man ist ist der Lage  von einem lokalen Datei-basiertem Repository zu clonen, pushen und pullen. 
+Es gibt aber zwei unterschiedliche Befehle, die man nutzen kann. Mit Präfix oder ohne.
+
 \begin{lstlisting}[caption=Ohne Präfix] label=lst:git]
 $ git clone /opt/git/Myproject.git
 \end{lstlisting}
@@ -860,24 +856,24 @@ $ git clone /opt/git/Myproject.git
 \begin{lstlisting}[caption=Mit Präfix] label=lst:git]
 $ git clone file:///opt/git/Myproject.git
 \end{lstlisting}
-Die beiden Arten unterscheiden sich auch von einander.
-Wenn man nur den Pfad angibt, und sowohl die Quelle, als auch das Ziel sich auf dem selben Dateisystem befinden, versucht Git harte Links zu benutzen. Wenn man die Variante mit dem Präfix nutzt, startet Git den Prozess, den es normalerweise zum Übertragen von Daten über ein Netzwerk verwenden würde, dass ist gewöhnlich die ineffizientere Methode zum Übertragen der Daten. In der Regel benutzt die Variante ohne Präfix da diese auch die Schnellere ist.	
+
+Die beiden Arten unterscheiden sich auch voneinander.
+Wenn man nur den Pfad angibt, und sowohl die Quelle, als auch das Ziel sich auf dem selben Dateisystem befinden, versucht Git harte Links zu benutzen. Wenn man die Variante mit dem Präfix nutzt, startet Git den Prozess, den es normalerweise zum Übertragen von Daten über ein Netzwerk verwenden würde, dass ist gewöhnlich die ineffizientere Methode zum Übertragen der Daten. In der Regel benutzt man die Variante ohne Präfix, da diese auch die Schnellere ist.	
 \paragraph{Das SSH Protokoll}
 Das vermutlich gebräuchlichste Transport-Protokoll für Git ist SSH.
-Es ist weit verbreitet und leicht einzurichten des weiteren unterstützt es lesende und schreibende Zugriffe.
+Es ist weit verbreitet und leicht einzurichten, des weiteren unterstützt es lesende und schreibende Zugriffe.
 
-\begin{lstlisting}[caption=Mit Präfix] label=lst:git]
+\begin{lstlisting}[caption=SSH] label=lst:git]
 $ git clone ssh://user@server/Myproject.git
 \end{lstlisting}
 
 \paragraph{Das Git Protokoll}
-Das Git Protokoll kommt mit Dem Versionsverwaltungsystem.
-Dieser Service ist vergleichbar mit dem SSH-Protokoll, aber ohne jegliche Authentifizierung. Das Git Protokoll ist das schnellste verfügbare Transfer Protokoll, dar es den selben Daten-Transfer Mechanismus wie das SSH-Protokoll nutzt, aber ohne den Entschlüsselungs- und Authentifizierungs-Overhead.
+Das Git Protokoll kommt mit dem Versionsverwaltungsystem.
+Dieser Service ist vergleichbar mit dem SSH-Protokoll, aber ohne jegliche Authentifizierung. Das Git Protokoll ist das schnellste verfügbare Transfer Protokoll, da es den selben Daten-Transfer Mechanismus wie das SSH-Protokoll nutzt, aber ohne den Entschlüsselungs- und Authentifizierungs-Overhead.
 
 \paragraph{Das HTTP/S Protokoll}
 Ist der Einfachheit wegen sehr beliebt, man braucht nur die Git Repository in das HTTP Hauptverzeichnis zu legen und einen speziellen post-update hook einrichten, schon ist das Clonen über HTTP eingerichtet.  
 
-\newpage
 
 % ----------------------------------------------------------------------------------------------------------
 % Literatur
@@ -920,6 +916,7 @@ Unterkategorie, die nicht im Inhaltsverzeichnis auftaucht.
 \vspace{2em}
 Hiermit versichere ich, dass ich meine Abschlussarbeit selbständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe.
 
+
 \vspace{4em}
 \begin{minipage}{\linewidth}
 	\begin{tabular}{p{15em}p{15em}}
@@ -927,4 +924,5 @@ Hiermit versichere ich, dass ich meine Abschlussarbeit selbständig verfasst und
 		& \centering (Unterschrift)\\
 	\end{tabular}
 \end{minipage}
+
 \end{document}

@@ -7,14 +7,6 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Bre]{online}
-\textsc{Brettschneider}, Daniel:
-\newblock \emph{Daniel Brettschneiders Blog}.
-\newblock \url{http://www.daniel-brettschneider.de}. --
-\newblock Zugriff: 15.02.2013, Archiviert mit
-  WebCite\textsuperscript{\textregistered}:
-  \url{http://www.webcitation.org/6ESWiGbhw}
-
 \bibitem[Cha09]{chacon2009pro}
 \textsc{Chacon}, Scott:
 \newblock \emph{Pro Git}.
@@ -36,13 +28,7 @@
   \url{https://github.com/jquery/jquery}
 
 \bibitem[Ley]{Leymann}
-\textsc{Leymann}, Professor Dr.~F.:
-\newblock \emph{Repository,Leymann}.
-\newblock \url{http://wirtschaftslexikon.gabler.de/Definition/repository.html}.
-  --
-\newblock Zugriff: 20.10.2014, Archiviert mit
-  WebCite\textsuperscript{\textregistered}:
-  \url{http://wirtschaftslexikon.gabler.de/Definition/repository.html}
+
 
 \bibitem[Rub]{ruby}
 \textsc{Ruby}:

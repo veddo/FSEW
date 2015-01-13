@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  9 JAN 2015 20:32
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.9)  13 JAN 2015 20:47
 entering extended mode
  %&-line parsing enabled.
-**%.tex Abschlussarbeit.tex
+**%.tex
 ! Emergency stop.
-<*> %.tex Abschlussarbeit.tex
-                             
+<*> %.tex
+         
 *** (job aborted, no legal \end found)
 
  
